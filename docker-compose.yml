@@ -1,0 +1,78 @@
+name: rampart
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PHP_VERSION: ${PHP_VERSION:-8.4}
+    image: rampart-app
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: rampart
+      DB_USERNAME: rampart
+      DB_PASSWORD: rampart
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      METADATA_MOCK_HOST: metadata.internal
+    volumes:
+      - app-storage:/var/www/html/storage
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      metadata-mock:
+        condition: service_started
+    networks:
+      default:
+      internal-only:
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: rampart
+      MYSQL_USER: rampart
+      MYSQL_PASSWORD: rampart
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks:
+      default:
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    networks:
+      default:
+
+  # Fake internal "cloud metadata" endpoint so the SSRF (A01) demo works fully offline.
+  # Only reachable from the app container (internal-only network, no published ports) at
+  # http://metadata.internal/latest/meta-data/ — never from the host.
+  metadata-mock:
+    build:
+      context: ./mock/metadata
+    image: rampart-metadata-mock
+    networks:
+      internal-only:
+        aliases:
+          - metadata.internal
+
+networks:
+  default:
+  internal-only:
+    internal: true
+
+volumes:
+  mysql-data:
+  app-storage:
