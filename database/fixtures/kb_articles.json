@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "author_id": 2,
+        "title": "How to reset your password",
+        "slug": "how-to-reset-your-password",
+        "body": "<p>Click <strong>Forgot password</strong> on the login page and follow the emailed link. Links are valid until used.</p>",
+        "is_published": true,
+        "created_days_ago": 300
+    },
+    {
+        "id": 2,
+        "author_id": 3,
+        "title": "Troubleshooting failed file uploads",
+        "slug": "troubleshooting-failed-file-uploads",
+        "body": "<p>Attachments are limited to 10MB. If an upload fails, check the file size and your connection, then try again.</p>",
+        "is_published": true,
+        "created_days_ago": 290
+    },
+    {
+        "id": 3,
+        "author_id": 4,
+        "title": "Understanding ticket priorities",
+        "slug": "understanding-ticket-priorities",
+        "body": "<p>Low: no immediate impact. Normal: standard queue. High: workflow blocked. Urgent: outage or data loss.</p>",
+        "is_published": true,
+        "created_days_ago": 280
+    },
+    {
+        "id": 4,
+        "author_id": 5,
+        "title": "Setting up a webhook",
+        "slug": "setting-up-a-webhook",
+        "body": "<p>Admins can configure outbound webhooks under Admin &rarr; Webhooks. Use the Test button to confirm delivery.</p>",
+        "is_published": true,
+        "created_days_ago": 270
+    },
+    {
+        "id": 5,
+        "author_id": 2,
+        "title": "Managing your API tokens",
+        "slug": "managing-your-api-tokens",
+        "body": "<p>Generate a personal API token from your account menu. Treat it like a password \u2014 anyone with it can act as you.</p>",
+        "is_published": true,
+        "created_days_ago": 260
+    },
+    {
+        "id": 6,
+        "author_id": 3,
+        "title": "Inviting teammates to your organization",
+        "slug": "inviting-teammates-to-your-organization",
+        "body": "<p>Ask an admin to add your teammate's email under Admin &rarr; Users.</p>",
+        "is_published": true,
+        "created_days_ago": 250
+    },
+    {
+        "id": 7,
+        "author_id": 4,
+        "title": "Saved views: filtering your ticket queue",
+        "slug": "saved-views-filtering-your-ticket-queue",
+        "body": "<p>Save a status/priority filter combination from the Tickets page so you can get back to it in one click.</p>",
+        "is_published": true,
+        "created_days_ago": 240
+    },
+    {
+        "id": 8,
+        "author_id": 5,
+        "title": "What happens when a ticket is closed",
+        "slug": "what-happens-when-a-ticket-is-closed",
+        "body": "<p>Closed tickets are archived from the default queue but remain searchable. Replying to a closed ticket reopens it.</p>",
+        "is_published": true,
+        "created_days_ago": 230
+    },
+    {
+        "id": 9,
+        "author_id": 2,
+        "title": "Understanding organizations",
+        "slug": "understanding-organizations",
+        "body": "<p>Each customer belongs to one organization. Agents and admins can see tickets across every organization.</p>",
+        "is_published": true,
+        "created_days_ago": 220
+    },
+    {
+        "id": 10,
+        "author_id": 3,
+        "title": "Contacting support outside business hours",
+        "slug": "contacting-support-outside-business-hours",
+        "body": "<p>File a ticket any time \u2014 our on-call team monitors urgent-priority tickets 24/7.</p>",
+        "is_published": true,
+        "created_days_ago": 210
+    }
+]

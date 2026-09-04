@@ -1,0 +1,12 @@
+# Generated from database/fixtures/generate.php — every password below matches at
+# least one seeded user's md5() hash. Regenerate this file by re-running that script;
+# never hand-edit it, or it will drift from the fixtures it's meant to crack.
+admin
+dragon123
+football7
+letmein1
+monkey123
+password123
+qwerty123
+sunshine22
+welcome1

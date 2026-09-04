@@ -1,0 +1,6 @@
+Steps to reproduce:
+1. Open the billing page
+2. Click "Download statement"
+3. Observe the blank PDF
+
+Attaching a screenshot of the console error below.

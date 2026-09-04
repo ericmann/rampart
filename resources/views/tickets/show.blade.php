@@ -11,6 +11,13 @@
     <div class="py-12">
         <div class="max-w-5xl mx-auto sm:px-6 lg:px-8 space-y-6">
 
+            @if (session('shareUrl'))
+                <div class="bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4 text-sm">
+                    <p class="font-medium text-indigo-800 dark:text-indigo-200">Share this read-only status link (expires in 7 days):</p>
+                    <code class="block mt-2 break-all bg-white dark:bg-gray-900 rounded p-2">{{ session('shareUrl') }}</code>
+                </div>
+            @endif
+
             <div class="bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 grid sm:grid-cols-3 gap-4 text-sm">
                 <div>
                     <div class="text-gray-500">Requester</div>
@@ -25,6 +32,11 @@
                     <div class="font-medium capitalize">{{ $ticket->priority }}</div>
                 </div>
             </div>
+
+            <form method="POST" action="{{ route('tickets.share', $ticket) }}">
+                @csrf
+                <button class="text-sm text-indigo-600 hover:text-indigo-500">Get a shareable status link &rarr;</button>
+            </form>
 
             @auth
                 @if (auth()->user()->isStaff())

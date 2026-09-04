@@ -2,24 +2,29 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
-     * Seed the application's database.
+     * Loads the committed fixture JSON verbatim — no runtime Faker. See
+     * database/fixtures/generate.php for how that JSON was produced, and
+     * docs/VULN-MAP.md for why the data looks the way it does (weak passwords,
+     * unsigned webhooks, etc.).
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $this->call([
+            OrganizationSeeder::class,
+            UserSeeder::class,
+            TicketSeeder::class,
+            MessageSeeder::class,
+            AttachmentSeeder::class,
+            KbArticleSeeder::class,
+            WebhookSeeder::class,
+            SavedViewSeeder::class,
+            SsrfMarkerSeeder::class,
+            SystemStateSeeder::class,
         ]);
     }
 }

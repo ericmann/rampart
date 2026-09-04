@@ -1,0 +1,3 @@
+invoice_number,amount_due,due_date,status
+INV-20260714-002,214.50,2026-07-28,paid
+INV-20260714-003,88.00,2026-07-28,overdue

@@ -11,6 +11,7 @@ use App\Http\Controllers\HealthController;
 use App\Http\Controllers\KbController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PublicTicketStatusController;
 use App\Http\Controllers\SavedViewController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\WebhookReceiverController;
@@ -20,10 +21,12 @@ Route::get('/', function () {
     return auth()->check() ? redirect()->route('dashboard') : view('welcome');
 })->name('home');
 
-Route::get('/health', HealthController::class)->name('health');
+Route::get('/health', [HealthController::class, 'index'])->name('health');
 
 Route::get('/kb', [KbController::class, 'index'])->name('kb.index');
 Route::get('/kb/{article:slug}', [KbController::class, 'show'])->name('kb.show');
+
+Route::get('/status/{token}', [PublicTicketStatusController::class, 'show'])->name('tickets.public-status');
 
 require __DIR__.'/auth.php';
 
@@ -39,6 +42,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/tickets/{ticket}', [TicketController::class, 'show'])->name('tickets.show');
     Route::patch('/tickets/{ticket}/status', [TicketController::class, 'updateStatus'])->name('tickets.status');
     Route::post('/tickets/{ticket}/assign', [TicketController::class, 'assign'])->name('tickets.assign');
+    Route::post('/tickets/{ticket}/share', [PublicTicketStatusController::class, 'create'])->name('tickets.share');
     Route::post('/tickets/{ticket}/messages', [MessageController::class, 'store'])->name('tickets.messages.store');
     Route::post('/tickets/{ticket}/attachments', [AttachmentController::class, 'store'])->name('tickets.attachments.store');
     Route::get('/attachments/{attachment}/download', [AttachmentController::class, 'download'])->name('attachments.download');

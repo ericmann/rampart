@@ -1,12 +1,13 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "rampart/rampart",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Rampart — an intentionally-vulnerable Laravel support desk for an OWASP Top 10:2025 workshop.",
+    "keywords": ["laravel", "owasp", "security-training"],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
+        "firebase/php-jwt": "6.10.0",
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0"
     },
@@ -45,10 +46,9 @@
             "Composer\\Config::disableProcessTimeout",
             "@php artisan dev"
         ],
-        "test": [
-            "@php artisan config:clear --ansi @no_additional_args",
-            "@php artisan test"
-        ],
+        "test": "vendor/bin/phpunit -c phpunit.xml",
+        "test:exploits": "ALLOW_EXPLOIT_TESTS=1 vendor/bin/phpunit -c phpunit.exploits.xml",
+        "db:reset": "@php artisan migrate:fresh --seed --force",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"

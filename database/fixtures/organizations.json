@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Northwind Traders",
+        "domain": "northwind.example",
+        "created_days_ago": 200
+    },
+    {
+        "id": 2,
+        "name": "Globex Corporation",
+        "domain": "globex.example",
+        "created_days_ago": 215
+    },
+    {
+        "id": 3,
+        "name": "Initech Solutions",
+        "domain": "initech.example",
+        "created_days_ago": 230
+    },
+    {
+        "id": 4,
+        "name": "Umbrella Logistics",
+        "domain": "umbrella.example",
+        "created_days_ago": 245
+    },
+    {
+        "id": 5,
+        "name": "Wayfarer Outfitters",
+        "domain": "wayfarer.example",
+        "created_days_ago": 260
+    },
+    {
+        "id": 6,
+        "name": "Bluepeak Analytics",
+        "domain": "bluepeak.example",
+        "created_days_ago": 275
+    }
+]

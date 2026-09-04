@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AuditLog;
 use App\Models\KbArticle;
 use App\Support\UrlFetcher;
 use Illuminate\Http\Request;
@@ -43,6 +44,15 @@ class KbController extends Controller
             'slug' => Str::slug($validated['title']).'-'.Str::random(6),
             'body' => $validated['body'],
             'is_published' => true,
+        ]);
+
+        // The only thing that actually gets audit-logged in this app — logins, role
+        // changes, and authorization denials do not. See docs/VULN-MAP.md (A09).
+        AuditLog::create([
+            'user_id' => $request->user()->id,
+            'event' => 'kb_article.created',
+            'context' => ['article_id' => $article->id],
+            'ip_address' => $request->ip(),
         ]);
 
         return redirect()->route('kb.show', $article)->with('status', 'Article published.');

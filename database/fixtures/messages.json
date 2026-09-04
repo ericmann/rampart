@@ -1,0 +1,2658 @@
+[
+    {
+        "id": 1,
+        "ticket_id": 1,
+        "author_id": 3,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163953
+    },
+    {
+        "id": 2,
+        "ticket_id": 1,
+        "author_id": 23,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163834
+    },
+    {
+        "id": 3,
+        "ticket_id": 1,
+        "author_id": 3,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163290
+    },
+    {
+        "id": 4,
+        "ticket_id": 2,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170809
+    },
+    {
+        "id": 5,
+        "ticket_id": 2,
+        "author_id": 11,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170711
+    },
+    {
+        "id": 6,
+        "ticket_id": 2,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170532
+    },
+    {
+        "id": 7,
+        "ticket_id": 2,
+        "author_id": 11,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 169996
+    },
+    {
+        "id": 8,
+        "ticket_id": 3,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 160652
+    },
+    {
+        "id": 9,
+        "ticket_id": 3,
+        "author_id": 20,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 160061
+    },
+    {
+        "id": 10,
+        "ticket_id": 4,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 31558
+    },
+    {
+        "id": 11,
+        "ticket_id": 4,
+        "author_id": 18,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 31336
+    },
+    {
+        "id": 12,
+        "ticket_id": 5,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 9803
+    },
+    {
+        "id": 13,
+        "ticket_id": 5,
+        "author_id": 2,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 9651
+    },
+    {
+        "id": 14,
+        "ticket_id": 6,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 2547
+    },
+    {
+        "id": 15,
+        "ticket_id": 6,
+        "author_id": 14,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 2030
+    },
+    {
+        "id": 16,
+        "ticket_id": 6,
+        "author_id": 4,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 1977
+    },
+    {
+        "id": 17,
+        "ticket_id": 7,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 168262
+    },
+    {
+        "id": 18,
+        "ticket_id": 7,
+        "author_id": 19,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 167990
+    },
+    {
+        "id": 19,
+        "ticket_id": 8,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18308
+    },
+    {
+        "id": 20,
+        "ticket_id": 8,
+        "author_id": 14,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18158
+    },
+    {
+        "id": 21,
+        "ticket_id": 8,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 17994
+    },
+    {
+        "id": 22,
+        "ticket_id": 8,
+        "author_id": 14,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 17636
+    },
+    {
+        "id": 23,
+        "ticket_id": 8,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 17080
+    },
+    {
+        "id": 24,
+        "ticket_id": 9,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 80046
+    },
+    {
+        "id": 25,
+        "ticket_id": 10,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1
+    },
+    {
+        "id": 26,
+        "ticket_id": 10,
+        "author_id": 8,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1
+    },
+    {
+        "id": 27,
+        "ticket_id": 10,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1
+    },
+    {
+        "id": 28,
+        "ticket_id": 10,
+        "author_id": 8,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1
+    },
+    {
+        "id": 29,
+        "ticket_id": 11,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 21355
+    },
+    {
+        "id": 30,
+        "ticket_id": 11,
+        "author_id": 14,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 21283
+    },
+    {
+        "id": 31,
+        "ticket_id": 11,
+        "author_id": 4,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 21218
+    },
+    {
+        "id": 32,
+        "ticket_id": 12,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 153858
+    },
+    {
+        "id": 33,
+        "ticket_id": 13,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 21400
+    },
+    {
+        "id": 34,
+        "ticket_id": 14,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 102150
+    },
+    {
+        "id": 35,
+        "ticket_id": 14,
+        "author_id": 13,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 101587
+    },
+    {
+        "id": 36,
+        "ticket_id": 14,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 101325
+    },
+    {
+        "id": 37,
+        "ticket_id": 14,
+        "author_id": 4,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 101231
+    },
+    {
+        "id": 38,
+        "ticket_id": 15,
+        "author_id": 3,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 117797
+    },
+    {
+        "id": 39,
+        "ticket_id": 15,
+        "author_id": 16,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 117385
+    },
+    {
+        "id": 40,
+        "ticket_id": 15,
+        "author_id": 3,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 117119
+    },
+    {
+        "id": 41,
+        "ticket_id": 15,
+        "author_id": 16,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 116595
+    },
+    {
+        "id": 42,
+        "ticket_id": 16,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 69961
+    },
+    {
+        "id": 43,
+        "ticket_id": 16,
+        "author_id": 16,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 69601
+    },
+    {
+        "id": 44,
+        "ticket_id": 16,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 69115
+    },
+    {
+        "id": 45,
+        "ticket_id": 16,
+        "author_id": 16,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 68809
+    },
+    {
+        "id": 46,
+        "ticket_id": 16,
+        "author_id": 4,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 68776
+    },
+    {
+        "id": 47,
+        "ticket_id": 17,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 143674
+    },
+    {
+        "id": 48,
+        "ticket_id": 17,
+        "author_id": 28,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 143282
+    },
+    {
+        "id": 49,
+        "ticket_id": 18,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 108986
+    },
+    {
+        "id": 50,
+        "ticket_id": 18,
+        "author_id": 24,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 108429
+    },
+    {
+        "id": 51,
+        "ticket_id": 18,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 107993
+    },
+    {
+        "id": 52,
+        "ticket_id": 18,
+        "author_id": 24,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 107927
+    },
+    {
+        "id": 53,
+        "ticket_id": 18,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 107451
+    },
+    {
+        "id": 54,
+        "ticket_id": 19,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163623
+    },
+    {
+        "id": 55,
+        "ticket_id": 19,
+        "author_id": 10,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163295
+    },
+    {
+        "id": 56,
+        "ticket_id": 19,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 163220
+    },
+    {
+        "id": 57,
+        "ticket_id": 19,
+        "author_id": 10,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 162974
+    },
+    {
+        "id": 58,
+        "ticket_id": 20,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 94781
+    },
+    {
+        "id": 59,
+        "ticket_id": 20,
+        "author_id": 9,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 94307
+    },
+    {
+        "id": 60,
+        "ticket_id": 20,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 93734
+    },
+    {
+        "id": 61,
+        "ticket_id": 20,
+        "author_id": 9,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 93211
+    },
+    {
+        "id": 62,
+        "ticket_id": 20,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 92692
+    },
+    {
+        "id": 63,
+        "ticket_id": 22,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 88969
+    },
+    {
+        "id": 64,
+        "ticket_id": 22,
+        "author_id": 12,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 88417
+    },
+    {
+        "id": 65,
+        "ticket_id": 22,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 88201
+    },
+    {
+        "id": 66,
+        "ticket_id": 22,
+        "author_id": 12,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 87659
+    },
+    {
+        "id": 67,
+        "ticket_id": 22,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 87209
+    },
+    {
+        "id": 68,
+        "ticket_id": 23,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 58562
+    },
+    {
+        "id": 69,
+        "ticket_id": 23,
+        "author_id": 16,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 58010
+    },
+    {
+        "id": 70,
+        "ticket_id": 23,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 57762
+    },
+    {
+        "id": 71,
+        "ticket_id": 24,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 34170
+    },
+    {
+        "id": 72,
+        "ticket_id": 25,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132280
+    },
+    {
+        "id": 73,
+        "ticket_id": 25,
+        "author_id": 12,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132236
+    },
+    {
+        "id": 74,
+        "ticket_id": 26,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 108837
+    },
+    {
+        "id": 75,
+        "ticket_id": 26,
+        "author_id": 16,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 108561
+    },
+    {
+        "id": 76,
+        "ticket_id": 27,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1075
+    },
+    {
+        "id": 77,
+        "ticket_id": 28,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 70187
+    },
+    {
+        "id": 78,
+        "ticket_id": 28,
+        "author_id": 5,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 69997
+    },
+    {
+        "id": 79,
+        "ticket_id": 29,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 106428
+    },
+    {
+        "id": 80,
+        "ticket_id": 29,
+        "author_id": 14,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 105995
+    },
+    {
+        "id": 81,
+        "ticket_id": 29,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 105748
+    },
+    {
+        "id": 82,
+        "ticket_id": 29,
+        "author_id": 4,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 105669
+    },
+    {
+        "id": 83,
+        "ticket_id": 30,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96369
+    },
+    {
+        "id": 84,
+        "ticket_id": 30,
+        "author_id": 8,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96190
+    },
+    {
+        "id": 85,
+        "ticket_id": 30,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96011
+    },
+    {
+        "id": 86,
+        "ticket_id": 31,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 9458
+    },
+    {
+        "id": 87,
+        "ticket_id": 31,
+        "author_id": 9,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 9255
+    },
+    {
+        "id": 88,
+        "ticket_id": 31,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 8876
+    },
+    {
+        "id": 89,
+        "ticket_id": 31,
+        "author_id": 9,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 8802
+    },
+    {
+        "id": 90,
+        "ticket_id": 31,
+        "author_id": 5,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 8749
+    },
+    {
+        "id": 91,
+        "ticket_id": 31,
+        "author_id": 5,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 8677
+    },
+    {
+        "id": 92,
+        "ticket_id": 32,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 8033
+    },
+    {
+        "id": 93,
+        "ticket_id": 32,
+        "author_id": 11,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 7822
+    },
+    {
+        "id": 94,
+        "ticket_id": 33,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 111852
+    },
+    {
+        "id": 95,
+        "ticket_id": 33,
+        "author_id": 22,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 111282
+    },
+    {
+        "id": 96,
+        "ticket_id": 33,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110907
+    },
+    {
+        "id": 97,
+        "ticket_id": 33,
+        "author_id": 22,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110718
+    },
+    {
+        "id": 98,
+        "ticket_id": 33,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110440
+    },
+    {
+        "id": 99,
+        "ticket_id": 35,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96284
+    },
+    {
+        "id": 100,
+        "ticket_id": 35,
+        "author_id": 12,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 95749
+    },
+    {
+        "id": 101,
+        "ticket_id": 35,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 95604
+    },
+    {
+        "id": 102,
+        "ticket_id": 35,
+        "author_id": 12,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 95051
+    },
+    {
+        "id": 103,
+        "ticket_id": 37,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 150952
+    },
+    {
+        "id": 104,
+        "ticket_id": 38,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 48672
+    },
+    {
+        "id": 105,
+        "ticket_id": 38,
+        "author_id": 11,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 48435
+    },
+    {
+        "id": 106,
+        "ticket_id": 38,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 47853
+    },
+    {
+        "id": 107,
+        "ticket_id": 38,
+        "author_id": 11,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 47349
+    },
+    {
+        "id": 108,
+        "ticket_id": 38,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 46782
+    },
+    {
+        "id": 109,
+        "ticket_id": 40,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 78638
+    },
+    {
+        "id": 110,
+        "ticket_id": 40,
+        "author_id": 20,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 78289
+    },
+    {
+        "id": 111,
+        "ticket_id": 40,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 78136
+    },
+    {
+        "id": 112,
+        "ticket_id": 40,
+        "author_id": 5,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 77987
+    },
+    {
+        "id": 113,
+        "ticket_id": 41,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149472
+    },
+    {
+        "id": 114,
+        "ticket_id": 41,
+        "author_id": 19,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148884
+    },
+    {
+        "id": 115,
+        "ticket_id": 41,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148588
+    },
+    {
+        "id": 116,
+        "ticket_id": 41,
+        "author_id": 19,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148134
+    },
+    {
+        "id": 117,
+        "ticket_id": 41,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 147551
+    },
+    {
+        "id": 118,
+        "ticket_id": 42,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 171221
+    },
+    {
+        "id": 119,
+        "ticket_id": 42,
+        "author_id": 20,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170776
+    },
+    {
+        "id": 120,
+        "ticket_id": 42,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170506
+    },
+    {
+        "id": 121,
+        "ticket_id": 42,
+        "author_id": 20,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170043
+    },
+    {
+        "id": 122,
+        "ticket_id": 42,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 169741
+    },
+    {
+        "id": 123,
+        "ticket_id": 43,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 34297
+    },
+    {
+        "id": 124,
+        "ticket_id": 43,
+        "author_id": 19,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 33837
+    },
+    {
+        "id": 125,
+        "ticket_id": 43,
+        "author_id": 5,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 33531
+    },
+    {
+        "id": 126,
+        "ticket_id": 44,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 70286
+    },
+    {
+        "id": 127,
+        "ticket_id": 44,
+        "author_id": 28,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 69854
+    },
+    {
+        "id": 128,
+        "ticket_id": 44,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 69616
+    },
+    {
+        "id": 129,
+        "ticket_id": 45,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 80129
+    },
+    {
+        "id": 130,
+        "ticket_id": 45,
+        "author_id": 28,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 79700
+    },
+    {
+        "id": 131,
+        "ticket_id": 46,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 100546
+    },
+    {
+        "id": 132,
+        "ticket_id": 46,
+        "author_id": 7,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 99949
+    },
+    {
+        "id": 133,
+        "ticket_id": 46,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 99739
+    },
+    {
+        "id": 134,
+        "ticket_id": 47,
+        "author_id": 5,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 11341
+    },
+    {
+        "id": 135,
+        "ticket_id": 47,
+        "author_id": 29,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 11018
+    },
+    {
+        "id": 136,
+        "ticket_id": 49,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 133688
+    },
+    {
+        "id": 137,
+        "ticket_id": 49,
+        "author_id": 23,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 133196
+    },
+    {
+        "id": 138,
+        "ticket_id": 49,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132939
+    },
+    {
+        "id": 139,
+        "ticket_id": 49,
+        "author_id": 23,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132396
+    },
+    {
+        "id": 140,
+        "ticket_id": 49,
+        "author_id": 4,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 132209
+    },
+    {
+        "id": 141,
+        "ticket_id": 50,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 150807
+    },
+    {
+        "id": 142,
+        "ticket_id": 50,
+        "author_id": 19,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 150389
+    },
+    {
+        "id": 143,
+        "ticket_id": 50,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149802
+    },
+    {
+        "id": 144,
+        "ticket_id": 50,
+        "author_id": 19,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149572
+    },
+    {
+        "id": 145,
+        "ticket_id": 50,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149451
+    },
+    {
+        "id": 146,
+        "ticket_id": 51,
+        "author_id": 5,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 24243
+    },
+    {
+        "id": 147,
+        "ticket_id": 52,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 35682
+    },
+    {
+        "id": 148,
+        "ticket_id": 53,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 74536
+    },
+    {
+        "id": 149,
+        "ticket_id": 53,
+        "author_id": 22,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 74270
+    },
+    {
+        "id": 150,
+        "ticket_id": 53,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 73719
+    },
+    {
+        "id": 151,
+        "ticket_id": 54,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 94930
+    },
+    {
+        "id": 152,
+        "ticket_id": 54,
+        "author_id": 3,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 94872
+    },
+    {
+        "id": 153,
+        "ticket_id": 55,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 119402
+    },
+    {
+        "id": 154,
+        "ticket_id": 55,
+        "author_id": 27,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 118885
+    },
+    {
+        "id": 155,
+        "ticket_id": 55,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 118299
+    },
+    {
+        "id": 156,
+        "ticket_id": 55,
+        "author_id": 27,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 118171
+    },
+    {
+        "id": 157,
+        "ticket_id": 55,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 117782
+    },
+    {
+        "id": 158,
+        "ticket_id": 55,
+        "author_id": 5,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 117701
+    },
+    {
+        "id": 159,
+        "ticket_id": 56,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 48573
+    },
+    {
+        "id": 160,
+        "ticket_id": 57,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 128012
+    },
+    {
+        "id": 161,
+        "ticket_id": 57,
+        "author_id": 29,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127516
+    },
+    {
+        "id": 162,
+        "ticket_id": 57,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127282
+    },
+    {
+        "id": 163,
+        "ticket_id": 58,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 156530
+    },
+    {
+        "id": 164,
+        "ticket_id": 59,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 90526
+    },
+    {
+        "id": 165,
+        "ticket_id": 60,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 146677
+    },
+    {
+        "id": 166,
+        "ticket_id": 60,
+        "author_id": 6,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 146439
+    },
+    {
+        "id": 167,
+        "ticket_id": 60,
+        "author_id": 4,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 146405
+    },
+    {
+        "id": 168,
+        "ticket_id": 61,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 165381
+    },
+    {
+        "id": 169,
+        "ticket_id": 61,
+        "author_id": 29,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 165009
+    },
+    {
+        "id": 170,
+        "ticket_id": 61,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 164785
+    },
+    {
+        "id": 171,
+        "ticket_id": 62,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 14236
+    },
+    {
+        "id": 172,
+        "ticket_id": 62,
+        "author_id": 2,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 14045
+    },
+    {
+        "id": 173,
+        "ticket_id": 63,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 25779
+    },
+    {
+        "id": 174,
+        "ticket_id": 63,
+        "author_id": 20,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 25580
+    },
+    {
+        "id": 175,
+        "ticket_id": 63,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 25423
+    },
+    {
+        "id": 176,
+        "ticket_id": 64,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 60030
+    },
+    {
+        "id": 177,
+        "ticket_id": 65,
+        "author_id": 3,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1
+    },
+    {
+        "id": 178,
+        "ticket_id": 68,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 112205
+    },
+    {
+        "id": 179,
+        "ticket_id": 68,
+        "author_id": 10,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 112064
+    },
+    {
+        "id": 180,
+        "ticket_id": 68,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 111620
+    },
+    {
+        "id": 181,
+        "ticket_id": 68,
+        "author_id": 10,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 111460
+    },
+    {
+        "id": 182,
+        "ticket_id": 68,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110880
+    },
+    {
+        "id": 183,
+        "ticket_id": 69,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132362
+    },
+    {
+        "id": 184,
+        "ticket_id": 69,
+        "author_id": 24,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 132160
+    },
+    {
+        "id": 185,
+        "ticket_id": 69,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 131704
+    },
+    {
+        "id": 186,
+        "ticket_id": 70,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 158045
+    },
+    {
+        "id": 187,
+        "ticket_id": 70,
+        "author_id": 21,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 157663
+    },
+    {
+        "id": 188,
+        "ticket_id": 71,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 119345
+    },
+    {
+        "id": 189,
+        "ticket_id": 71,
+        "author_id": 2,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 119240
+    },
+    {
+        "id": 190,
+        "ticket_id": 72,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148077
+    },
+    {
+        "id": 191,
+        "ticket_id": 72,
+        "author_id": 5,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 148053
+    },
+    {
+        "id": 192,
+        "ticket_id": 73,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 125088
+    },
+    {
+        "id": 193,
+        "ticket_id": 73,
+        "author_id": 24,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 124949
+    },
+    {
+        "id": 194,
+        "ticket_id": 73,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 124428
+    },
+    {
+        "id": 195,
+        "ticket_id": 74,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 31172
+    },
+    {
+        "id": 196,
+        "ticket_id": 74,
+        "author_id": 6,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 30730
+    },
+    {
+        "id": 197,
+        "ticket_id": 74,
+        "author_id": 3,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 30443
+    },
+    {
+        "id": 198,
+        "ticket_id": 75,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 92992
+    },
+    {
+        "id": 199,
+        "ticket_id": 75,
+        "author_id": 8,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 92940
+    },
+    {
+        "id": 200,
+        "ticket_id": 75,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 92556
+    },
+    {
+        "id": 201,
+        "ticket_id": 76,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 39897
+    },
+    {
+        "id": 202,
+        "ticket_id": 76,
+        "author_id": 8,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 39505
+    },
+    {
+        "id": 203,
+        "ticket_id": 76,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 38934
+    },
+    {
+        "id": 204,
+        "ticket_id": 76,
+        "author_id": 8,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 38626
+    },
+    {
+        "id": 205,
+        "ticket_id": 77,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127987
+    },
+    {
+        "id": 206,
+        "ticket_id": 77,
+        "author_id": 30,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127878
+    },
+    {
+        "id": 207,
+        "ticket_id": 77,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127621
+    },
+    {
+        "id": 208,
+        "ticket_id": 77,
+        "author_id": 30,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 127361
+    },
+    {
+        "id": 209,
+        "ticket_id": 78,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 100335
+    },
+    {
+        "id": 210,
+        "ticket_id": 78,
+        "author_id": 7,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 99765
+    },
+    {
+        "id": 211,
+        "ticket_id": 78,
+        "author_id": 3,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 99610
+    },
+    {
+        "id": 212,
+        "ticket_id": 79,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149268
+    },
+    {
+        "id": 213,
+        "ticket_id": 79,
+        "author_id": 22,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149011
+    },
+    {
+        "id": 214,
+        "ticket_id": 79,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148695
+    },
+    {
+        "id": 215,
+        "ticket_id": 79,
+        "author_id": 4,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 148629
+    },
+    {
+        "id": 216,
+        "ticket_id": 81,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 166646
+    },
+    {
+        "id": 217,
+        "ticket_id": 81,
+        "author_id": 21,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 166155
+    },
+    {
+        "id": 218,
+        "ticket_id": 81,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 165567
+    },
+    {
+        "id": 219,
+        "ticket_id": 81,
+        "author_id": 3,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 165396
+    },
+    {
+        "id": 220,
+        "ticket_id": 83,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 45842
+    },
+    {
+        "id": 221,
+        "ticket_id": 83,
+        "author_id": 18,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 45437
+    },
+    {
+        "id": 222,
+        "ticket_id": 83,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 44899
+    },
+    {
+        "id": 223,
+        "ticket_id": 84,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 123493
+    },
+    {
+        "id": 224,
+        "ticket_id": 84,
+        "author_id": 24,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 123446
+    },
+    {
+        "id": 225,
+        "ticket_id": 84,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 123272
+    },
+    {
+        "id": 226,
+        "ticket_id": 86,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 13935
+    },
+    {
+        "id": 227,
+        "ticket_id": 86,
+        "author_id": 18,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 13807
+    },
+    {
+        "id": 228,
+        "ticket_id": 86,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 13777
+    },
+    {
+        "id": 229,
+        "ticket_id": 86,
+        "author_id": 18,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 13639
+    },
+    {
+        "id": 230,
+        "ticket_id": 87,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 98938
+    },
+    {
+        "id": 231,
+        "ticket_id": 87,
+        "author_id": 24,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 98858
+    },
+    {
+        "id": 232,
+        "ticket_id": 87,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 98532
+    },
+    {
+        "id": 233,
+        "ticket_id": 88,
+        "author_id": 3,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 172716
+    },
+    {
+        "id": 234,
+        "ticket_id": 88,
+        "author_id": 19,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 172571
+    },
+    {
+        "id": 235,
+        "ticket_id": 88,
+        "author_id": 3,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 172531
+    },
+    {
+        "id": 236,
+        "ticket_id": 88,
+        "author_id": 19,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 172126
+    },
+    {
+        "id": 237,
+        "ticket_id": 89,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 146675
+    },
+    {
+        "id": 238,
+        "ticket_id": 89,
+        "author_id": 20,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 146151
+    },
+    {
+        "id": 239,
+        "ticket_id": 89,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 145675
+    },
+    {
+        "id": 240,
+        "ticket_id": 89,
+        "author_id": 20,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 145477
+    },
+    {
+        "id": 241,
+        "ticket_id": 89,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 145106
+    },
+    {
+        "id": 242,
+        "ticket_id": 89,
+        "author_id": 2,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 144950
+    },
+    {
+        "id": 243,
+        "ticket_id": 90,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 38725
+    },
+    {
+        "id": 244,
+        "ticket_id": 91,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149387
+    },
+    {
+        "id": 245,
+        "ticket_id": 91,
+        "author_id": 18,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 149040
+    },
+    {
+        "id": 246,
+        "ticket_id": 91,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 148891
+    },
+    {
+        "id": 247,
+        "ticket_id": 91,
+        "author_id": 4,
+        "body": "<p>Confirmed via logs \u2014 related to the batch job change from last sprint.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 148876
+    },
+    {
+        "id": 248,
+        "ticket_id": 92,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 145109
+    },
+    {
+        "id": 249,
+        "ticket_id": 92,
+        "author_id": 6,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 144882
+    },
+    {
+        "id": 250,
+        "ticket_id": 92,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 144345
+    },
+    {
+        "id": 251,
+        "ticket_id": 92,
+        "author_id": 6,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 143988
+    },
+    {
+        "id": 252,
+        "ticket_id": 92,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 143915
+    },
+    {
+        "id": 253,
+        "ticket_id": 92,
+        "author_id": 2,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 143757
+    },
+    {
+        "id": 254,
+        "ticket_id": 93,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 3718
+    },
+    {
+        "id": 255,
+        "ticket_id": 93,
+        "author_id": 13,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 3679
+    },
+    {
+        "id": 256,
+        "ticket_id": 93,
+        "author_id": 3,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 3419
+    },
+    {
+        "id": 257,
+        "ticket_id": 93,
+        "author_id": 13,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 3206
+    },
+    {
+        "id": 258,
+        "ticket_id": 93,
+        "author_id": 3,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 2828
+    },
+    {
+        "id": 259,
+        "ticket_id": 93,
+        "author_id": 3,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 2710
+    },
+    {
+        "id": 260,
+        "ticket_id": 94,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 126504
+    },
+    {
+        "id": 261,
+        "ticket_id": 94,
+        "author_id": 12,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 126007
+    },
+    {
+        "id": 262,
+        "ticket_id": 95,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18625
+    },
+    {
+        "id": 263,
+        "ticket_id": 95,
+        "author_id": 20,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18366
+    },
+    {
+        "id": 264,
+        "ticket_id": 95,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18296
+    },
+    {
+        "id": 265,
+        "ticket_id": 95,
+        "author_id": 20,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 18256
+    },
+    {
+        "id": 266,
+        "ticket_id": 96,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 75902
+    },
+    {
+        "id": 267,
+        "ticket_id": 96,
+        "author_id": 10,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 75353
+    },
+    {
+        "id": 268,
+        "ticket_id": 96,
+        "author_id": 4,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 75112
+    },
+    {
+        "id": 269,
+        "ticket_id": 96,
+        "author_id": 10,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 74649
+    },
+    {
+        "id": 270,
+        "ticket_id": 97,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170897
+    },
+    {
+        "id": 271,
+        "ticket_id": 97,
+        "author_id": 20,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170527
+    },
+    {
+        "id": 272,
+        "ticket_id": 97,
+        "author_id": 5,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 170215
+    },
+    {
+        "id": 273,
+        "ticket_id": 97,
+        "author_id": 20,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 169739
+    },
+    {
+        "id": 274,
+        "ticket_id": 97,
+        "author_id": 5,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 169295
+    },
+    {
+        "id": 275,
+        "ticket_id": 99,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 2683
+    },
+    {
+        "id": 276,
+        "ticket_id": 99,
+        "author_id": 26,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 2120
+    },
+    {
+        "id": 277,
+        "ticket_id": 99,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1563
+    },
+    {
+        "id": 278,
+        "ticket_id": 99,
+        "author_id": 26,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 1524
+    },
+    {
+        "id": 279,
+        "ticket_id": 101,
+        "author_id": 4,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 24053
+    },
+    {
+        "id": 280,
+        "ticket_id": 102,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 158155
+    },
+    {
+        "id": 281,
+        "ticket_id": 103,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 19540
+    },
+    {
+        "id": 282,
+        "ticket_id": 103,
+        "author_id": 29,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 19508
+    },
+    {
+        "id": 283,
+        "ticket_id": 104,
+        "author_id": 5,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 80208
+    },
+    {
+        "id": 284,
+        "ticket_id": 104,
+        "author_id": 19,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 79971
+    },
+    {
+        "id": 285,
+        "ticket_id": 104,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 79476
+    },
+    {
+        "id": 286,
+        "ticket_id": 104,
+        "author_id": 5,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 79302
+    },
+    {
+        "id": 287,
+        "ticket_id": 105,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 34380
+    },
+    {
+        "id": 288,
+        "ticket_id": 105,
+        "author_id": 27,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 33832
+    },
+    {
+        "id": 289,
+        "ticket_id": 106,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110721
+    },
+    {
+        "id": 290,
+        "ticket_id": 107,
+        "author_id": 3,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 6905
+    },
+    {
+        "id": 291,
+        "ticket_id": 107,
+        "author_id": 23,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 6474
+    },
+    {
+        "id": 292,
+        "ticket_id": 108,
+        "author_id": 5,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97837
+    },
+    {
+        "id": 293,
+        "ticket_id": 108,
+        "author_id": 20,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97466
+    },
+    {
+        "id": 294,
+        "ticket_id": 108,
+        "author_id": 5,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97384
+    },
+    {
+        "id": 295,
+        "ticket_id": 108,
+        "author_id": 20,
+        "body": "<p>This is blocking my team, could we prioritize it?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97070
+    },
+    {
+        "id": 296,
+        "ticket_id": 108,
+        "author_id": 5,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96716
+    },
+    {
+        "id": 297,
+        "ticket_id": 109,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 138060
+    },
+    {
+        "id": 298,
+        "ticket_id": 109,
+        "author_id": 22,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 137600
+    },
+    {
+        "id": 299,
+        "ticket_id": 109,
+        "author_id": 2,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 137406
+    },
+    {
+        "id": 300,
+        "ticket_id": 109,
+        "author_id": 22,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 136883
+    },
+    {
+        "id": 301,
+        "ticket_id": 110,
+        "author_id": 4,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 77519
+    },
+    {
+        "id": 302,
+        "ticket_id": 111,
+        "author_id": 4,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 61659
+    },
+    {
+        "id": 303,
+        "ticket_id": 111,
+        "author_id": 30,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 61409
+    },
+    {
+        "id": 304,
+        "ticket_id": 111,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 61189
+    },
+    {
+        "id": 305,
+        "ticket_id": 111,
+        "author_id": 30,
+        "body": "<p>That worked, thank you! Really appreciate the quick turnaround.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 60938
+    },
+    {
+        "id": 306,
+        "ticket_id": 111,
+        "author_id": 4,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 60821
+    },
+    {
+        "id": 307,
+        "ticket_id": 112,
+        "author_id": 3,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 64485
+    },
+    {
+        "id": 308,
+        "ticket_id": 112,
+        "author_id": 25,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 64212
+    },
+    {
+        "id": 309,
+        "ticket_id": 112,
+        "author_id": 3,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 63852
+    },
+    {
+        "id": 310,
+        "ticket_id": 112,
+        "author_id": 25,
+        "body": "<p>I tried that but I'm still seeing the same issue on my end.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 63382
+    },
+    {
+        "id": 311,
+        "ticket_id": 112,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 62842
+    },
+    {
+        "id": 312,
+        "ticket_id": 113,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 45618
+    },
+    {
+        "id": 313,
+        "ticket_id": 114,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 21276
+    },
+    {
+        "id": 314,
+        "ticket_id": 114,
+        "author_id": 4,
+        "body": "<p>Customer is on the annual plan, worth prioritizing.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 21130
+    },
+    {
+        "id": 315,
+        "ticket_id": 115,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110369
+    },
+    {
+        "id": 316,
+        "ticket_id": 115,
+        "author_id": 24,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 110228
+    },
+    {
+        "id": 317,
+        "ticket_id": 115,
+        "author_id": 4,
+        "body": "<p>This should be resolved now \u2014 could you give it another try and let us know?</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 109863
+    },
+    {
+        "id": 318,
+        "ticket_id": 116,
+        "author_id": 3,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 84505
+    },
+    {
+        "id": 319,
+        "ticket_id": 116,
+        "author_id": 23,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 84277
+    },
+    {
+        "id": 320,
+        "ticket_id": 117,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97508
+    },
+    {
+        "id": 321,
+        "ticket_id": 117,
+        "author_id": 7,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97298
+    },
+    {
+        "id": 322,
+        "ticket_id": 117,
+        "author_id": 2,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 97046
+    },
+    {
+        "id": 323,
+        "ticket_id": 117,
+        "author_id": 7,
+        "body": "<p>Here's a bit more detail on what I was doing when it happened.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96838
+    },
+    {
+        "id": 324,
+        "ticket_id": 117,
+        "author_id": 2,
+        "body": "<p>I've escalated this to engineering, I'll update this ticket as soon as I hear back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96543
+    },
+    {
+        "id": 325,
+        "ticket_id": 117,
+        "author_id": 2,
+        "body": "<p>Possible duplicate of an internal issue, checking with engineering.</p>",
+        "is_internal_note": true,
+        "created_minutes_ago": 96360
+    },
+    {
+        "id": 326,
+        "ticket_id": 118,
+        "author_id": 3,
+        "body": "<p>Could you confirm which browser and plan you're on? That'll help narrow it down.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 156366
+    },
+    {
+        "id": 327,
+        "ticket_id": 118,
+        "author_id": 12,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 155772
+    },
+    {
+        "id": 328,
+        "ticket_id": 120,
+        "author_id": 2,
+        "body": "<p>Thanks for the report \u2014 I can reproduce this on my end, looking into it now.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 96145
+    },
+    {
+        "id": 329,
+        "ticket_id": 120,
+        "author_id": 14,
+        "body": "<p>Thanks for looking into this \u2014 let me know what else you need from my side.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 95715
+    },
+    {
+        "id": 330,
+        "ticket_id": 120,
+        "author_id": 2,
+        "body": "<p>Closing this out since it looks resolved, but feel free to reopen if it comes back.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 95158
+    },
+    {
+        "id": 331,
+        "ticket_id": 120,
+        "author_id": 14,
+        "body": "<p>Any update on this? It's been a couple of days.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 94594
+    },
+    {
+        "id": 332,
+        "ticket_id": 120,
+        "author_id": 2,
+        "body": "<p>Good news \u2014 this was fixed in today's release. Let us know if you still see it.</p>",
+        "is_internal_note": false,
+        "created_minutes_ago": 94422
+    }
+]

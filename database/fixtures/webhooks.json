@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Slack \u2014 #support-alerts",
+        "target_url": "https://hooks.example.com/services/rampart-demo/support-alerts",
+        "event": "ticket.created",
+        "inbound_token": "cb0aa9c67afb0cadf5612b2a",
+        "secret": "42801cb3f5e12b620a8bf4df8332b6f49489f3a4",
+        "is_active": true,
+        "created_days_ago": 150
+    },
+    {
+        "id": 2,
+        "name": "Billing system sync",
+        "target_url": "https://billing.example.com/webhooks/rampart",
+        "event": "ticket.closed",
+        "inbound_token": "6c20eb5b3ddcfd4f75da9702",
+        "secret": "bd1cb3204a461cd8d4ba498168e2eafaa8b3fe3e",
+        "is_active": true,
+        "created_days_ago": 145
+    },
+    {
+        "id": 3,
+        "name": "Status page updater",
+        "target_url": "https://status.example.com/hooks/rampart",
+        "event": "ticket.closed",
+        "inbound_token": "2986b4b94f33608594a5b329",
+        "secret": "09ffa59d547c518740942a801647d5289d4b9c10",
+        "is_active": true,
+        "created_days_ago": 140
+    }
+]
