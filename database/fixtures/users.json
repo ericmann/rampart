@@ -48,7 +48,7 @@
         "id": 6,
         "organization_id": 1,
         "name": "Clark Abbott",
-        "email": "clarkabbott6@northwind.example",
+        "email": "clark.abbott@northwind.example",
         "role": "customer",
         "created_days_ago": 25,
         "password_md5": "21232f297a57a5a743894a0e4a801fc3"
@@ -57,7 +57,7 @@
         "id": 7,
         "organization_id": 2,
         "name": "General Kulas Sr.",
-        "email": "generalkulassr7@globex.example",
+        "email": "general.kulas@globex.example",
         "role": "customer",
         "created_days_ago": 68,
         "password_md5": "ce2e5165566e4056fa020f984885b931"
@@ -66,7 +66,7 @@
         "id": 8,
         "organization_id": 3,
         "name": "Brannon Wehner",
-        "email": "brannonwehner8@initech.example",
+        "email": "brannon.wehner@initech.example",
         "role": "customer",
         "created_days_ago": 117,
         "password_md5": "403123cb5c0a0d2c2e0f044d61309e55"
@@ -75,7 +75,7 @@
         "id": 9,
         "organization_id": 4,
         "name": "Theodora Frami",
-        "email": "theodoraframi9@umbrella.example",
+        "email": "theodora.frami@umbrella.example",
         "role": "customer",
         "created_days_ago": 316,
         "password_md5": "fba7e9b80b60e4fa5749e717500c0dce"
@@ -84,7 +84,7 @@
         "id": 10,
         "organization_id": 5,
         "name": "Tiffany Abernathy",
-        "email": "tiffanyabernathy10@wayfarer.example",
+        "email": "tiffany.abernathy@wayfarer.example",
         "role": "customer",
         "created_days_ago": 359,
         "password_md5": "f697794c4f32e5280f15853abfb693b1"
@@ -93,7 +93,7 @@
         "id": 11,
         "organization_id": 6,
         "name": "Mr. Layne Koch III",
-        "email": "mrlaynekochiii11@bluepeak.example",
+        "email": "layne.koch@bluepeak.example",
         "role": "customer",
         "created_days_ago": 283,
         "password_md5": "bcace9a368e019ef388d9875299380c5"
@@ -102,7 +102,7 @@
         "id": 12,
         "organization_id": 1,
         "name": "General Jacobson",
-        "email": "generaljacobson12@northwind.example",
+        "email": "general.jacobson@northwind.example",
         "role": "customer",
         "created_days_ago": 91,
         "password_md5": "3fc0a7acf087f549ac2b266baf94b8b1"
@@ -111,7 +111,7 @@
         "id": 13,
         "organization_id": 2,
         "name": "Vincenza Zieme",
-        "email": "vincenzazieme13@globex.example",
+        "email": "vincenza.zieme@globex.example",
         "role": "customer",
         "created_days_ago": 114,
         "password_md5": "f82e6824bfe7b80dac5fd68310cd601c"
@@ -120,7 +120,7 @@
         "id": 14,
         "organization_id": 3,
         "name": "Zane Turner",
-        "email": "zaneturner14@initech.example",
+        "email": "zane.turner@initech.example",
         "role": "customer",
         "created_days_ago": 275,
         "password_md5": "4807e5b31b7a4c58416998eee82b253f"
@@ -129,7 +129,7 @@
         "id": 15,
         "organization_id": 4,
         "name": "Monique Carroll",
-        "email": "moniquecarroll15@umbrella.example",
+        "email": "monique.carroll@umbrella.example",
         "role": "customer",
         "created_days_ago": 216,
         "password_md5": "e22cc743f5369df09bb249d6c7a0a678"
@@ -138,7 +138,7 @@
         "id": 16,
         "organization_id": 5,
         "name": "Tate Murazik",
-        "email": "tatemurazik16@wayfarer.example",
+        "email": "tate.murazik@wayfarer.example",
         "role": "customer",
         "created_days_ago": 266,
         "password_md5": "6fc0e01b4ed7ae8f7850724b1078bc21"
@@ -147,7 +147,7 @@
         "id": 17,
         "organization_id": 6,
         "name": "Ms. Nikki Wilderman MD",
-        "email": "msnikkiwildermanmd17@bluepeak.example",
+        "email": "nikki.wilderman@bluepeak.example",
         "role": "customer",
         "created_days_ago": 232,
         "password_md5": "428146c09c007e215226d67e44fd00c3"
@@ -156,7 +156,7 @@
         "id": 18,
         "organization_id": 1,
         "name": "Dr. Johnnie Langworth",
-        "email": "drjohnnielangworth18@northwind.example",
+        "email": "johnnie.langworth@northwind.example",
         "role": "customer",
         "created_days_ago": 298,
         "password_md5": "bec92397646e8feb93667ae2e6bc931b"
@@ -165,7 +165,7 @@
         "id": 19,
         "organization_id": 2,
         "name": "Kailey Johnston",
-        "email": "kaileyjohnston19@globex.example",
+        "email": "kailey.johnston@globex.example",
         "role": "customer",
         "created_days_ago": 46,
         "password_md5": "4b661617465a6901d9ca6b0ca4afb0d9"
@@ -174,7 +174,7 @@
         "id": 20,
         "organization_id": 3,
         "name": "Esperanza Buckridge DVM",
-        "email": "esperanzabuckridgedvm20@initech.example",
+        "email": "esperanza.buckridge@initech.example",
         "role": "customer",
         "created_days_ago": 116,
         "password_md5": "61e26c4d7151b30f6384db7a9bfc5a98"
@@ -183,7 +183,7 @@
         "id": 21,
         "organization_id": 4,
         "name": "Ethan Ortiz",
-        "email": "ethanortiz21@umbrella.example",
+        "email": "ethan.ortiz@umbrella.example",
         "role": "customer",
         "created_days_ago": 67,
         "password_md5": "fac3b6c91a03f0896f369e471b1976e3"
@@ -192,7 +192,7 @@
         "id": 22,
         "organization_id": 5,
         "name": "Charlie Leannon DDS",
-        "email": "charlieleannondds22@wayfarer.example",
+        "email": "charlie.leannon@wayfarer.example",
         "role": "customer",
         "created_days_ago": 94,
         "password_md5": "ff7ce47732246c0871961f843cb12b6e"
@@ -201,7 +201,7 @@
         "id": 23,
         "organization_id": 6,
         "name": "Jadon Hickle IV",
-        "email": "jadonhickleiv23@bluepeak.example",
+        "email": "jadon.hickle@bluepeak.example",
         "role": "customer",
         "created_days_ago": 48,
         "password_md5": "80727a1b7b73bbcfed56d8a9a15823cf"
@@ -210,7 +210,7 @@
         "id": 24,
         "organization_id": 1,
         "name": "Phoebe Ratke",
-        "email": "phoeberatke24@northwind.example",
+        "email": "phoebe.ratke@northwind.example",
         "role": "customer",
         "created_days_ago": 132,
         "password_md5": "cc25c0f861a83f5efadc6e1ba9d1269e"
@@ -219,7 +219,7 @@
         "id": 25,
         "organization_id": 2,
         "name": "Prof. Waino Satterfield",
-        "email": "profwainosatterfield25@globex.example",
+        "email": "waino.satterfield@globex.example",
         "role": "customer",
         "created_days_ago": 203,
         "password_md5": "9e061c6f838542ec8cddaa3d380537ef"
@@ -228,7 +228,7 @@
         "id": 26,
         "organization_id": 3,
         "name": "Mrs. Alisha Oberbrunner",
-        "email": "mrsalishaoberbrunner26@initech.example",
+        "email": "alisha.oberbrunner@initech.example",
         "role": "customer",
         "created_days_ago": 76,
         "password_md5": "d42dcf1e84cd97cdf1ea0055eae7e193"
@@ -237,7 +237,7 @@
         "id": 27,
         "organization_id": 4,
         "name": "Mr. Louvenia Hayes",
-        "email": "mrlouveniahayes27@umbrella.example",
+        "email": "louvenia.hayes@umbrella.example",
         "role": "customer",
         "created_days_ago": 349,
         "password_md5": "482c811da5d5b4bc6d497ffa98491e38"
@@ -246,7 +246,7 @@
         "id": 28,
         "organization_id": 5,
         "name": "Kenneth Christiansen",
-        "email": "kennethchristiansen28@wayfarer.example",
+        "email": "kenneth.christiansen@wayfarer.example",
         "role": "customer",
         "created_days_ago": 22,
         "password_md5": "02c0f9d3ce4e9598856c35a520b5bdca"
@@ -255,7 +255,7 @@
         "id": 29,
         "organization_id": 6,
         "name": "Hazle Rodriguez",
-        "email": "hazlerodriguez29@bluepeak.example",
+        "email": "hazle.rodriguez@bluepeak.example",
         "role": "customer",
         "created_days_ago": 248,
         "password_md5": "6b15ffea610a6b7677e90937e18fe576"
@@ -264,7 +264,7 @@
         "id": 30,
         "organization_id": 1,
         "name": "Austen Satterfield",
-        "email": "austensatterfield30@northwind.example",
+        "email": "austen.satterfield@northwind.example",
         "role": "customer",
         "created_days_ago": 191,
         "password_md5": "201f00b5ca5d65a1c118e5e32431514c"

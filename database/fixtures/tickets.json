@@ -5,7 +5,7 @@
         "requester_id": 23,
         "assigned_agent_id": 3,
         "subject": "Unable to reset my password",
-        "body": "Delectus rem fuga fugit vitae. Sed sit maxime eos quae est enim magnam. Sequi quos similique corrupti et ipsa impedit.",
+        "body": "I clicked the reset link in the email but it just redirects me back to the login page without changing anything. I've tried this three times now from two different browsers. Can someone reset it manually on your end?",
         "status": "open",
         "priority": "high",
         "created_days_ago": 114
@@ -16,7 +16,7 @@
         "requester_id": 11,
         "assigned_agent_id": 5,
         "subject": "Invoice shows an incorrect amount",
-        "body": "Quia eligendi suscipit explicabo veniam magnam voluptas. Maxime sapiente qui corrupti iusto. Dolor sunt voluptatum est nobis ea consequatur sapiente.\n\nQui laborum recusandae saepe eos accusantium quo dolores. Et animi perspiciatis nostrum voluptatem. Minima et quis consequatur quos numquam magnam.",
+        "body": "This month's invoice charged us for 12 seats but we only have 8 active users on the team. Can you take a look and issue a corrected invoice or a credit for the difference?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 119
@@ -27,7 +27,7 @@
         "requester_id": 20,
         "assigned_agent_id": 3,
         "subject": "App crashes when uploading a photo",
-        "body": "Sit minima culpa incidunt consequatur sit. Quod facilis est consectetur. Tempora eum repellat sunt qui soluta ut.",
+        "body": "Every time I try to attach a screenshot larger than a few hundred KB, the page just goes blank and I have to refresh. This is happening consistently on Chrome for Mac.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 112
@@ -38,7 +38,7 @@
         "requester_id": 18,
         "assigned_agent_id": 2,
         "subject": "Export to CSV produces an empty file",
-        "body": "Illum ab ad voluptas quibusdam vero. Qui quaerat delectus dolores alias quo. Numquam quam debitis nemo sit nisi.",
+        "body": "I exported our ticket list from the dashboard and the CSV downloads fine but every row is blank except the header. This worked last week, so something must have changed.",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 22
@@ -49,7 +49,7 @@
         "requester_id": 30,
         "assigned_agent_id": 2,
         "subject": "Cannot invite a teammate to my workspace",
-        "body": "Impedit sit et qui omnis quasi recusandae non. Rerum magni est doloremque temporibus. Sapiente aut quis ratione repudiandae.",
+        "body": "I'm trying to add a new agent to our organization but the invite button just spins forever and nothing happens. No error message, no email sent as far as I can tell.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 7
@@ -60,7 +60,7 @@
         "requester_id": 14,
         "assigned_agent_id": 4,
         "subject": "2FA codes never arrive",
-        "body": "Omnis rem quasi iste reiciendis. Est commodi sunt doloremque quia sunt. Impedit eum consequatur tempore sit blanditiis dolorum. Quia perferendis assumenda repellat exercitationem sed adipisci consectetur debitis.",
+        "body": "I enabled two-factor authentication last week and now the SMS codes aren't arriving at all. I've double-checked my phone number is correct in my profile.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 2
@@ -71,7 +71,7 @@
         "requester_id": 19,
         "assigned_agent_id": 2,
         "subject": "Dashboard widgets are stuck loading",
-        "body": "Minus officia quo consequatur alias eos aspernatur ullam. Libero dolores voluptatem tenetur perspiciatis. Corporis et voluptas cumque voluptatem qui adipisci.\n\nEst rerum unde quia. Deleniti expedita facilis officiis autem amet. Nisi magni quibusdam quibusdam minima qui.\n\nEt voluptates officiis laudantium non aspernatur et. Eveniet recusandae corporis ducimus officiis. Voluptatibus est id laborum aut unde hic nisi.",
+        "body": "The ticket volume chart on my dashboard has been showing a spinner for two days straight. Everything else on the page loads normally, it's just that one widget.",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 117
@@ -82,7 +82,7 @@
         "requester_id": 14,
         "assigned_agent_id": 5,
         "subject": "Billing address will not save",
-        "body": "Provident voluptas ipsum eum molestiae et. Cumque rerum aut est atque optio harum. Est sit eos adipisci enim.",
+        "body": "I updated our billing address after we moved offices, hit save, and it looks correct for a second before reverting back to the old address. Tried in two browsers with the same result.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 13
@@ -93,7 +93,7 @@
         "requester_id": 22,
         "assigned_agent_id": 4,
         "subject": "API returns 500 on bulk import",
-        "body": "Nihil minus quia quaerat ut voluptatem occaecati animi. Vitae libero voluptas ut in voluptatem consectetur. Consectetur reprehenderit dolore corrupti provident et recusandae vero voluptas. Facere qui architecto explicabo omnis ducimus voluptatibus.\n\nUt laborum nam quidem magnam corrupti mollitia velit. Eveniet illum aut quo. Voluptatem placeat hic quisquam tempora. Expedita officia corporis quos tempore quis eum.\n\nQui corporis eaque qui rerum nihil rerum voluptatum. Veniam qui accusamus cum suscipit voluptas sit. Vel ex deleniti natus dolores. Quos nihil excepturi fuga in dolorum.",
+        "body": "Our integration calls the bulk ticket import endpoint every night and it's been failing with a 500 error since Tuesday. Nothing changed on our side that we're aware of.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 56
@@ -104,7 +104,7 @@
         "requester_id": 8,
         "assigned_agent_id": 2,
         "subject": "Need to downgrade our plan",
-        "body": "Qui dolorem dolores itaque voluptas quis. Et expedita velit nihil. Sit possimus tempore dolore odio. Mollitia minima ut corporis velit qui eveniet.",
+        "body": "We're down to 3 active agents and don't need the Team plan anymore. Could someone walk me through downgrading without losing our ticket history?",
         "status": "open",
         "priority": "high",
         "created_days_ago": 0
@@ -115,7 +115,7 @@
         "requester_id": 14,
         "assigned_agent_id": 4,
         "subject": "Search results look stale",
-        "body": "Quibusdam minus illum blanditiis voluptatem eum eum quod. Aliquam non excepturi velit assumenda et id ipsa. Error fuga odit tempore non molestias. Id ab iure minima dolorum beatae quos. Odit ex fugit et totam ipsum.\n\nConsectetur fugiat possimus et aperiam. Vero amet atque eos optio voluptates numquam a. Quia adipisci aut reiciendis eveniet tempora.",
+        "body": "When I search for a ticket by subject, the results don't seem to include anything created in the last few days. Older tickets show up fine.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 15
@@ -126,7 +126,7 @@
         "requester_id": 22,
         "assigned_agent_id": 2,
         "subject": "Webhook deliveries stopped overnight",
-        "body": "Blanditiis veniam sint iusto sequi. Est laboriosam consectetur perspiciatis odit sit libero. Perspiciatis voluptatum voluptates laboriosam vel aut. Deleniti dolorem corporis repudiandae id totam temporibus.",
+        "body": "Our Slack channel used to get a notification every time a ticket closed, and that stopped sometime last night with no changes on our webhook config. The endpoint is definitely still up.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 107
@@ -137,7 +137,7 @@
         "requester_id": 15,
         "assigned_agent_id": 3,
         "subject": "Feature request: dark mode for reports",
-        "body": "Quisquam quia sit reiciendis repellendus culpa. Rerum non ea veniam nam et ea.",
+        "body": "Our team spends a lot of time in the reports section in the evening and the bright white background is rough on the eyes. Any chance a dark mode is on the roadmap?",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 15
@@ -148,7 +148,7 @@
         "requester_id": 13,
         "assigned_agent_id": 4,
         "subject": "Duplicate charge on this month's invoice",
-        "body": "Sunt provident exercitationem fugit expedita. Ex cum nam voluptatem tempore. Voluptatum dolores dolores veritatis nobis magni.\n\nAliquam dolor et nesciunt placeat architecto ab quae. Doloremque sunt aspernatur voluptas atque sunt laudantium eaque odit. Aut nobis omnis necessitatibus non ut magni.",
+        "body": "I just noticed two separate charges for the same amount on our card this billing cycle. Can you confirm whether this was a processing error and refund the duplicate?",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 71
@@ -159,7 +159,7 @@
         "requester_id": 16,
         "assigned_agent_id": 3,
         "subject": "SSO login loop",
-        "body": "Voluptates libero quasi fuga sapiente molestiae dolor velit. Consequatur et quia quo dolorem voluptatibus laborum omnis. Tempore consequatur voluptatum velit sequi.",
+        "body": "Since we set up SSO with our identity provider, logging in redirects back and forth between your login page and our IdP a few times before eventually failing. It worked fine in testing yesterday.",
         "status": "open",
         "priority": "urgent",
         "created_days_ago": 82
@@ -170,7 +170,7 @@
         "requester_id": 16,
         "assigned_agent_id": 4,
         "subject": "Attachment previews are broken",
-        "body": "Sit esse natus earum. Minus sed eum ab laborum et expedita exercitationem. Sunt nihil architecto vel quis quasi.\n\nReprehenderit aut sed et possimus. Impedit architecto blanditiis fugit delectus magnam. Tenetur voluptates quisquam illo cupiditate ut similique reprehenderit ipsam. Sed dolor qui molestiae ipsum nobis.",
+        "body": "PDF attachments used to show a thumbnail preview right in the ticket, but now they just show a broken image icon. Downloading the file directly still works fine.",
         "status": "open",
         "priority": "high",
         "created_days_ago": 49
@@ -181,7 +181,7 @@
         "requester_id": 28,
         "assigned_agent_id": 2,
         "subject": "Timezone is wrong on all timestamps",
-        "body": "Nostrum et facilis tempora. Nihil amet consequatur qui quod. Iure sequi eos est.\n\nSaepe rem sequi architecto laborum consectetur. Quia aut quae id numquam qui reiciendis. Nihil dolore dolores hic qui illum quae quo.\n\nBeatae deserunt quis et nam. Cupiditate fugiat atque numquam architecto pariatur maxime eligendi voluptatem. Autem accusantium iure molestiae aut eos. Consectetur est dolorem non vel aut.",
+        "body": "Every ticket timestamp is showing three hours ahead of my actual timezone even though my profile is set correctly. This is making it hard to track our response times.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 100
@@ -192,7 +192,7 @@
         "requester_id": 24,
         "assigned_agent_id": 2,
         "subject": "Cannot delete an old project",
-        "body": "Illum qui et totam fugiat. Illum doloribus itaque odit autem. Assumenda quisquam atque quas ipsam delectus quam ipsum. Voluptatem quaerat alias et perspiciatis.",
+        "body": "I'm trying to archive a project we don't use anymore but the delete button is grayed out with no explanation of why. There are no open tickets linked to it that I can find.",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 76
@@ -203,7 +203,7 @@
         "requester_id": 10,
         "assigned_agent_id": 4,
         "subject": "Rate limit hit during normal usage",
-        "body": "Saepe hic voluptate et maiores eaque id. Rerum repellendus sunt enim eaque. Totam magni cum maiores dicta et non non quos. Ducimus nemo incidunt perferendis aliquam maxime dolorem.",
+        "body": "We're getting 429 errors from the API during what feels like completely normal usage, well under any limits mentioned in the docs. This started happening this morning.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 114
@@ -214,7 +214,7 @@
         "requester_id": 9,
         "assigned_agent_id": 2,
         "subject": "Mobile app keeps logging me out",
-        "body": "Maxime beatae minima ut exercitationem magnam quos accusamus. Est nulla eum est aliquam. Consequatur eos velit id illo ipsa temporibus similique quae. Fugit dolor sit necessitatibus molestiae.\n\nSequi aut alias perspiciatis quidem vel. Aut totam error possimus aspernatur sunt quam perspiciatis quia. Blanditiis fugit quos sit ipsum.\n\nDistinctio et et suscipit omnis ad. Veritatis temporibus exercitationem neque unde consequatur. Ipsum expedita excepturi voluptatem ut. Est ex numquam autem repellendus quo ipsa est.",
+        "body": "The iOS app signs me out every few hours even though I have 'stay logged in' checked. I have to re-enter my password multiple times a day now.",
         "status": "pending",
         "priority": "low",
         "created_days_ago": 66
@@ -225,7 +225,7 @@
         "requester_id": 26,
         "assigned_agent_id": null,
         "subject": "Missing email notifications",
-        "body": "Similique atque doloremque qui reprehenderit voluptatem. Tempora consequuntur inventore quia omnis temporibus mollitia accusamus fuga. Sit exercitationem deleniti quibusdam.\n\nAut tempora voluptatem doloremque amet vero vel. Et corrupti nobis et quaerat excepturi ad. Et consequatur aut ut sed possimus consequatur excepturi. Ut earum quis quibusdam quod non et blanditiis.",
+        "body": "I used to get an email every time a customer replied to one of my assigned tickets, and I haven't received one in almost a week even though replies are clearly coming in.",
         "status": "open",
         "priority": "high",
         "created_days_ago": 85
@@ -236,7 +236,7 @@
         "requester_id": 12,
         "assigned_agent_id": 2,
         "subject": "Custom domain SSL certificate expired",
-        "body": "Quia reprehenderit ut ut. Expedita alias voluptatem tempore magni qui. Quas eos omnis deserunt. Voluptatem iste delectus enim dicta.\n\nDolor nam veniam quidem illo. Itaque porro sed magni consequuntur aut pariatur numquam. Ipsa neque dolor voluptatem dolor ullam consectetur.\n\nFuga distinctio enim praesentium adipisci deserunt quia provident. Et quia quis quisquam molestiae doloribus repellendus magni tenetur. Dicta excepturi velit sint deserunt possimus sed est.",
+        "body": "Our support portal on our custom domain is showing a certificate expired warning to customers. I thought this renewed automatically \u2014 can someone reissue it?",
         "status": "resolved",
         "priority": "high",
         "created_days_ago": 62
@@ -247,7 +247,7 @@
         "requester_id": 16,
         "assigned_agent_id": 4,
         "subject": "Team member permissions are not saving",
-        "body": "Sint exercitationem facilis aut fugit. Consequatur dolores possimus et. Fuga minima dicta quia provident.\n\nQui est ex ad facilis voluptatibus nobis. Quis ad quasi est omnis consequatur in. Debitis tempora quia sequi omnis.\n\nEligendi nobis nam deleniti. Odio ratione necessitatibus omnis rerum sapiente libero officia. Doloremque quo explicabo sequi ipsam et sit molestias. Animi asperiores non atque exercitationem cum.",
+        "body": "I changed one of our agents from admin to standard access, clicked save, and when I go back to the page it still shows them as admin. Tried this several times.",
         "status": "resolved",
         "priority": "high",
         "created_days_ago": 41
@@ -258,7 +258,7 @@
         "requester_id": 19,
         "assigned_agent_id": 4,
         "subject": "Import wizard hangs at 90%",
-        "body": "Neque eum veniam vitae in dignissimos nihil. Quia porro reprehenderit sint aliquid aut. Nulla sunt magnam maiores quas. Dolorem dolor voluptas asperiores eius est qui est.",
+        "body": "Every time I try to import our old ticket data from a CSV, the progress bar gets to about 90% and just sits there indefinitely. The file is only a few hundred rows.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 24
@@ -269,7 +269,7 @@
         "requester_id": 12,
         "assigned_agent_id": 5,
         "subject": "Trial extension request",
-        "body": "Libero aut et et necessitatibus aliquam. Quia magnam ut possimus qui ut doloribus impedit. Voluptas autem necessitatibus itaque natus ut blanditiis.\n\nEt sit ut amet similique vero natus. In ducimus rerum autem vel sit et earum.",
+        "body": "We're right in the middle of evaluating the product with our team and our trial ends in two days. Would it be possible to get another two weeks to finish testing?",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 92
@@ -280,7 +280,7 @@
         "requester_id": 16,
         "assigned_agent_id": 4,
         "subject": "Report totals do not match the dashboard",
-        "body": "Et velit dolorem quibusdam voluptas velit qui earum. Aut numquam expedita doloribus beatae dolorem aliquid quia. Voluptatibus sit debitis perferendis.",
+        "body": "The weekly report I exported shows 47 resolved tickets but the dashboard for the same date range says 52. Not sure which number is actually correct.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 76
@@ -291,7 +291,7 @@
         "requester_id": 24,
         "assigned_agent_id": 2,
         "subject": "Slack integration disconnected",
-        "body": "Quibusdam ratione sed exercitationem debitis voluptas consequuntur natus. Sed quod qui quaerat corrupti non iure sed veniam. Qui dolor accusamus at consequuntur voluptas molestiae. Et voluptatem et esse qui enim aperiam laudantium magni. Doloribus praesentium ducimus aut voluptatem incidunt voluptatem sequi.\n\nNon neque dolor ut consequatur asperiores. Aut quos laborum sunt et molestiae minus et laborum. A sapiente repellat delectus quaerat.",
+        "body": "Our Slack integration shows as connected in settings but notifications stopped coming through three days ago. Reconnecting it doesn't seem to fix anything.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 1
@@ -302,7 +302,7 @@
         "requester_id": 9,
         "assigned_agent_id": 5,
         "subject": "Password reset email never arrives",
-        "body": "Necessitatibus ab quia ut rerum officiis aut. Laboriosam doloremque provident suscipit ipsam omnis distinctio. Facilis mollitia doloribus voluptatem culpa ex suscipit.",
+        "body": "I requested a password reset twice now and checked spam, and nothing has come through either time. Other emails from your system reach my inbox fine.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 49
@@ -313,7 +313,7 @@
         "requester_id": 14,
         "assigned_agent_id": 4,
         "subject": "Users table sort order changed unexpectedly",
-        "body": "Placeat architecto cumque autem autem aliquid aut. Dolore deleniti rerum qui ut et. Quibusdam occaecati earum iure excepturi. Alias animi eaque cum ipsum consequatur asperiores.\n\nVeniam quam suscipit laudantium laudantium nihil porro. Deserunt accusamus ea velit. Qui sed animi similique et sapiente corrupti.\n\nEt doloribus ut vel repellat consectetur. Sapiente aut saepe maiores quisquam cum qui saepe. Sed sit sint quo nostrum autem voluptates.",
+        "body": "The admin users list used to be sorted alphabetically and now it seems to be in some random order. Nothing looks broken, it's just confusing to navigate.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 74
@@ -324,7 +324,7 @@
         "requester_id": 8,
         "assigned_agent_id": 4,
         "subject": "Need a data export for compliance",
-        "body": "Aperiam quia ut molestias sequi nobis perspiciatis nobis molestiae. Velit veniam commodi pariatur ut est. Soluta et animi quidem veritatis magni corrupti. Dicta reprehenderit quia iure aut cupiditate facilis quis.\n\nQuam mollitia quia qui et. Doloremque voluptate voluptatum non delectus. Et id veniam ut sit quis. Dolores nisi totam nulla et provident.\n\nDolor repudiandae adipisci quisquam optio ullam odio neque. Veritatis odit est eos deleniti nulla nisi. Reiciendis quia quam eos facere omnis.",
+        "body": "Our legal team needs a full export of customer data tied to our account for an upcoming audit. Is there a self-serve way to do this or do I need to request it here?",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 67
@@ -335,7 +335,7 @@
         "requester_id": 9,
         "assigned_agent_id": 5,
         "subject": "Unable to reset my password",
-        "body": "Nobis ab quia quia voluptatem harum molestiae. Optio voluptatum soluta itaque assumenda quia. Amet qui qui architecto doloribus.",
+        "body": "I clicked the reset link in the email but it just redirects me back to the login page without changing anything. I've tried this three times now from two different browsers. Can someone reset it manually on your end?",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 7
@@ -346,7 +346,7 @@
         "requester_id": 11,
         "assigned_agent_id": 4,
         "subject": "Invoice shows an incorrect amount",
-        "body": "Sit et asperiores fugit suscipit quas sit. Placeat necessitatibus ut magni. Libero nostrum modi minima tempore voluptas. Qui omnis dolorem eum impedit sint.\n\nAutem perspiciatis quis et porro. Et molestiae est impedit.",
+        "body": "This month's invoice charged us for 12 seats but we only have 8 active users on the team. Can you take a look and issue a corrected invoice or a credit for the difference?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 6
@@ -357,7 +357,7 @@
         "requester_id": 22,
         "assigned_agent_id": 2,
         "subject": "App crashes when uploading a photo",
-        "body": "Molestiae et incidunt consequatur enim est. Dignissimos eum eius corporis quod libero molestias. Ullam quibusdam sint qui facere nobis porro.\n\nAmet ullam consequatur est quae eos. Iure provident natus quo animi est neque non et. Esse incidunt sunt soluta et illum.",
+        "body": "Every time I try to attach a screenshot larger than a few hundred KB, the page just goes blank and I have to refresh. This is happening consistently on Chrome for Mac.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 78
@@ -368,7 +368,7 @@
         "requester_id": 13,
         "assigned_agent_id": null,
         "subject": "Export to CSV produces an empty file",
-        "body": "Cum ab delectus animi voluptas quidem voluptatum nihil. Explicabo praesentium harum qui pariatur at voluptas quod est. Perspiciatis nulla qui velit a repellat corporis. Illum perferendis voluptatem dolores odio et.\n\nDeserunt quidem ea reiciendis dolores dicta cum provident. Et fugit delectus dolorem quia voluptas molestias optio. Quia rerum et ut non commodi et. Nihil non ipsa qui illo et est optio. Sit omnis sint blanditiis quis.\n\nAd enim mollitia quia itaque dolorem veritatis excepturi. Corrupti quas inventore consequuntur at omnis non. Tenetur sint occaecati sint sit ut dignissimos. Amet vel enim nihil voluptate.",
+        "body": "I exported our ticket list from the dashboard and the CSV downloads fine but every row is blank except the header. This worked last week, so something must have changed.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 99
@@ -379,7 +379,7 @@
         "requester_id": 12,
         "assigned_agent_id": 2,
         "subject": "Cannot invite a teammate to my workspace",
-        "body": "Natus hic officiis quia cumque. Veniam quaerat architecto consectetur tempora quia delectus sed. Impedit quod quasi quidem pariatur sunt.\n\nAliquam occaecati ducimus voluptatem vel ullam. Placeat possimus aut et et quibusdam et eum expedita. Est tempora est quaerat. Voluptate qui eos ipsam ut.\n\nId voluptatem animi dolores quia quasi. Occaecati laboriosam omnis quos iusto maxime esse quas consectetur. Iusto ipsum quibusdam voluptas omnis non. Porro hic delectus repellat neque et odit placeat.",
+        "body": "I'm trying to add a new agent to our organization but the invite button just spins forever and nothing happens. No error message, no email sent as far as I can tell.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 67
@@ -390,7 +390,7 @@
         "requester_id": 23,
         "assigned_agent_id": null,
         "subject": "2FA codes never arrive",
-        "body": "Facilis cum eaque sed eligendi. Sapiente quos odit beatae soluta cumque voluptas. Modi nihil architecto consequatur sed id.\n\nImpedit enim voluptates dicta. Exercitationem nesciunt non dolores. Qui sit nulla cupiditate placeat quod illum.",
+        "body": "I enabled two-factor authentication last week and now the SMS codes aren't arriving at all. I've double-checked my phone number is correct in my profile.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 17
@@ -401,7 +401,7 @@
         "requester_id": 22,
         "assigned_agent_id": 2,
         "subject": "Dashboard widgets are stuck loading",
-        "body": "Consequatur omnis voluptas aut nihil itaque sit. Cupiditate qui adipisci excepturi perferendis similique.\n\nDucimus earum ipsam sed nemo enim aperiam blanditiis. Quas veritatis et saepe in culpa. Officiis molestiae magnam provident sequi. Placeat qui non incidunt.\n\nEt beatae voluptatem eaque ipsum. Vitae repudiandae omnis voluptate eligendi. Unde consequatur adipisci dicta et omnis culpa. Est consequuntur incidunt perferendis aut nemo.",
+        "body": "The ticket volume chart on my dashboard has been showing a spinner for two days straight. Everything else on the page loads normally, it's just that one widget.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 105
@@ -412,7 +412,7 @@
         "requester_id": 11,
         "assigned_agent_id": 5,
         "subject": "Billing address will not save",
-        "body": "Esse qui quaerat veniam atque. Consequatur dolores soluta quis. Reiciendis harum qui autem eos beatae aliquam ipsa maiores.\n\nIste eligendi ut eius et. Doloribus nostrum veritatis eos in. Ut ut possimus assumenda sunt deleniti error. Iure consequatur veritatis aut est earum.",
+        "body": "I updated our billing address after we moved offices, hit save, and it looks correct for a second before reverting back to the old address. Tried in two browsers with the same result.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 34
@@ -423,7 +423,7 @@
         "requester_id": 16,
         "assigned_agent_id": null,
         "subject": "API returns 500 on bulk import",
-        "body": "Voluptatum qui officiis laboriosam fuga ad sunt nesciunt. Nulla dicta possimus aut inventore omnis impedit. Non quae nemo sed eius et minima aliquid. Magni omnis ipsa dolore aut doloribus autem quia excepturi.\n\nDebitis magni exercitationem ab aspernatur nam. Autem sapiente exercitationem quia ea minima. Deserunt aliquam exercitationem autem itaque accusamus. Vitae ipsam porro sint exercitationem sit blanditiis.",
+        "body": "Our integration calls the bulk ticket import endpoint every night and it's been failing with a 500 error since Tuesday. Nothing changed on our side that we're aware of.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 72
@@ -434,7 +434,7 @@
         "requester_id": 20,
         "assigned_agent_id": 5,
         "subject": "Need to downgrade our plan",
-        "body": "Sed provident at expedita perferendis. Id occaecati debitis perferendis nobis quo odit. Ratione vitae sed ut sit laboriosam.\n\nAut iusto earum itaque molestiae corrupti. Dolore enim aliquid et sed tenetur quia. Unde voluptate perspiciatis ratione aut. Et eum non quod dolores unde nihil.\n\nIn autem vel ducimus maxime. Atque quos deserunt non nihil suscipit maiores.",
+        "body": "We're down to 3 active agents and don't need the Team plan anymore. Could someone walk me through downgrading without losing our ticket history?",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 55
@@ -445,7 +445,7 @@
         "requester_id": 19,
         "assigned_agent_id": 4,
         "subject": "Search results look stale",
-        "body": "Repudiandae voluptatum a est. Et ut quis quam. Qui ipsam voluptate vel accusantium. Rem cum voluptas ad necessitatibus.\n\nCommodi repellat officiis iusto. Dolorem sit adipisci reprehenderit ea qui quia itaque. Iure eos qui et voluptas nostrum est consequatur.",
+        "body": "When I search for a ticket by subject, the results don't seem to include anything created in the last few days. Older tickets show up fine.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 104
@@ -456,7 +456,7 @@
         "requester_id": 20,
         "assigned_agent_id": 2,
         "subject": "Webhook deliveries stopped overnight",
-        "body": "Non recusandae occaecati nihil aut qui facere. Et quia non incidunt. Quasi minima repudiandae omnis consequatur. Modi sequi eum nisi dolores nam sunt.",
+        "body": "Our Slack channel used to get a notification every time a ticket closed, and that stopped sometime last night with no changes on our webhook config. The endpoint is definitely still up.",
         "status": "pending",
         "priority": "low",
         "created_days_ago": 119
@@ -467,7 +467,7 @@
         "requester_id": 19,
         "assigned_agent_id": 5,
         "subject": "Feature request: dark mode for reports",
-        "body": "Delectus voluptas dolorem alias sunt. Sit excepturi est non. Consequatur esse sed neque ut aut unde earum.",
+        "body": "Our team spends a lot of time in the reports section in the evening and the bright white background is rough on the eyes. Any chance a dark mode is on the roadmap?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 24
@@ -478,7 +478,7 @@
         "requester_id": 28,
         "assigned_agent_id": 2,
         "subject": "Duplicate charge on this month's invoice",
-        "body": "Sint qui aut rerum recusandae unde optio. Eaque deserunt accusantium totam reprehenderit sint. Alias magnam dolor nihil aut natus quis.\n\nIpsa earum ea facere aut. Similique culpa sint magnam et sunt rem. Eum atque maxime dolor nulla velit. Sed omnis velit blanditiis repellendus quam aperiam occaecati.",
+        "body": "I just noticed two separate charges for the same amount on our card this billing cycle. Can you confirm whether this was a processing error and refund the duplicate?",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 49
@@ -489,7 +489,7 @@
         "requester_id": 28,
         "assigned_agent_id": 2,
         "subject": "SSO login loop",
-        "body": "Illo debitis quo natus iusto voluptatem. Doloribus dolorum saepe modi nisi corporis. Ut beatae temporibus asperiores asperiores eligendi et. Occaecati eveniet et non labore sequi sint.",
+        "body": "Since we set up SSO with our identity provider, logging in redirects back and forth between your login page and our IdP a few times before eventually failing. It worked fine in testing yesterday.",
         "status": "resolved",
         "priority": "urgent",
         "created_days_ago": 56
@@ -500,7 +500,7 @@
         "requester_id": 7,
         "assigned_agent_id": 4,
         "subject": "Attachment previews are broken",
-        "body": "Dolor vitae ut laborum ut. Quis praesentium aliquid autem corporis omnis. A qui esse omnis odit dolorem consectetur. Architecto repellat consectetur nobis ea necessitatibus eligendi cupiditate.\n\nNam at et qui dolor. Numquam ipsa qui reiciendis eos exercitationem. Ea sit quibusdam reiciendis sequi.\n\nReprehenderit vitae qui quidem quasi vero quo. Ut rem pariatur saepe quam voluptatum quidem. Et illum molestiae possimus harum. Commodi libero modi molestiae quo.",
+        "body": "PDF attachments used to show a thumbnail preview right in the ticket, but now they just show a broken image icon. Downloading the file directly still works fine.",
         "status": "pending",
         "priority": "urgent",
         "created_days_ago": 70
@@ -511,7 +511,7 @@
         "requester_id": 29,
         "assigned_agent_id": 5,
         "subject": "Timezone is wrong on all timestamps",
-        "body": "Aliquid nesciunt mollitia ut. Nam tempore cum qui corrupti consectetur.\n\nQuibusdam atque sed beatae aliquam nihil modi nihil quia. Aliquam iste ad omnis quo reprehenderit nihil. Modi autem modi hic provident. Asperiores voluptas sit nam enim perferendis.",
+        "body": "Every ticket timestamp is showing three hours ahead of my actual timezone even though my profile is set correctly. This is making it hard to track our response times.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 8
@@ -522,7 +522,7 @@
         "requester_id": 10,
         "assigned_agent_id": null,
         "subject": "Cannot delete an old project",
-        "body": "Rerum iure aut consectetur omnis aperiam hic ut sunt. Ducimus voluptatem quis at asperiores sunt aut.\n\nEt itaque aut ipsa id distinctio illum. Asperiores ut eos nam est dolores repudiandae. Quae enim quae omnis sit distinctio. Sapiente autem nemo et dolores et qui nihil.",
+        "body": "I'm trying to archive a project we don't use anymore but the delete button is grayed out with no explanation of why. There are no open tickets linked to it that I can find.",
         "status": "open",
         "priority": "urgent",
         "created_days_ago": 12
@@ -533,7 +533,7 @@
         "requester_id": 23,
         "assigned_agent_id": 4,
         "subject": "Rate limit hit during normal usage",
-        "body": "Eveniet nihil et est sed. Culpa in enim in earum. Ut laborum voluptas et harum atque ex.",
+        "body": "We're getting 429 errors from the API during what feels like completely normal usage, well under any limits mentioned in the docs. This started happening this morning.",
         "status": "pending",
         "priority": "low",
         "created_days_ago": 93
@@ -544,7 +544,7 @@
         "requester_id": 19,
         "assigned_agent_id": 2,
         "subject": "Mobile app keeps logging me out",
-        "body": "In quia assumenda blanditiis beatae et fuga. Consequatur quas sapiente et alias deserunt. Repudiandae atque autem qui odio quo et amet. Sunt rem qui et doloribus adipisci vel.\n\nAut est quidem nesciunt vero natus molestiae. Ullam velit aut ipsum. Quos quia temporibus eos ut qui rerum.",
+        "body": "The iOS app signs me out every few hours even though I have 'stay logged in' checked. I have to re-enter my password multiple times a day now.",
         "status": "resolved",
         "priority": "urgent",
         "created_days_ago": 105
@@ -555,7 +555,7 @@
         "requester_id": 25,
         "assigned_agent_id": 5,
         "subject": "Missing email notifications",
-        "body": "Dolorum cum dolores sunt illo. Reiciendis at quod debitis veritatis quam.\n\nIpsam repudiandae animi accusamus ex. A aut sed dolorem rerum qui omnis ea. Rerum quae nemo illo et consequatur explicabo debitis quaerat. Nam et eaque iste expedita minus velit sit consequatur.",
+        "body": "I used to get an email every time a customer replied to one of my assigned tickets, and I haven't received one in almost a week even though replies are clearly coming in.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 17
@@ -566,7 +566,7 @@
         "requester_id": 28,
         "assigned_agent_id": 4,
         "subject": "Custom domain SSL certificate expired",
-        "body": "Distinctio blanditiis est eos molestias optio ipsam quia. Ullam distinctio non est perferendis molestias iusto ipsam. Ex laborum laboriosam recusandae voluptatem esse eum.",
+        "body": "Our support portal on our custom domain is showing a certificate expired warning to customers. I thought this renewed automatically \u2014 can someone reissue it?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 25
@@ -577,7 +577,7 @@
         "requester_id": 22,
         "assigned_agent_id": 2,
         "subject": "Team member permissions are not saving",
-        "body": "Magnam velit sed quo eos. Praesentium ut ratione ut dicta dignissimos nostrum doloribus quasi. Fugit quos vel quidem aliquam. Quaerat dolor officiis ex alias tempore unde.\n\nSit quo odio nostrum. Quo nobis non cum voluptates. Earum voluptas tempore sit doloribus architecto expedita.\n\nAb dolor occaecati ducimus. Occaecati eligendi eos aliquam numquam laboriosam quae et. Aliquam maxime porro et. Quia consequatur sunt et eum pariatur corporis vitae et.",
+        "body": "I changed one of our agents from admin to standard access, clicked save, and when I go back to the page it still shows them as admin. Tried this several times.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 52
@@ -588,7 +588,7 @@
         "requester_id": 26,
         "assigned_agent_id": 3,
         "subject": "Import wizard hangs at 90%",
-        "body": "Asperiores qui autem dolorem quisquam cumque eum quia. Rerum eveniet vel repellendus excepturi. A ut velit architecto.",
+        "body": "Every time I try to import our old ticket data from a CSV, the progress bar gets to about 90% and just sits there indefinitely. The file is only a few hundred rows.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 66
@@ -599,7 +599,7 @@
         "requester_id": 27,
         "assigned_agent_id": 5,
         "subject": "Trial extension request",
-        "body": "Vel et repellendus maiores est mollitia iste. Vitae exercitationem eligendi error assumenda. Maxime non beatae illo. Asperiores est blanditiis at voluptas qui. Deleniti ad enim voluptatem dolorem saepe blanditiis ut.\n\nVoluptate in quisquam autem aut. Et officiis quo distinctio deserunt. Sed et quam ullam tempora. Pariatur ut beatae minima. Officia consectetur sit dolores in est.\n\nRepudiandae quo earum mollitia aut. Voluptatem facilis esse sed enim repellendus. Laudantium nulla dolores aliquam et veritatis nulla. Nulla aliquam impedit enim eius porro.",
+        "body": "We're right in the middle of evaluating the product with our team and our trial ends in two days. Would it be possible to get another two weeks to finish testing?",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 83
@@ -610,7 +610,7 @@
         "requester_id": 29,
         "assigned_agent_id": 4,
         "subject": "Report totals do not match the dashboard",
-        "body": "Doloribus numquam ut quo sit reprehenderit. Consequatur deleniti voluptas deserunt. Modi sit adipisci est fuga et. Laudantium est qui aut.\n\nQui rerum quisquam deleniti quaerat. Rem nobis nihil totam et ut. Laboriosam alias at consequuntur.",
+        "body": "The weekly report I exported shows 47 resolved tickets but the dashboard for the same date range says 52. Not sure which number is actually correct.",
         "status": "pending",
         "priority": "low",
         "created_days_ago": 34
@@ -621,7 +621,7 @@
         "requester_id": 29,
         "assigned_agent_id": 2,
         "subject": "Slack integration disconnected",
-        "body": "Consequuntur voluptates rerum vero quis aperiam alias. Atque ea aperiam non eos id ullam reiciendis. Autem necessitatibus ipsa alias laboriosam. Sint ullam quia aliquam nesciunt nihil quasi et.\n\nDebitis aut repellat amet explicabo soluta voluptatibus. Nisi mollitia aut accusamus laborum molestiae omnis nostrum. Temporibus dolor illo hic quia molestiae harum. Est omnis alias cum tenetur.",
+        "body": "Our Slack integration shows as connected in settings but notifications stopped coming through three days ago. Reconnecting it doesn't seem to fix anything.",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 89
@@ -632,7 +632,7 @@
         "requester_id": 24,
         "assigned_agent_id": 5,
         "subject": "Password reset email never arrives",
-        "body": "Dolorem illum id sint fugit. Ab eligendi expedita earum qui inventore voluptatem. Aut quo placeat iste sunt quos voluptates.\n\nVoluptatem nostrum officia eveniet debitis aut dolor. Nam fugiat itaque error porro sed vel autem. Omnis deserunt possimus laborum voluptatem quisquam temporibus vitae. Doloribus qui quasi atque nam ut eos nisi.",
+        "body": "I requested a password reset twice now and checked spam, and nothing has come through either time. Other emails from your system reach my inbox fine.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 109
@@ -643,7 +643,7 @@
         "requester_id": 26,
         "assigned_agent_id": 3,
         "subject": "Users table sort order changed unexpectedly",
-        "body": "Cumque non eaque quae eveniet natus quidem impedit consequatur. Perferendis unde voluptatem exercitationem est eaque omnis dolorem. Velit sint aut tenetur facere est tempora autem quae. Repellendus exercitationem recusandae et et nesciunt ab quo. Et at eaque sit ea enim.\n\nMolestias quam maiores amet at deleniti molestiae voluptatem. Sit dignissimos iste ea odit recusandae id. Ipsam odit rerum totam tenetur. Itaque beatae eos quas et illo minus.",
+        "body": "The admin users list used to be sorted alphabetically and now it seems to be in some random order. Nothing looks broken, it's just confusing to navigate.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 63
@@ -654,7 +654,7 @@
         "requester_id": 6,
         "assigned_agent_id": 4,
         "subject": "Need a data export for compliance",
-        "body": "Dolorum quia omnis adipisci distinctio ea aut voluptatem deleniti. Eum soluta commodi praesentium autem doloremque rerum. Iure modi eos qui sequi ducimus non.",
+        "body": "Our legal team needs a full export of customer data tied to our account for an upcoming audit. Is there a self-serve way to do this or do I need to request it here?",
         "status": "open",
         "priority": "high",
         "created_days_ago": 102
@@ -665,7 +665,7 @@
         "requester_id": 29,
         "assigned_agent_id": 2,
         "subject": "Unable to reset my password",
-        "body": "Mollitia mollitia et perspiciatis nemo ea nisi. Perspiciatis veritatis commodi odit beatae qui. Eaque optio et eveniet enim. Deleniti et fugiat occaecati sapiente qui.\n\nNeque quia velit voluptas ut. Praesentium et dolor itaque autem dolorem aut neque. Et autem asperiores necessitatibus sit molestiae perferendis voluptatum. Saepe placeat dignissimos asperiores quidem autem nihil ab qui. Porro in optio nisi dolorem quaerat sed qui.",
+        "body": "I clicked the reset link in the email but it just redirects me back to the login page without changing anything. I've tried this three times now from two different browsers. Can someone reset it manually on your end?",
         "status": "resolved",
         "priority": "high",
         "created_days_ago": 115
@@ -676,7 +676,7 @@
         "requester_id": 20,
         "assigned_agent_id": 2,
         "subject": "Invoice shows an incorrect amount",
-        "body": "Blanditiis rerum sapiente deleniti. Ducimus dolores quia eveniet iure. Ea iste harum ut quam. Ipsa aperiam eos delectus voluptatibus impedit. Ad quisquam facere pariatur quo.\n\nAspernatur sit nobis est est. Magni explicabo earum assumenda molestiae vitae. Ab praesentium ut qui.",
+        "body": "This month's invoice charged us for 12 seats but we only have 8 active users on the team. Can you take a look and issue a corrected invoice or a credit for the difference?",
         "status": "closed",
         "priority": "urgent",
         "created_days_ago": 10
@@ -687,7 +687,7 @@
         "requester_id": 20,
         "assigned_agent_id": 4,
         "subject": "App crashes when uploading a photo",
-        "body": "Consequatur autem aut magnam nihil officiis quidem. Quidem provident vitae dolor dolor. Dignissimos similique aliquam perferendis autem modi. Eum fuga aut asperiores eos qui modi odio.\n\nConsequatur quidem magnam quo in odit sunt quis. Quaerat velit voluptatem eum exercitationem voluptatibus rerum. Placeat modi quia adipisci modi blanditiis est quis.",
+        "body": "Every time I try to attach a screenshot larger than a few hundred KB, the page just goes blank and I have to refresh. This is happening consistently on Chrome for Mac.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 18
@@ -698,7 +698,7 @@
         "requester_id": 30,
         "assigned_agent_id": 4,
         "subject": "Export to CSV produces an empty file",
-        "body": "Accusamus ad ducimus ipsam facere animi omnis. Amet voluptas tempore omnis ratione. Voluptatem odit architecto similique.\n\nAspernatur earum consequatur dolorem animi ratione et. Ab iusto accusantium ut. Nostrum eum officia aspernatur dolor.",
+        "body": "I exported our ticket list from the dashboard and the CSV downloads fine but every row is blank except the header. This worked last week, so something must have changed.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 42
@@ -709,7 +709,7 @@
         "requester_id": 17,
         "assigned_agent_id": 3,
         "subject": "Cannot invite a teammate to my workspace",
-        "body": "Autem autem vel aut minus aut temporibus porro molestiae. Nesciunt delectus qui quo sunt. Omnis a aut autem deleniti repellendus possimus aliquam.",
+        "body": "I'm trying to add a new agent to our organization but the invite button just spins forever and nothing happens. No error message, no email sent as far as I can tell.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 0
@@ -720,7 +720,7 @@
         "requester_id": 12,
         "assigned_agent_id": null,
         "subject": "2FA codes never arrive",
-        "body": "Qui reiciendis rem maxime modi consequatur a. Soluta eum ut quo qui deserunt laborum quia. Cumque modi sit autem occaecati quis aliquam. Odio consequuntur autem aperiam accusamus accusamus soluta ex.\n\nOptio et doloremque dignissimos animi. Corrupti consequuntur saepe illum nihil perspiciatis. Occaecati officiis quaerat dolorem occaecati eum maxime quis. Dolorum voluptas ad consequatur quas quidem est placeat.",
+        "body": "I enabled two-factor authentication last week and now the SMS codes aren't arriving at all. I've double-checked my phone number is correct in my profile.",
         "status": "open",
         "priority": "high",
         "created_days_ago": 95
@@ -731,7 +731,7 @@
         "requester_id": 29,
         "assigned_agent_id": null,
         "subject": "Dashboard widgets are stuck loading",
-        "body": "Nihil omnis architecto dignissimos neque aspernatur illum. Asperiores voluptas distinctio debitis quia perspiciatis ut eius. Mollitia ullam et quia et inventore debitis delectus. Eum dolorem doloribus quae sapiente molestiae.",
+        "body": "The ticket volume chart on my dashboard has been showing a spinner for two days straight. Everything else on the page loads normally, it's just that one widget.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 0
@@ -742,7 +742,7 @@
         "requester_id": 10,
         "assigned_agent_id": 2,
         "subject": "Billing address will not save",
-        "body": "Eos voluptatum dolorum dolor. Incidunt error quo et quas. Quod quia doloremque quos est. Consectetur nemo quos est ducimus quia dolorum.",
+        "body": "I updated our billing address after we moved offices, hit save, and it looks correct for a second before reverting back to the old address. Tried in two browsers with the same result.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 78
@@ -753,7 +753,7 @@
         "requester_id": 24,
         "assigned_agent_id": 4,
         "subject": "API returns 500 on bulk import",
-        "body": "Perspiciatis odio est corrupti unde. Saepe nobis maxime iusto labore.",
+        "body": "Our integration calls the bulk ticket import endpoint every night and it's been failing with a 500 error since Tuesday. Nothing changed on our side that we're aware of.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 92
@@ -764,7 +764,7 @@
         "requester_id": 21,
         "assigned_agent_id": 3,
         "subject": "Need to downgrade our plan",
-        "body": "Esse molestiae quaerat quia voluptatem est. Eos cum totam quis quibusdam id ipsa. Est accusamus consequuntur in dolores. Minima et voluptatibus tempore excepturi voluptate rerum quibusdam quis. Laboriosam nihil blanditiis dicta et nisi.\n\nEt fuga dolor ut consectetur est. Et fuga aliquid architecto sunt. Sit facilis sit consequatur quisquam adipisci quas eum. Laboriosam mollitia molestiae ut impedit in voluptatem temporibus.",
+        "body": "We're down to 3 active agents and don't need the Team plan anymore. Could someone walk me through downgrading without losing our ticket history?",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 110
@@ -775,7 +775,7 @@
         "requester_id": 11,
         "assigned_agent_id": 2,
         "subject": "Search results look stale",
-        "body": "Qui officia laborum consequuntur at praesentium. Cum voluptatum saepe dolor eos aut. Vitae dolore molestiae officia voluptas ut est. Debitis aut ex saepe.\n\nNecessitatibus necessitatibus sunt et rerum. Quo placeat illum qui sit doloremque quia in. Consequatur reprehenderit facilis quo ut deserunt ducimus enim. Sint ab harum et accusamus cumque pariatur.",
+        "body": "When I search for a ticket by subject, the results don't seem to include anything created in the last few days. Older tickets show up fine.",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 83
@@ -786,7 +786,7 @@
         "requester_id": 7,
         "assigned_agent_id": 5,
         "subject": "Webhook deliveries stopped overnight",
-        "body": "Vel debitis consequatur quisquam aut et excepturi. Facere aut rerum fuga qui sequi consequatur.\n\nOmnis est et quos non. Non placeat laudantium illo quia numquam inventore libero perspiciatis.\n\nDolore eos odit illum nihil temporibus fugit. Est laboriosam eos autem inventore. Vitae quibusdam sunt magni impedit voluptas est est. Omnis maiores voluptates qui et dolorem.",
+        "body": "Our Slack channel used to get a notification every time a ticket closed, and that stopped sometime last night with no changes on our webhook config. The endpoint is definitely still up.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 103
@@ -797,7 +797,7 @@
         "requester_id": 24,
         "assigned_agent_id": 2,
         "subject": "Feature request: dark mode for reports",
-        "body": "Voluptas fugit sit sed cupiditate quod. Porro veritatis optio ea quis dolorum corporis. Incidunt molestias quia odit porro.\n\nQuis velit fugiat et enim aut non eos. Eum architecto ut perferendis quia autem placeat. Aliquid nihil vel laudantium cum qui. Tenetur nesciunt cum voluptatem molestias officiis aspernatur. Laudantium consectetur et ut.",
+        "body": "Our team spends a lot of time in the reports section in the evening and the bright white background is rough on the eyes. Any chance a dark mode is on the roadmap?",
         "status": "pending",
         "priority": "urgent",
         "created_days_ago": 87
@@ -808,7 +808,7 @@
         "requester_id": 6,
         "assigned_agent_id": 3,
         "subject": "Duplicate charge on this month's invoice",
-        "body": "Pariatur vel eius fugit laboriosam vel quisquam porro dolor. Laboriosam et eos repudiandae. Rem autem aperiam optio in in sed id.",
+        "body": "I just noticed two separate charges for the same amount on our card this billing cycle. Can you confirm whether this was a processing error and refund the duplicate?",
         "status": "open",
         "priority": "high",
         "created_days_ago": 22
@@ -819,7 +819,7 @@
         "requester_id": 8,
         "assigned_agent_id": 5,
         "subject": "SSO login loop",
-        "body": "Omnis ratione blanditiis nulla quae. Ut inventore exercitationem aliquid quod quia tempora culpa.\n\nMinima repellat accusamus ipsam amet ut facilis. Sit et voluptatibus aut. Occaecati ea aut at. Totam sed fuga expedita debitis ullam ea voluptatibus quae.",
+        "body": "Since we set up SSO with our identity provider, logging in redirects back and forth between your login page and our IdP a few times before eventually failing. It worked fine in testing yesterday.",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 65
@@ -830,7 +830,7 @@
         "requester_id": 8,
         "assigned_agent_id": 4,
         "subject": "Attachment previews are broken",
-        "body": "Nihil quasi earum enim optio excepturi repellendus. Velit autem quibusdam ut et quisquam iure quaerat. Est perspiciatis sit sint laboriosam iure sint.\n\nEos magnam quas nisi nemo. Et assumenda quas pariatur aliquam sint omnis. Temporibus commodi ab in a eum et quos recusandae.",
+        "body": "PDF attachments used to show a thumbnail preview right in the ticket, but now they just show a broken image icon. Downloading the file directly still works fine.",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 28
@@ -841,7 +841,7 @@
         "requester_id": 30,
         "assigned_agent_id": 5,
         "subject": "Timezone is wrong on all timestamps",
-        "body": "Et dolorem eum voluptatem deserunt qui dolorem et. Voluptas amet ut minima id omnis omnis perspiciatis. Accusantium nam unde enim. Sint unde quia libero veritatis.\n\nDolores modi autem accusantium mollitia vel autem facilis. Architecto adipisci facilis quos maxime provident tempore. Atque magni tempore unde corrupti ut perferendis.",
+        "body": "Every ticket timestamp is showing three hours ahead of my actual timezone even though my profile is set correctly. This is making it hard to track our response times.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 89
@@ -852,7 +852,7 @@
         "requester_id": 7,
         "assigned_agent_id": 3,
         "subject": "Cannot delete an old project",
-        "body": "Aut nulla repellendus adipisci. Sed maxime sunt ut sed eos enim vitae. Quia sunt et eum veritatis et nisi. Numquam explicabo recusandae ipsa quis natus.\n\nMagni sequi esse dolores voluptatem aliquid reprehenderit veniam. Ut nesciunt dignissimos delectus maiores ut id mollitia. Repellat voluptatem qui aut.",
+        "body": "I'm trying to archive a project we don't use anymore but the delete button is grayed out with no explanation of why. There are no open tickets linked to it that I can find.",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 70
@@ -863,7 +863,7 @@
         "requester_id": 22,
         "assigned_agent_id": 4,
         "subject": "Rate limit hit during normal usage",
-        "body": "Cupiditate et rerum autem fuga. Possimus omnis culpa sunt velit sint eligendi. Itaque expedita distinctio possimus quo harum quaerat. Laboriosam qui vel laudantium ad accusantium voluptate.",
+        "body": "We're getting 429 errors from the API during what feels like completely normal usage, well under any limits mentioned in the docs. This started happening this morning.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 104
@@ -874,7 +874,7 @@
         "requester_id": 13,
         "assigned_agent_id": null,
         "subject": "Mobile app keeps logging me out",
-        "body": "Nihil voluptatem quis fugiat quo tempore. Unde et quaerat eum voluptas qui. Placeat excepturi rerum molestiae rerum iste esse. Cupiditate odit quia repellat exercitationem.\n\nOmnis vero nostrum asperiores ea quae doloribus aut. Dicta similique voluptatibus impedit minima vel sunt ullam. Consequuntur quia molestiae explicabo autem cupiditate est dignissimos.",
+        "body": "The iOS app signs me out every few hours even though I have 'stay logged in' checked. I have to re-enter my password multiple times a day now.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 13
@@ -885,7 +885,7 @@
         "requester_id": 21,
         "assigned_agent_id": 3,
         "subject": "Missing email notifications",
-        "body": "Maiores sapiente incidunt consequuntur. Cum quod architecto aliquid expedita ut facilis ipsum. Ut esse excepturi neque dolores nam. Sint quaerat est enim facere minus nam iusto.",
+        "body": "I used to get an email every time a customer replied to one of my assigned tickets, and I haven't received one in almost a week even though replies are clearly coming in.",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 116
@@ -896,7 +896,7 @@
         "requester_id": 18,
         "assigned_agent_id": null,
         "subject": "Custom domain SSL certificate expired",
-        "body": "Rem deserunt repellat vel nihil distinctio ab. Eaque deserunt numquam eveniet sunt qui. Voluptatibus laboriosam perspiciatis in sapiente eos et. Libero quia enim deleniti maxime vel.",
+        "body": "Our support portal on our custom domain is showing a certificate expired warning to customers. I thought this renewed automatically \u2014 can someone reissue it?",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 95
@@ -907,7 +907,7 @@
         "requester_id": 18,
         "assigned_agent_id": 5,
         "subject": "Team member permissions are not saving",
-        "body": "Veritatis rem perferendis accusantium. Quam voluptas atque ut voluptas nobis. Perferendis consequatur eaque sit et et.\n\nPerferendis et non molestiae tenetur tempore et provident. Repellendus voluptas vero nihil. Corporis asperiores quae atque deleniti sequi rerum. Nam aliquid accusantium et consequuntur non molestias.\n\nCommodi et eius libero sed et. Voluptatibus ut at velit nobis velit repellendus. Et vero qui consectetur vel facere quis.",
+        "body": "I changed one of our agents from admin to standard access, clicked save, and when I go back to the page it still shows them as admin. Tried this several times.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 32
@@ -918,7 +918,7 @@
         "requester_id": 24,
         "assigned_agent_id": 4,
         "subject": "Import wizard hangs at 90%",
-        "body": "Commodi expedita excepturi omnis id. Blanditiis non quos consequatur tenetur quia. Neque qui dolorem aliquid eaque aut excepturi. Illum quis dicta facere ipsum.\n\nQuis tenetur aperiam nihil ipsum nihil ipsa. Aliquam ad non iusto minima et est. Et accusamus dolores maiores aliquam amet et placeat. Totam culpa quia doloremque numquam a.\n\nOccaecati omnis repudiandae quasi enim accusantium occaecati quam repudiandae. Et nam repudiandae ipsa corporis blanditiis voluptas et quia.",
+        "body": "Every time I try to import our old ticket data from a CSV, the progress bar gets to about 90% and just sits there indefinitely. The file is only a few hundred rows.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 86
@@ -929,7 +929,7 @@
         "requester_id": 23,
         "assigned_agent_id": null,
         "subject": "Trial extension request",
-        "body": "Molestiae sed qui eum ea nam rerum itaque et. Blanditiis consectetur commodi qui quas quam quas omnis. Et doloribus rerum tempore magnam voluptates est.\n\nAmet voluptas et recusandae aperiam nostrum sit. Nobis nisi id et odio facilis recusandae. Provident vel enim quo praesentium. Ipsam autem consequatur dignissimos ad ratione perferendis.",
+        "body": "We're right in the middle of evaluating the product with our team and our trial ends in two days. Would it be possible to get another two weeks to finish testing?",
         "status": "open",
         "priority": "low",
         "created_days_ago": 20
@@ -940,7 +940,7 @@
         "requester_id": 18,
         "assigned_agent_id": 5,
         "subject": "Report totals do not match the dashboard",
-        "body": "Dolore sunt consequatur illum voluptates expedita tenetur. Quis commodi sunt nemo eaque qui non voluptatem. Laborum qui distinctio exercitationem.",
+        "body": "The weekly report I exported shows 47 resolved tickets but the dashboard for the same date range says 52. Not sure which number is actually correct.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 10
@@ -951,7 +951,7 @@
         "requester_id": 24,
         "assigned_agent_id": 5,
         "subject": "Slack integration disconnected",
-        "body": "Possimus et animi sequi nam et. Qui voluptatum nesciunt sunt quibusdam et. Facere harum sed autem facere id. Qui assumenda et rem nisi eaque.",
+        "body": "Our Slack integration shows as connected in settings but notifications stopped coming through three days ago. Reconnecting it doesn't seem to fix anything.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 69
@@ -962,7 +962,7 @@
         "requester_id": 19,
         "assigned_agent_id": 3,
         "subject": "Password reset email never arrives",
-        "body": "Quam vel aut adipisci quos. Accusantium numquam libero laborum magnam est. Facere id repellendus quo id soluta. Nihil laboriosam dolores architecto amet.",
+        "body": "I requested a password reset twice now and checked spam, and nothing has come through either time. Other emails from your system reach my inbox fine.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 120
@@ -973,7 +973,7 @@
         "requester_id": 20,
         "assigned_agent_id": 2,
         "subject": "Users table sort order changed unexpectedly",
-        "body": "Voluptate fuga qui autem voluptatum. Sit dolorum ducimus quo autem ut itaque quia. Quia vitae molestiae sunt. Cumque fuga maiores consectetur officiis assumenda nisi.\n\nRem doloribus quia id facilis quae. Et sunt maxime soluta ipsam exercitationem nulla consequatur. Recusandae voluptate alias qui.\n\nIste ducimus voluptas culpa ullam vel hic cupiditate. Magni sequi sed ut tempore repellat ut. Id dicta ut quas eius ea et quia. Hic qui vero nisi quaerat totam.",
+        "body": "The admin users list used to be sorted alphabetically and now it seems to be in some random order. Nothing looks broken, it's just confusing to navigate.",
         "status": "closed",
         "priority": "high",
         "created_days_ago": 102
@@ -984,7 +984,7 @@
         "requester_id": 13,
         "assigned_agent_id": 5,
         "subject": "Need a data export for compliance",
-        "body": "Rerum laborum dolorem distinctio dolorem voluptates eos. Molestiae aliquam est ut non magnam dolor. Sint explicabo ea perspiciatis odit. Maiores dignissimos ex sint et dolores laboriosam.\n\nNam quos expedita qui dolores atque adipisci. Omnis ipsum voluptatibus explicabo dolorum quis distinctio ducimus. Excepturi esse dolores dolore molestiae odit rerum in. Aperiam qui numquam in fugit et.\n\nVel laboriosam reiciendis minima voluptatem consequatur assumenda non magni. Aut sequi dolores perferendis fugit amet iusto. Sed et nisi dicta corrupti placeat nisi et. Consequatur sed sunt itaque et culpa illo sequi.",
+        "body": "Our legal team needs a full export of customer data tied to our account for an upcoming audit. Is there a self-serve way to do this or do I need to request it here?",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 27
@@ -995,7 +995,7 @@
         "requester_id": 18,
         "assigned_agent_id": 4,
         "subject": "Unable to reset my password",
-        "body": "Harum voluptatum voluptas nisi in eos repellendus in reprehenderit. Dolore beatae quo fugiat eum architecto fugit fugit. Qui dolore labore eligendi praesentium. Et cum iusto accusamus fuga quas voluptatem.\n\nMaxime natus nam sint reiciendis dolor natus deserunt. Impedit eveniet dicta qui consequatur et qui libero. Rerum quasi nulla exercitationem modi.",
+        "body": "I clicked the reset link in the email but it just redirects me back to the login page without changing anything. I've tried this three times now from two different browsers. Can someone reset it manually on your end?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 104
@@ -1006,7 +1006,7 @@
         "requester_id": 6,
         "assigned_agent_id": 2,
         "subject": "Invoice shows an incorrect amount",
-        "body": "Et consequatur eligendi qui est numquam officiis quas. Sit ullam et ut enim et nostrum.",
+        "body": "This month's invoice charged us for 12 seats but we only have 8 active users on the team. Can you take a look and issue a corrected invoice or a credit for the difference?",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 101
@@ -1017,7 +1017,7 @@
         "requester_id": 13,
         "assigned_agent_id": 3,
         "subject": "App crashes when uploading a photo",
-        "body": "Voluptatum mollitia blanditiis in. Soluta nostrum mollitia voluptate adipisci nobis voluptatem dolorem impedit. Autem dolores aut voluptates nostrum. Rem est sint eligendi est aut odit voluptas quas.\n\nEst dolorum asperiores sed et aspernatur vel. Numquam quae at expedita. Quia quia in dolorum molestiae ut. Illo et est magnam.\n\nIpsam earum doloremque voluptate. Facilis molestias illo optio quo aut. Iste reiciendis enim nihil similique quo. Ut quam aut et et.",
+        "body": "Every time I try to attach a screenshot larger than a few hundred KB, the page just goes blank and I have to refresh. This is happening consistently on Chrome for Mac.",
         "status": "pending",
         "priority": "high",
         "created_days_ago": 3
@@ -1028,7 +1028,7 @@
         "requester_id": 12,
         "assigned_agent_id": 2,
         "subject": "Export to CSV produces an empty file",
-        "body": "Aut quibusdam aut at non. Id quo odio sit iure explicabo. Suscipit autem rerum vel velit voluptas consequatur.",
+        "body": "I exported our ticket list from the dashboard and the CSV downloads fine but every row is blank except the header. This worked last week, so something must have changed.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 88
@@ -1039,7 +1039,7 @@
         "requester_id": 20,
         "assigned_agent_id": 5,
         "subject": "Cannot invite a teammate to my workspace",
-        "body": "Rerum est voluptatem voluptatem voluptate facere. Explicabo omnis sunt nisi ut aliquid adipisci hic id. Modi maiores aspernatur nesciunt reprehenderit. Excepturi cumque architecto voluptatem voluptate architecto aut.\n\nAt iure eius error non eligendi est. Ullam soluta excepturi natus corrupti eos. Id in ullam sit inventore eos.\n\nVelit eius maxime eius id. Nam nam inventore numquam ut ea in quam. Velit est deleniti aut qui sed beatae.",
+        "body": "I'm trying to add a new agent to our organization but the invite button just spins forever and nothing happens. No error message, no email sent as far as I can tell.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 13
@@ -1050,7 +1050,7 @@
         "requester_id": 10,
         "assigned_agent_id": 4,
         "subject": "2FA codes never arrive",
-        "body": "Minima cum debitis fugiat veritatis. Consectetur quis praesentium eum eos omnis aut et.\n\nEst amet necessitatibus est consequatur et inventore soluta. Eius quos quia eaque voluptates totam. Ut odio molestiae suscipit amet labore saepe necessitatibus.",
+        "body": "I enabled two-factor authentication last week and now the SMS codes aren't arriving at all. I've double-checked my phone number is correct in my profile.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 53
@@ -1061,7 +1061,7 @@
         "requester_id": 20,
         "assigned_agent_id": 5,
         "subject": "Dashboard widgets are stuck loading",
-        "body": "Nihil ab tenetur explicabo dignissimos expedita. Maxime aliquid itaque rerum vel nesciunt voluptates. Dignissimos quia ut iure adipisci commodi. Vero provident aliquid error.\n\nQuia blanditiis quas ut fugiat ad voluptatum cumque. Quaerat amet voluptatem sunt odio non. Tempora nisi cupiditate et perferendis aliquam. Omnis qui vitae tempora qui aliquam fugiat quis nihil.\n\nPlaceat quidem quia quaerat id. Magni voluptates vero quis delectus. Odit repellat cumque nulla distinctio assumenda nihil. Quia ut vel architecto sunt libero. Ipsam quia sunt quisquam placeat.",
+        "body": "The ticket volume chart on my dashboard has been showing a spinner for two days straight. Everything else on the page loads normally, it's just that one widget.",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 119
@@ -1072,7 +1072,7 @@
         "requester_id": 23,
         "assigned_agent_id": null,
         "subject": "Billing address will not save",
-        "body": "Sunt aliquid dolores aut dolorem unde et. Eum odit magni id culpa assumenda. Velit corporis doloribus reiciendis recusandae autem. Ea ducimus doloribus sed laboriosam doloribus.",
+        "body": "I updated our billing address after we moved offices, hit save, and it looks correct for a second before reverting back to the old address. Tried in two browsers with the same result.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 52
@@ -1083,7 +1083,7 @@
         "requester_id": 26,
         "assigned_agent_id": 2,
         "subject": "API returns 500 on bulk import",
-        "body": "Aliquid dolor sequi id voluptate aut sed porro. Velit sequi hic et repudiandae. Nulla tenetur facilis nostrum ab veniam. Enim veritatis sint est rerum.\n\nAut nihil id dolores ullam unde itaque dolores. Velit deleniti in aut cupiditate ad aspernatur. Quia quo consequatur delectus ea nisi. Ex rerum sed dolore et.\n\nCum nesciunt laudantium dignissimos facilis culpa deleniti et. Sapiente reiciendis ut quia velit occaecati quod aperiam. Dolore vero necessitatibus aut similique officia.",
+        "body": "Our integration calls the bulk ticket import endpoint every night and it's been failing with a 500 error since Tuesday. Nothing changed on our side that we're aware of.",
         "status": "open",
         "priority": "urgent",
         "created_days_ago": 2
@@ -1094,7 +1094,7 @@
         "requester_id": 22,
         "assigned_agent_id": null,
         "subject": "Need to downgrade our plan",
-        "body": "Quidem dolores excepturi asperiores maxime fugiat. Molestiae assumenda ea veniam. Et labore incidunt voluptatem quisquam repudiandae occaecati voluptatem est. Aspernatur quis et quia nam explicabo ut.\n\nEt quibusdam velit ducimus et excepturi molestias. Numquam ut soluta et ullam asperiores nostrum sed ea. Minima incidunt quia illum est minima perspiciatis. Odit sunt praesentium minus dolorem tempora sed.",
+        "body": "We're down to 3 active agents and don't need the Team plan anymore. Could someone walk me through downgrading without losing our ticket history?",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 112
@@ -1105,7 +1105,7 @@
         "requester_id": 6,
         "assigned_agent_id": 4,
         "subject": "Search results look stale",
-        "body": "Culpa nisi quas enim consequatur laudantium explicabo. Rerum commodi et ducimus iste nulla quis aliquid tenetur. Aperiam laboriosam omnis maiores a cupiditate mollitia dolorum. Sed repudiandae sit laudantium explicabo fuga.\n\nSint illum sit quod dolores. Eveniet sit accusamus aut.",
+        "body": "When I search for a ticket by subject, the results don't seem to include anything created in the last few days. Older tickets show up fine.",
         "status": "pending",
         "priority": "low",
         "created_days_ago": 17
@@ -1116,7 +1116,7 @@
         "requester_id": 12,
         "assigned_agent_id": 2,
         "subject": "Webhook deliveries stopped overnight",
-        "body": "Necessitatibus necessitatibus velit esse sed. Inventore ut suscipit earum sequi hic ad consectetur repellendus. Est autem exercitationem illo dolor adipisci.\n\nIncidunt est blanditiis fuga repudiandae voluptatem. Molestiae sed velit praesentium optio et et. Quis voluptate at hic. Voluptatem eveniet ut vel. Numquam perferendis velit id nostrum quibusdam.\n\nNumquam autem delectus quia numquam. Aspernatur omnis animi quae qui corporis ex.",
+        "body": "Our Slack channel used to get a notification every time a ticket closed, and that stopped sometime last night with no changes on our webhook config. The endpoint is definitely still up.",
         "status": "closed",
         "priority": "low",
         "created_days_ago": 110
@@ -1127,7 +1127,7 @@
         "requester_id": 29,
         "assigned_agent_id": 2,
         "subject": "Feature request: dark mode for reports",
-        "body": "Doloribus et illo ex laudantium. Quas eveniet consequatur rerum nesciunt. Vero pariatur corrupti a eos eius repellat dolores. Fugiat quas mollitia dignissimos autem possimus distinctio.\n\nDolores est laudantium ut. Debitis nam officiis tenetur sequi nobis dolores aut. Consequuntur sed ratione dolores quasi culpa magnam error.",
+        "body": "Our team spends a lot of time in the reports section in the evening and the bright white background is rough on the eyes. Any chance a dark mode is on the roadmap?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 14
@@ -1138,7 +1138,7 @@
         "requester_id": 19,
         "assigned_agent_id": 5,
         "subject": "Duplicate charge on this month's invoice",
-        "body": "Et explicabo sed veritatis aut. Enim maxime assumenda aut vel eligendi molestiae vel. Doloremque dolorum alias debitis est. Omnis reprehenderit excepturi earum sunt molestias.\n\nDolorum ipsam eos aut. Voluptatem saepe rem alias. Est nemo ut debitis excepturi quo laudantium dolores. Sunt corporis necessitatibus aut doloribus.",
+        "body": "I just noticed two separate charges for the same amount on our card this billing cycle. Can you confirm whether this was a processing error and refund the duplicate?",
         "status": "pending",
         "priority": "urgent",
         "created_days_ago": 56
@@ -1149,7 +1149,7 @@
         "requester_id": 27,
         "assigned_agent_id": 5,
         "subject": "SSO login loop",
-        "body": "Harum ut laudantium dolores illo sequi dolores et. Tenetur non vitae fuga adipisci accusantium nam. Sit aut voluptatem voluptatem non.",
+        "body": "Since we set up SSO with our identity provider, logging in redirects back and forth between your login page and our IdP a few times before eventually failing. It worked fine in testing yesterday.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 24
@@ -1160,7 +1160,7 @@
         "requester_id": 7,
         "assigned_agent_id": 2,
         "subject": "Attachment previews are broken",
-        "body": "Voluptatum modi quo ullam totam non magni. Quo provident earum fugit molestiae quas vitae ipsam dignissimos. Dignissimos commodi commodi pariatur eaque libero esse totam.\n\nDolorem sunt nihil et nostrum veritatis. Doloribus enim aut libero ea mollitia quae. Nemo qui cumque dolor quaerat blanditiis.\n\nLaudantium quis ducimus eius eos necessitatibus. Qui possimus eius sunt. Amet enim qui non quis.",
+        "body": "PDF attachments used to show a thumbnail preview right in the ticket, but now they just show a broken image icon. Downloading the file directly still works fine.",
         "status": "closed",
         "priority": "normal",
         "created_days_ago": 77
@@ -1171,7 +1171,7 @@
         "requester_id": 23,
         "assigned_agent_id": 3,
         "subject": "Timezone is wrong on all timestamps",
-        "body": "Sint aut consequuntur repellat expedita consequatur aspernatur cupiditate. Consequatur deleniti tenetur beatae hic. Dolore ut et occaecati fuga natus ducimus laborum et. Doloribus molestias et et sint vero veritatis at rerum. Nesciunt animi laudantium officia ea est quisquam aut est.\n\nSapiente commodi voluptatem facere aspernatur natus. Similique corporis reprehenderit id ut qui. Temporibus id tempora laborum quaerat facere et. Quas quo consequatur magni soluta consequatur aut.",
+        "body": "Every ticket timestamp is showing three hours ahead of my actual timezone even though my profile is set correctly. This is making it hard to track our response times.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 5
@@ -1182,7 +1182,7 @@
         "requester_id": 20,
         "assigned_agent_id": 5,
         "subject": "Cannot delete an old project",
-        "body": "Voluptatem maxime pariatur vel provident quam. Tempore ad quibusdam rem qui fuga itaque eos. Deserunt quam aut illum omnis enim rerum ipsa. Est quod voluptatibus esse doloremque aut fugit.\n\nAut quisquam eos delectus qui eius. Aliquid ullam neque omnis sed illo eum similique. In eveniet aut vel aut qui unde.",
+        "body": "I'm trying to archive a project we don't use anymore but the delete button is grayed out with no explanation of why. There are no open tickets linked to it that I can find.",
         "status": "open",
         "priority": "low",
         "created_days_ago": 68
@@ -1193,7 +1193,7 @@
         "requester_id": 22,
         "assigned_agent_id": 2,
         "subject": "Rate limit hit during normal usage",
-        "body": "Sunt beatae aliquam adipisci est quasi voluptatem. Ut qui deleniti esse et reprehenderit tenetur qui. Delectus quidem aut hic et rerum. Nostrum repellat veniam dolores.\n\nTempora quod totam est. Velit quis maiores reprehenderit libero a a. Libero porro labore explicabo provident libero. Non omnis error laudantium ratione expedita.",
+        "body": "We're getting 429 errors from the API during what feels like completely normal usage, well under any limits mentioned in the docs. This started happening this morning.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 96
@@ -1204,7 +1204,7 @@
         "requester_id": 8,
         "assigned_agent_id": 4,
         "subject": "Mobile app keeps logging me out",
-        "body": "Nesciunt facere harum cupiditate ut rerum. Quo quaerat omnis qui fuga iusto ratione. Quisquam facilis laboriosam corporis labore molestias ut.",
+        "body": "The iOS app signs me out every few hours even though I have 'stay logged in' checked. I have to re-enter my password multiple times a day now.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 54
@@ -1215,7 +1215,7 @@
         "requester_id": 30,
         "assigned_agent_id": 4,
         "subject": "Missing email notifications",
-        "body": "Rerum rerum id quae optio libero enim. Iusto in ut ducimus voluptatum rem vel quo. Commodi sint qui non. Provident fugiat ea sed in error.",
+        "body": "I used to get an email every time a customer replied to one of my assigned tickets, and I haven't received one in almost a week even though replies are clearly coming in.",
         "status": "open",
         "priority": "high",
         "created_days_ago": 43
@@ -1226,7 +1226,7 @@
         "requester_id": 25,
         "assigned_agent_id": 3,
         "subject": "Custom domain SSL certificate expired",
-        "body": "Voluptas corporis et ipsam ducimus. Et aspernatur dolor quo atque voluptatibus earum esse. Eos hic et voluptas est ad iusto. Ea vitae sunt aliquam accusantium cumque vero eveniet.",
+        "body": "Our support portal on our custom domain is showing a certificate expired warning to customers. I thought this renewed automatically \u2014 can someone reissue it?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 45
@@ -1237,7 +1237,7 @@
         "requester_id": 7,
         "assigned_agent_id": 3,
         "subject": "Team member permissions are not saving",
-        "body": "Qui occaecati qui laborum rerum iure. Assumenda ducimus reiciendis laboriosam impedit eos quia dicta. Iusto similique ipsum ratione et optio dolorum. Voluptatibus nostrum est ut et nisi fuga.\n\nDolores quo consequatur vero placeat maxime quisquam. Explicabo impedit eos aperiam iusto dolorem non. Fuga et reprehenderit in officia facilis. Eum vitae animi odio dolor omnis quam.",
+        "body": "I changed one of our agents from admin to standard access, clicked save, and when I go back to the page it still shows them as admin. Tried this several times.",
         "status": "resolved",
         "priority": "high",
         "created_days_ago": 32
@@ -1248,7 +1248,7 @@
         "requester_id": 18,
         "assigned_agent_id": 4,
         "subject": "Import wizard hangs at 90%",
-        "body": "Aut doloribus nihil dolores animi. Iure consequatur dicta laudantium laudantium rerum id odit. Quae dolores ipsum at quis et omnis.\n\nRepellendus recusandae maxime laborum fuga qui itaque dolorum. Suscipit et magni et est vero incidunt. Eum omnis expedita corrupti rerum dolorem atque saepe.\n\nAnimi expedita illum adipisci enim voluptatem eveniet voluptatem. Quo nulla dignissimos amet quis. Et quo velit et accusantium ut qui qui sit. Asperiores illum laborum quo mollitia. Quia quam quis distinctio pariatur.",
+        "body": "Every time I try to import our old ticket data from a CSV, the progress bar gets to about 90% and just sits there indefinitely. The file is only a few hundred rows.",
         "status": "resolved",
         "priority": "urgent",
         "created_days_ago": 15
@@ -1259,7 +1259,7 @@
         "requester_id": 24,
         "assigned_agent_id": 4,
         "subject": "Trial extension request",
-        "body": "Rem fugiat ut sint quia nostrum illo dolore qui. Velit tenetur culpa veritatis. Delectus qui ipsam qui qui reprehenderit temporibus.\n\nUllam est dolor illo ipsa ea nihil. Aut dolores deserunt explicabo quia placeat ipsa sequi. Dignissimos consequatur distinctio deserunt eum atque. Non quisquam rerum omnis labore non ab deleniti animi.",
+        "body": "We're right in the middle of evaluating the product with our team and our trial ends in two days. Would it be possible to get another two weeks to finish testing?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 77
@@ -1270,7 +1270,7 @@
         "requester_id": 23,
         "assigned_agent_id": 3,
         "subject": "Report totals do not match the dashboard",
-        "body": "Atque inventore aut libero. At sapiente officiis in ut eum eos dolor. Ab cupiditate sequi eos modi soluta recusandae amet. Animi amet mollitia autem assumenda est veritatis voluptatem. Libero veniam ipsum esse recusandae ullam ab eos aut.\n\nPlaceat praesentium architecto reprehenderit consequatur ipsum. Quibusdam rerum voluptatum officiis odio voluptatem maxime. Maiores rerum omnis quidem dicta architecto temporibus consequatur. Error animi deleniti sequi eaque.",
+        "body": "The weekly report I exported shows 47 resolved tickets but the dashboard for the same date range says 52. Not sure which number is actually correct.",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 59
@@ -1281,7 +1281,7 @@
         "requester_id": 7,
         "assigned_agent_id": 2,
         "subject": "Slack integration disconnected",
-        "body": "Inventore nisi ut aliquam placeat. Deleniti ducimus quia et mollitia non soluta quis. Qui doloremque magni nesciunt eos. Quo corporis animi saepe aut voluptate est.",
+        "body": "Our Slack integration shows as connected in settings but notifications stopped coming through three days ago. Reconnecting it doesn't seem to fix anything.",
         "status": "resolved",
         "priority": "low",
         "created_days_ago": 68
@@ -1292,7 +1292,7 @@
         "requester_id": 12,
         "assigned_agent_id": 3,
         "subject": "Password reset email never arrives",
-        "body": "Quasi qui dignissimos repudiandae quo qui voluptas hic. Odit libero autem ea dolor velit. Iure non et molestiae eos debitis quas odit ipsam. Ratione optio aspernatur cumque fugiat voluptatem eos voluptas. Impedit qui voluptates eligendi ut quia.",
+        "body": "I requested a password reset twice now and checked spam, and nothing has come through either time. Other emails from your system reach my inbox fine.",
         "status": "pending",
         "priority": "normal",
         "created_days_ago": 109
@@ -1303,7 +1303,7 @@
         "requester_id": 21,
         "assigned_agent_id": null,
         "subject": "Users table sort order changed unexpectedly",
-        "body": "Suscipit dolor rerum fuga nihil nemo ipsum et dolorem. Sunt quidem labore iure odit et facilis. Qui placeat voluptas eos praesentium repellendus. Repellat totam suscipit sunt et ut velit aliquid quo.",
+        "body": "The admin users list used to be sorted alphabetically and now it seems to be in some random order. Nothing looks broken, it's just confusing to navigate.",
         "status": "open",
         "priority": "normal",
         "created_days_ago": 20
@@ -1314,7 +1314,7 @@
         "requester_id": 14,
         "assigned_agent_id": 2,
         "subject": "Need a data export for compliance",
-        "body": "Occaecati voluptates rerum aut quod. Sequi praesentium ex veniam cupiditate. Nihil qui ea dolorum aut ea quasi nobis. Rem quos unde ad ipsam explicabo est odio.",
+        "body": "Our legal team needs a full export of customer data tied to our account for an upcoming audit. Is there a self-serve way to do this or do I need to request it here?",
         "status": "resolved",
         "priority": "normal",
         "created_days_ago": 67

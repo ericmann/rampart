@@ -25,6 +25,43 @@ function writeJson(string $path, array $data): void
     echo 'wrote '.basename($path).' ('.count($data)." records)\n";
 }
 
+/**
+ * firstname.lastname@company.example — falls back to appending a number only in the
+ * (unlikely, for our fixed name set) event of a collision. Pure string formatting on an
+ * already-generated name, no Faker calls, so it can't perturb the shared random sequence
+ * used for everything else in this script.
+ */
+function customerEmail(string $name, string $domain, array &$usedEmails): string
+{
+    // Faker occasionally adds an honorific prefix ("Mr.", "Dr.") or a generational suffix
+    // ("Jr.", "III", "PhD") as its own word — strip those before taking first/last, or
+    // they end up as the "name" in the address instead of the honorific they are.
+    $honorifics = ['mr', 'mrs', 'ms', 'miss', 'dr', 'prof', 'jr', 'sr', 'ii', 'iii', 'iv', 'v', 'md', 'dds', 'phd', 'dvm'];
+
+    $parts = array_values(array_filter(
+        preg_split('/\s+/', trim($name)),
+        fn ($part) => ! in_array(strtolower(rtrim($part, '.')), $honorifics, true)
+    ));
+
+    if (count($parts) < 2) {
+        $parts = preg_split('/\s+/', trim($name));
+    }
+
+    $first = strtolower(preg_replace('/[^a-zA-Z]/', '', $parts[0]));
+    $last = strtolower(preg_replace('/[^a-zA-Z]/', '', end($parts)));
+
+    $base = "{$first}.{$last}";
+    $email = "{$base}@{$domain}";
+    $suffix = 2;
+    while (in_array($email, $usedEmails, true)) {
+        $email = "{$base}{$suffix}@{$domain}";
+        $suffix++;
+    }
+    $usedEmails[] = $email;
+
+    return $email;
+}
+
 // ---------------------------------------------------------------------------------------
 // Organizations
 // ---------------------------------------------------------------------------------------
@@ -84,6 +121,7 @@ foreach ($agentNames as $i => $name) {
 }
 
 $customerCount = 25;
+$usedEmails = [];
 for ($i = 0; $i < $customerCount; $i++) {
     $id = $i + 6;
     $orgId = ($i % count($organizations)) + 1;
@@ -97,7 +135,7 @@ for ($i = 0; $i < $customerCount; $i++) {
         'id' => $id,
         'organization_id' => $orgId,
         'name' => $name,
-        'email' => strtolower(preg_replace('/[^a-z]/', '', str_replace(' ', '.', strtolower($name)))).$id.'@'.$organizations[$orgId - 1]['domain'],
+        'email' => customerEmail($name, $organizations[$orgId - 1]['domain'], $usedEmails),
         'role' => 'customer',
         'password_plain' => $plain,
         'password_is_weak' => $usesWeakPassword,
@@ -144,6 +182,41 @@ $subjects = [
     'Custom domain SSL certificate expired', 'Team member permissions are not saving', 'Import wizard hangs at 90%',
     'Trial extension request', 'Report totals do not match the dashboard', 'Slack integration disconnected',
     'Password reset email never arrives', 'Users table sort order changed unexpectedly', 'Need a data export for compliance',
+];
+
+// One body per subject above, same order/index — keeps each ticket's subject and body
+// thematically matched no matter which of the 120 tickets lands on it.
+$ticketBodies = [
+    "I clicked the reset link in the email but it just redirects me back to the login page without changing anything. I've tried this three times now from two different browsers. Can someone reset it manually on your end?",
+    "This month's invoice charged us for 12 seats but we only have 8 active users on the team. Can you take a look and issue a corrected invoice or a credit for the difference?",
+    'Every time I try to attach a screenshot larger than a few hundred KB, the page just goes blank and I have to refresh. This is happening consistently on Chrome for Mac.',
+    'I exported our ticket list from the dashboard and the CSV downloads fine but every row is blank except the header. This worked last week, so something must have changed.',
+    "I'm trying to add a new agent to our organization but the invite button just spins forever and nothing happens. No error message, no email sent as far as I can tell.",
+    "I enabled two-factor authentication last week and now the SMS codes aren't arriving at all. I've double-checked my phone number is correct in my profile.",
+    "The ticket volume chart on my dashboard has been showing a spinner for two days straight. Everything else on the page loads normally, it's just that one widget.",
+    'I updated our billing address after we moved offices, hit save, and it looks correct for a second before reverting back to the old address. Tried in two browsers with the same result.',
+    "Our integration calls the bulk ticket import endpoint every night and it's been failing with a 500 error since Tuesday. Nothing changed on our side that we're aware of.",
+    "We're down to 3 active agents and don't need the Team plan anymore. Could someone walk me through downgrading without losing our ticket history?",
+    "When I search for a ticket by subject, the results don't seem to include anything created in the last few days. Older tickets show up fine.",
+    'Our Slack channel used to get a notification every time a ticket closed, and that stopped sometime last night with no changes on our webhook config. The endpoint is definitely still up.',
+    'Our team spends a lot of time in the reports section in the evening and the bright white background is rough on the eyes. Any chance a dark mode is on the roadmap?',
+    'I just noticed two separate charges for the same amount on our card this billing cycle. Can you confirm whether this was a processing error and refund the duplicate?',
+    'Since we set up SSO with our identity provider, logging in redirects back and forth between your login page and our IdP a few times before eventually failing. It worked fine in testing yesterday.',
+    'PDF attachments used to show a thumbnail preview right in the ticket, but now they just show a broken image icon. Downloading the file directly still works fine.',
+    'Every ticket timestamp is showing three hours ahead of my actual timezone even though my profile is set correctly. This is making it hard to track our response times.',
+    "I'm trying to archive a project we don't use anymore but the delete button is grayed out with no explanation of why. There are no open tickets linked to it that I can find.",
+    "We're getting 429 errors from the API during what feels like completely normal usage, well under any limits mentioned in the docs. This started happening this morning.",
+    "The iOS app signs me out every few hours even though I have 'stay logged in' checked. I have to re-enter my password multiple times a day now.",
+    'I used to get an email every time a customer replied to one of my assigned tickets, and I haven\'t received one in almost a week even though replies are clearly coming in.',
+    'Our support portal on our custom domain is showing a certificate expired warning to customers. I thought this renewed automatically — can someone reissue it?',
+    'I changed one of our agents from admin to standard access, clicked save, and when I go back to the page it still shows them as admin. Tried this several times.',
+    'Every time I try to import our old ticket data from a CSV, the progress bar gets to about 90% and just sits there indefinitely. The file is only a few hundred rows.',
+    "We're right in the middle of evaluating the product with our team and our trial ends in two days. Would it be possible to get another two weeks to finish testing?",
+    "The weekly report I exported shows 47 resolved tickets but the dashboard for the same date range says 52. Not sure which number is actually correct.",
+    'Our Slack integration shows as connected in settings but notifications stopped coming through three days ago. Reconnecting it doesn\'t seem to fix anything.',
+    'I requested a password reset twice now and checked spam, and nothing has come through either time. Other emails from your system reach my inbox fine.',
+    "The admin users list used to be sorted alphabetically and now it seems to be in some random order. Nothing looks broken, it's just confusing to navigate.",
+    'Our legal team needs a full export of customer data tied to our account for an upcoming audit. Is there a self-serve way to do this or do I need to request it here?',
 ];
 
 $customerReplies = [
@@ -205,13 +278,18 @@ for ($i = 0; $i < $ticketCount; $i++) {
     $assignedAgentId = $hasAgent ? $faker->randomElement($agentIds) : null;
     $createdDaysAgo = $faker->numberBetween(0, 120);
 
+    // Burns the same Faker draws the old lorem-ipsum body used to, so every downstream
+    // random pick below — and in every later iteration — lines up exactly with
+    // previously-shipped fixtures. Only the body text itself (from $ticketBodies) is new.
+    $faker->paragraphs($faker->numberBetween(1, 3), true);
+
     $tickets[] = [
         'id' => $ticketId,
         'organization_id' => $customer['organization_id'],
         'requester_id' => $customer['id'],
         'assigned_agent_id' => $assignedAgentId,
         'subject' => $subjects[$i % count($subjects)],
-        'body' => $faker->paragraphs($faker->numberBetween(1, 3), true),
+        'body' => $ticketBodies[$i % count($subjects)],
         'status' => $status,
         'priority' => weightedPick($priorities, $priorityWeights, $faker),
         'created_days_ago' => $createdDaysAgo,
