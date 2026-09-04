@@ -9,7 +9,3 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
-
-# Instructor-only answer key — never ships in an attendee distribution built via
-# `git archive` (e.g. a release tarball or GitHub's "Download ZIP" of a tag).
-docs/VULN-MAP.md export-ignore
