@@ -2,8 +2,8 @@ ARG PHP_VERSION=8.4
 
 FROM node:22-bookworm-slim AS assets
 WORKDIR /app
-COPY package.json package-lock.json* /app/
-RUN npm install
+COPY package.json package-lock.json /app/
+RUN npm ci
 COPY resources /app/resources
 COPY vite.config.js tailwind.config.js postcss.config.js /app/
 RUN npm run build
