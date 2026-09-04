@@ -42,7 +42,16 @@ class SavedViewController extends Controller
     {
         Gate::authorize('view', $savedView);
 
-        $preferences = unserialize($savedView->preferences);
+        // A08:2025 — Software & Data Integrity Failures. `unserialize()` on data that
+        // crossed a trust boundary lets an attacker who can get any serialized string into
+        // this column instantiate an arbitrary autoloadable class with attacker-controlled
+        // properties — object injection. The stored format has to stay `serialize()`
+        // (SavedViewTest, the public suite, already asserts against it), so instead of
+        // switching formats we pass `allowed_classes => false`: every object in the string
+        // is converted to a harmless `__PHP_Incomplete_Class` with no constructor,
+        // `__wakeup()`, or `__destruct()` ever invoked, while plain arrays/scalars — the
+        // only shapes this feature actually needs — still decode normally.
+        $preferences = unserialize($savedView->preferences, ['allowed_classes' => false]);
 
         return view('saved-views.show', [
             'savedView' => $savedView,

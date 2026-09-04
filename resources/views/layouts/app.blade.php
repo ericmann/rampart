@@ -10,7 +10,15 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+        {{-- A03:2025 — Software Supply Chain Failures. A CDN script with no Subresource
+             Integrity check runs whatever jsDelivr serves at request time — a compromised
+             CDN or a MITM on the wire can swap it for anything, and the browser has no way
+             to notice. integrity pins this to the exact bytes hashed below (computed
+             locally from the real file, not copied from a third party); the browser
+             refuses to execute the script if what it downloads doesn't match. --}}
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+                integrity="sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g"
+                crossorigin="anonymous"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">

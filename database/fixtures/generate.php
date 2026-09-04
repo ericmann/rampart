@@ -143,14 +143,17 @@ for ($i = 0; $i < $customerCount; $i++) {
     ];
 }
 
+// A04:2025 fix — UserSeeder now hashes this plaintext itself via the Hash facade
+// (bcrypt) at seed time, the same way any real signup/password-change path would. The
+// fixture only needs to carry the plaintext; it's no longer responsible for picking a
+// hash algorithm.
 $wordlist = [];
 foreach ($users as &$user) {
     $isWeak = $user['password_is_weak'] ?? true; // admin + all agents use the common-password pool
-    $user['password_md5'] = md5($user['password_plain']);
     if ($isWeak) {
         $wordlist[] = $user['password_plain'];
     }
-    unset($user['password_plain'], $user['password_is_weak']);
+    unset($user['password_is_weak']);
 }
 unset($user);
 
@@ -161,8 +164,11 @@ sort($wordlist);
 file_put_contents(
     "$docsDir/wordlist.txt",
     "# Generated from database/fixtures/generate.php — every password below matches at\n".
-    "# least one seeded user's md5() hash. Regenerate this file by re-running that script;\n".
-    "# never hand-edit it, or it will drift from the fixtures it's meant to crack.\n".
+    "# least one seeded user's stored password hash. Regenerate this file by re-running\n".
+    "# that script; never hand-edit it, or it will drift from the fixtures it's meant to\n".
+    "# crack. On main, users.json ships md5() hashes this cracks directly; on solutions\n".
+    "# the seeder bcrypt-hashes these same plaintexts instead (see UserSeeder), which is\n".
+    "# why this wordlist no longer cracks anything there — that's the A04 fix.\n".
     implode("\n", $wordlist).PHP_EOL
 );
 echo 'wrote wordlist.txt ('.count($wordlist)." passwords)\n";

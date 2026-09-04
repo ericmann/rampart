@@ -2,7 +2,6 @@
 
 use App\Http\Middleware\EnsureUserHasRole;
 use App\Http\Middleware\LogFullRequests;
-use App\Http\Middleware\TrustRememberMeCookie;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -15,11 +14,6 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        // The remember-me cookie is plain base64, not an encrypted Laravel cookie — it
-        // has to be excluded here or EncryptCookies would reject it before
-        // TrustRememberMeCookie ever sees it.
-        $middleware->encryptCookies(except: [TrustRememberMeCookie::COOKIE_NAME]);
-
         // Inbound webhooks are called by external services that have no session and no
         // CSRF token, so this receiver is exempt from CSRF verification (as any webhook
         // endpoint must be).
@@ -27,17 +21,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->web(append: [
             LogFullRequests::class,
-            TrustRememberMeCookie::class,
         ]);
-
-        // Laravel's middleware priority sorting can otherwise reorder the route-level
-        // `auth` check ahead of anything merely appended to the 'web' group, which would
-        // make the forged remember-me cookie never get a chance to log the user in before
-        // the auth check runs. Force the ordering explicitly.
-        $middleware->prependToPriorityList(
-            before: \Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests::class,
-            prepend: TrustRememberMeCookie::class,
-        );
 
         $middleware->alias([
             'role' => EnsureUserHasRole::class,
@@ -48,21 +32,11 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
 
-        // Only intercepts genuine server errors; validation/auth/HTTP/not-found exceptions
-        // keep Laravel's normal handling so the rest of the app behaves correctly.
-        $exceptions->render(function (Throwable $e, Request $request) {
-            if (! config('app.debug') || $request->expectsJson()) {
-                return null;
-            }
-
-            if ($e instanceof \Illuminate\Validation\ValidationException
-                || $e instanceof \Illuminate\Auth\AuthenticationException
-                || $e instanceof \Illuminate\Auth\Access\AuthorizationException
-                || $e instanceof \Symfony\Component\HttpKernel\Exception\HttpExceptionInterface
-                || $e instanceof \Illuminate\Database\Eloquent\ModelNotFoundException) {
-                return null;
-            }
-
-            return response()->view('errors.debug', ['exception' => $e], 500);
-        });
+        // A02:2025 — Security Misconfiguration. main rendered a custom "errors.debug" view
+        // here whenever app.debug was on, dumping the exception plus a table of live
+        // config values (DB_PASSWORD, APP_KEY, ...) straight into the response body — a
+        // debug page, custom or framework, must never render secrets. That view is gone;
+        // there's no override left here at all, so an uncaught exception falls through to
+        // Laravel's own handling, which is debug-aware (shows a trace when app.debug is
+        // on, a plain 500 when it's off) but was never wired to print config/env values.
     })->create();
