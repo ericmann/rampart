@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """
-Minimal fake "cloud instance metadata" endpoint for the offline SSRF demo.
-
-Deliberately mimics the shape of the AWS EC2 IMDSv1 endpoint (no auth token required,
-just like the classic misconfiguration this demo is teaching) so the KB "preview link"
-SSRF (docs/VULN-MAP.md — A01c) has something juicy and legible to fetch. The credentials
-below are fake and only ever exist inside this container's Docker-internal network.
+Minimal fake "cloud instance metadata" endpoint, styled after the AWS EC2 IMDSv1 shape.
+The credentials below are fake and only ever exist inside this container's Docker-internal
+network.
 """
 import http.server
 import json

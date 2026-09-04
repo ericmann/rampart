@@ -8,9 +8,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Loads the committed fixture JSON verbatim — no runtime Faker. See
-     * database/fixtures/generate.php for how that JSON was produced, and
-     * docs/VULN-MAP.md for why the data looks the way it does (weak passwords,
-     * unsigned webhooks, etc.).
+     * database/fixtures/generate.php for how that JSON was produced.
      */
     public function run(): void
     {

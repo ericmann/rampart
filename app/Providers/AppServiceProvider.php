@@ -21,7 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // See docs/VULN-MAP.md (A04) — this makes md5() the app-wide password hasher.
         Hash::extend('md5', fn () => new Md5Hasher);
     }
 }

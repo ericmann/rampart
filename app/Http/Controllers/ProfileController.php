@@ -15,11 +15,6 @@ class ProfileController extends Controller
         return view('profile.edit', ['user' => $request->user()]);
     }
 
-    /**
-     * Updates straight from the raw request body with no field allowlist. Combined with
-     * `role` being mass-assignable on User (see app/Models/User.php), posting
-     * `role=admin` here self-promotes. See docs/VULN-MAP.md (A01b).
-     */
     public function update(Request $request): RedirectResponse
     {
         $request->user()->update($request->except(['_token', '_method']));

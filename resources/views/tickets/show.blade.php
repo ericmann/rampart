@@ -76,7 +76,6 @@
                         <span>&middot;</span>
                         <span>{{ $ticket->created_at->diffForHumans() }}</span>
                     </div>
-                    {{-- Rendered unescaped on purpose — see docs/VULN-MAP.md (A05). --}}
                     <div class="prose prose-sm dark:prose-invert max-w-none">{!! $ticket->body !!}</div>
                 </div>
 
@@ -90,8 +89,7 @@
                             <span>&middot;</span>
                             <span>{{ $message->created_at->diffForHumans() }}</span>
                         </div>
-                        {{-- Rendered unescaped on purpose — see docs/VULN-MAP.md (A05). --}}
-                        <div class="prose prose-sm dark:prose-invert max-w-none">{!! $message->body !!}</div>
+                            <div class="prose prose-sm dark:prose-invert max-w-none">{!! $message->body !!}</div>
                     </div>
                 @endforeach
             </div>
@@ -101,8 +99,6 @@
                     <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-3">Reply</h3>
                     <form method="POST" action="{{ route('tickets.messages.store', $ticket) }}" class="space-y-3">
                         @csrf
-                        {{-- The server should recompute this from the logged-in user's role, not
-                             trust the client — see docs/VULN-MAP.md (A06). --}}
                         <input type="hidden" name="can_view_internal_notes" value="{{ $canViewInternalNotes ? 1 : 0 }}">
                         <textarea name="body" rows="4" class="block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 shadow-sm" required></textarea>
                         <div class="flex items-center justify-between">

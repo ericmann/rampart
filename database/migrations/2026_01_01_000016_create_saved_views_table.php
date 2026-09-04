@@ -6,10 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * `preferences` holds a PHP serialize()'d blob, read back with unserialize() with no
-     * allowed_classes restriction — see docs/VULN-MAP.md (A08). Deliberately NOT json.
-     */
     public function up(): void
     {
         Schema::create('saved_views', function (Blueprint $table) {

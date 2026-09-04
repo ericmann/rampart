@@ -6,9 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\View\View;
 
 /**
- * Read-only "here's what's configured" screen for the workshop — deliberately surfaces the
- * misconfigurations (debug mode, CORS, default admin) rather than hiding them, so attendees
- * can see the blast radius from the admin's own point of view. See docs/VULN-MAP.md (A02).
+ * Read-only "here's what's configured" screen for admins.
  */
 class SettingsController extends Controller
 {

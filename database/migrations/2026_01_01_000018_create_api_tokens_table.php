@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * `token` is stored in cleartext (not hashed) — see docs/VULN-MAP.md (A04).
-     */
     public function up(): void
     {
         Schema::create('api_tokens', function (Blueprint $table) {

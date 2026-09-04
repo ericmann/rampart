@@ -46,8 +46,6 @@ class KbController extends Controller
             'is_published' => true,
         ]);
 
-        // The only thing that actually gets audit-logged in this app — logins, role
-        // changes, and authorization denials do not. See docs/VULN-MAP.md (A09).
         AuditLog::create([
             'user_id' => $request->user()->id,
             'event' => 'kb_article.created',
@@ -59,9 +57,7 @@ class KbController extends Controller
     }
 
     /**
-     * Fetches whatever URL the author pastes in, server-side, with no allowlist and no
-     * scheme restriction — including internal-only hosts and file:// reads. See
-     * docs/VULN-MAP.md (A01c, SSRF).
+     * Fetches the pasted URL server-side so the author can preview it before citing it.
      */
     public function previewLink(Request $request, UrlFetcher $fetcher): \Illuminate\Http\JsonResponse
     {

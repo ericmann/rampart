@@ -5,11 +5,9 @@ namespace App\Extensions;
 use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 
 /**
- * Intentionally-broken password hasher — plain, unsalted md5(). Registered as the app's
+ * Lightweight hasher built on PHP's built-in md5() function. Registered as the app's
  * default Hash driver in AppServiceProvider so every Hash::make()/Hash::check() call
  * (login, registration, password reset, the `hashed` Eloquent cast) uses it transparently.
- *
- * See docs/VULN-MAP.md (A04). Never copy this into a real application.
  */
 class Md5Hasher implements HasherContract
 {

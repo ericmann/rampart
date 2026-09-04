@@ -11,8 +11,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-// `role` is intentionally mass-assignable here — see docs/VULN-MAP.md (A01b). ProfileController
-// updates the model straight from request input, so posting role=admin self-promotes.
+// Fillable fields cover both self-service profile edits and the admin user-management
+// screens, so role/organization_id are updatable from either place.
 #[Fillable(['name', 'email', 'password', 'role', 'organization_id'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
@@ -30,9 +30,7 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            // The `hashed` cast just calls Hash::make()/Hash::check() — the app-wide default
-            // hasher is swapped to md5 in AppServiceProvider, so this still "works" while
-            // being cryptographically broken. See docs/VULN-MAP.md (A04).
+            // Delegates to the app's configured Hash driver — see config/hashing.php.
             'password' => 'hashed',
         ];
     }

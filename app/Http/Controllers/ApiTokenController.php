@@ -16,10 +16,6 @@ class ApiTokenController extends Controller
         return view('api-tokens.index', ['tokens' => $request->user()->apiTokens]);
     }
 
-    /**
-     * The token is stored in cleartext in `api_tokens.token` — not hashed at rest like
-     * Sanctum does it. See docs/VULN-MAP.md (A04).
-     */
     public function store(Request $request): RedirectResponse
     {
         $validated = $request->validate([

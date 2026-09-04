@@ -15,9 +15,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        // The forged remember-me cookie is plain base64, not an encrypted Laravel cookie —
-        // it has to be excluded here or EncryptCookies would reject the tampered value
-        // outright before TrustRememberMeCookie ever sees it. See docs/VULN-MAP.md (A07).
+        // The remember-me cookie is plain base64, not an encrypted Laravel cookie — it
+        // has to be excluded here or EncryptCookies would reject it before
+        // TrustRememberMeCookie ever sees it.
         $middleware->encryptCookies(except: [TrustRememberMeCookie::COOKIE_NAME]);
 
         $middleware->web(append: [
@@ -43,7 +43,6 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
 
-        // Deliberate debug-mode information disclosure — see docs/VULN-MAP.md (A02).
         // Only intercepts genuine server errors; validation/auth/HTTP/not-found exceptions
         // keep Laravel's normal handling so the rest of the app behaves correctly.
         $exceptions->render(function (Throwable $e, Request $request) {

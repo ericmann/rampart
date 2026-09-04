@@ -10,9 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
 /**
- * Admin's own user-management screens. This is the LEGITIMATE way to change a user's
- * role — distinct from the ProfileController@update mass-assignment bug (A01b), which lets
- * a user grant *themselves* a role via their own profile form.
+ * Admin user-management screens — lets an admin edit another user's role and organization.
  */
 class UserController extends Controller
 {

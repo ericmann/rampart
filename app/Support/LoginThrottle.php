@@ -8,13 +8,6 @@ use Throwable;
 /**
  * Per-account login lockout, counters kept in Redis. After MAX_ATTEMPTS failures for the
  * same email within the window, further attempts are rejected.
- *
- * Two deliberate gaps here, documented in docs/VULN-MAP.md:
- *  - A06: keyed ONLY by email, so a password-spray attack (many accounts, one attacker)
- *    never trips it — an attacker just needs to avoid repeating the same account.
- *  - A10: no fallback when Redis itself is unreachable. The try/catch swallows the
- *    connection error and returns as if nothing happened, so a Redis outage silently
- *    disables the lockout instead of failing closed.
  */
 class LoginThrottle
 {
@@ -43,7 +36,7 @@ class LoginThrottle
                 Redis::expire($key, self::WINDOW_SECONDS);
             }
         } catch (Throwable $e) {
-            // Redis down — lockout silently skipped, brute force can resume. See A10.
+            //
         }
     }
 

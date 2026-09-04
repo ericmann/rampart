@@ -8,11 +8,6 @@ use Illuminate\Http\RedirectResponse;
 
 class MessageController extends Controller
 {
-    /**
-     * Body is stored verbatim. The stored XSS is on the read side (tickets/show.blade.php
-     * renders it with {!! !!}), but nothing here strips or escapes it either. See
-     * docs/VULN-MAP.md (A05).
-     */
     public function store(Request $request, Ticket $ticket): RedirectResponse
     {
         $validated = $request->validate([

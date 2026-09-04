@@ -13,9 +13,7 @@ use UnexpectedValueException;
 
 /**
  * Signed, expiring "share this ticket's status" links — no login required to view. Uses
- * firebase/php-jwt (see composer.json / docs/VULN-MAP.md — A03 for why this dependency is
- * pinned where it is) for a real signed+expiring token, deliberately unlike the reset
- * token in app/Http/Controllers/Auth/NewPasswordController.php.
+ * firebase/php-jwt for the signed, time-limited token.
  */
 class PublicTicketStatusController extends Controller
 {

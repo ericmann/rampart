@@ -9,10 +9,8 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Hand-rolled "remember me" — bypasses Laravel's own signed recaller entirely. The cookie
- * is just base64(user_id), unsigned and unencrypted (excluded from EncryptCookies in
- * bootstrap/app.php), and this middleware trusts it outright: anyone can forge
- * `remember_me=base64_encode('1')` and be logged in as user #1. See docs/VULN-MAP.md (A07).
+ * Lightweight "remember me" cookie — stores the user id so returning visitors don't have
+ * to log in again on the same browser.
  */
 class TrustRememberMeCookie
 {

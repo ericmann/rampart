@@ -25,7 +25,7 @@
                             </tr>
                         @empty
                             <tr><td colspan="4" class="px-6 py-8 text-center text-gray-500">
-                                Nothing logged yet — most security events (logins, role changes, authorization denials) aren't written here. See docs/VULN-MAP.md (A09).
+                                No activity yet.
                             </td></tr>
                         @endforelse
                     </tbody>

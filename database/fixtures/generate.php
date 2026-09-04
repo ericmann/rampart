@@ -47,9 +47,9 @@ writeJson("$root/organizations.json", $organizations);
 
 // ---------------------------------------------------------------------------------------
 // Users — explicit ids: 1 = admin, 2-5 = agents, 6-30 = customers.
-// A curated pool of weak passwords is used for a deliberate SUBSET of accounts (including
-// the admin) so docs/wordlist.txt (generated below, from this same array) can crack them —
-// the rest get a random-but-still-md5'd password that is NOT in the shipped wordlist.
+// A curated pool of common passwords is used for a subset of accounts (including the
+// admin) so docs/wordlist.txt (generated below, from this same array) matches them — the
+// rest get a random generated password that isn't in the shipped wordlist.
 // ---------------------------------------------------------------------------------------
 
 $weakPasswords = [
@@ -107,7 +107,7 @@ for ($i = 0; $i < $customerCount; $i++) {
 
 $wordlist = [];
 foreach ($users as &$user) {
-    $isWeak = $user['password_is_weak'] ?? true; // admin + all agents are deliberately weak
+    $isWeak = $user['password_is_weak'] ?? true; // admin + all agents use the common-password pool
     $user['password_md5'] = md5($user['password_plain']);
     if ($isWeak) {
         $wordlist[] = $user['password_plain'];

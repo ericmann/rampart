@@ -69,11 +69,6 @@ class WebhookController extends Controller
         return redirect()->route('admin.webhooks.index')->with('status', 'Webhook removed.');
     }
 
-    /**
-     * "Test webhook" — fetches the configured target_url server-side, same unallowlisted
-     * fetch as the KB preview-link feature. A secondary SSRF surface, same root cause. See
-     * docs/VULN-MAP.md (A01c).
-     */
     public function test(Webhook $webhook, UrlFetcher $fetcher): RedirectResponse
     {
         $result = $fetcher->fetch($webhook->target_url);

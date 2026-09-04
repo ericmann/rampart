@@ -10,10 +10,8 @@ use Illuminate\Http\JsonResponse;
 class WebhookReceiverController extends Controller
 {
     /**
-     * Inbound webhook receiver. `secret` exists on the `webhooks` row specifically to HMAC
-     * -verify inbound payloads, but nothing here ever checks a signature header against
-     * it — any request that knows (or guesses) a webhook's public `{token}` can drive
-     * real ticket state. See docs/VULN-MAP.md (A08).
+     * Inbound webhook receiver — looks up the webhook by its public token and applies
+     * the event payload.
      */
     public function handle(Request $request, string $token): JsonResponse
     {

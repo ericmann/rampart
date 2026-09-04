@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * `preferences` is a raw serialize()'d blob, written and read verbatim (no json casting)
- * so the unserialize() call in SavedViewController stays reachable. See docs/VULN-MAP.md (A08).
+ * `preferences` is stored as a serialized PHP value rather than JSON so arbitrary filter
+ * shapes round-trip without needing a schema change every time a new filter is added.
  */
 #[Fillable(['user_id', 'name', 'preferences'])]
 class SavedView extends Model

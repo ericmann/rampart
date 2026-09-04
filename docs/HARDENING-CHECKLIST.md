@@ -1,8 +1,7 @@
 # Hardening Checklist
 
 One secure-default takeaway per OWASP Top 10:2025 category — the "if you remember nothing
-else" slide. Each line is the fix; details and file locations are in
-`docs/VULN-MAP.md` (instructor) and the hunt itself is in `docs/LAB-GUIDE.md` (attendee).
+else" slide. Each line is the fix; the hunt itself is in `docs/LAB-GUIDE.md` (attendee).
 
 | # | Category | Do this by default |
 |---|---|---|

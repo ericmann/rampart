@@ -10,11 +10,6 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        {{-- Chart rendering for the dashboard — pulled from a public CDN with no
-             integrity/crossorigin (SRI) attributes. Offline this 404s harmlessly (the
-             dashboard doesn't actually render a chart with it); the point is the missing
-             attribute itself, which is assertable in the HTML with or without network
-             access. See docs/VULN-MAP.md (A03). --}}
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     </head>
     <body class="font-sans antialiased">

@@ -20,7 +20,6 @@ class UserSeeder extends Seeder
                 'name' => $user['name'],
                 'email' => $user['email'],
                 'role' => $user['role'],
-                // Precomputed md5 digest, inserted verbatim — see docs/VULN-MAP.md (A04).
                 'password' => $user['password_md5'],
                 'email_verified_at' => $timestamp,
                 'created_at' => $timestamp,

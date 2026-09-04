@@ -39,13 +39,6 @@ class SavedViewController extends Controller
         return redirect()->route('saved-views.index')->with('status', 'View saved.');
     }
 
-    /**
-     * unserialize() on a blob that came from the `preferences` column with no
-     * `allowed_classes` restriction. Any class autoloadable by the app can be instantiated
-     * via a crafted serialized payload, running its __wakeup()/__destruct(). See
-     * docs/VULN-MAP.md (A08) and App\Support\SavedViewGadget for the planted, safe-payload
-     * gadget class used to prove it.
-     */
     public function show(SavedView $savedView): View
     {
         Gate::authorize('view', $savedView);

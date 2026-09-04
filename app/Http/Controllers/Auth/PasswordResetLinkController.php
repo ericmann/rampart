@@ -18,13 +18,6 @@ class PasswordResetLinkController extends Controller
         return view('auth.forgot-password');
     }
 
-    /**
-     * Hand-rolled reset-link flow (bypasses Laravel's Password broker entirely). Two
-     * deliberate flaws, documented in docs/VULN-MAP.md:
-     *  - A06: the response differs for a known vs. unknown email — user enumeration.
-     *  - A04/A07: the token is md5($email.time()), stored in plaintext with no expiry
-     *    and no single-use invalidation (see NewPasswordController).
-     */
     public function store(Request $request): RedirectResponse
     {
         $request->validate(['email' => ['required', 'email']]);

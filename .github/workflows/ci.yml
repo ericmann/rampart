@@ -37,8 +37,6 @@ jobs:
           --health-retries=10
 
     steps:
-      # Pinned to a mutable tag rather than a commit SHA — `@v4` can move out from under
-      # this workflow without anyone noticing. See docs/VULN-MAP.md (A03).
       - uses: actions/checkout@v4
 
       - uses: shivammathur/setup-php@v2
@@ -47,8 +45,6 @@ jobs:
           extensions: mbstring, pdo_mysql, redis, zip, gd, bcmath, intl
           coverage: none
 
-      # No --locked flag, so a composer.json/composer.lock drift wouldn't fail the build
-      # the way `composer install --locked` would. See docs/VULN-MAP.md (A03).
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist
 

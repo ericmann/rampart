@@ -60,9 +60,9 @@ as fixes land on a patched branch.
   three-rung hint ladder per category. Start here if you're doing the workshop.
 - **[docs/HARDENING-CHECKLIST.md](docs/HARDENING-CHECKLIST.md)** — one secure-default
   line per category, for the closing recap.
-- **`docs/VULN-MAP.md`** — instructor-only answer key (file, exploit, fix, hidden test for
-  every plant). Not included in `git archive` output; if you're an attendee reading this
-  from a distributed copy, you may not have this file, and that's on purpose.
+
+The instructor's own answer key (file, exploit, fix, hidden test for every plant) is kept
+outside this repository.
 
 ## Safety
 

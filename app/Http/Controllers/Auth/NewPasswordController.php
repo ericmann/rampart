@@ -17,11 +17,6 @@ class NewPasswordController extends Controller
         return view('auth.reset-password', ['request' => $request]);
     }
 
-    /**
-     * The reset token row is never deleted or expiry-checked here, so it stays valid and
-     * reusable indefinitely — the same md5($email.time()) token can reset the password
-     * over and over. See docs/VULN-MAP.md (A07).
-     */
     public function store(Request $request): RedirectResponse
     {
         $request->validate([

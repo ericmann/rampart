@@ -33,7 +33,7 @@ Route::get('/status/{token}', [PublicTicketStatusController::class, 'show'])->na
 
 require __DIR__.'/auth.php';
 
-// External services call this — deliberately unauthenticated. See docs/VULN-MAP.md (A08).
+// External services call this to notify us of events.
 Route::post('/webhooks/inbound/{token}', [WebhookReceiverController::class, 'handle'])->name('webhooks.inbound');
 
 Route::middleware('auth')->group(function () {

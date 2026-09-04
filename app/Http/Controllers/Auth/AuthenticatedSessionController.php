@@ -17,12 +17,6 @@ class AuthenticatedSessionController extends Controller
         return view('auth.login');
     }
 
-    /**
-     * Deliberately does NOT call $request->session()->regenerate() after login, leaving
-     * the app open to session fixation — an attacker who fixes a victim's session id
-     * before login keeps a valid, authenticated session id after they log in. See
-     * docs/VULN-MAP.md (A07).
-     */
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();

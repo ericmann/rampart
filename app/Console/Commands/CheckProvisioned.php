@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Schema;
 
 /**
  * Exit 0 if the database has already been migrated + seeded, non-zero otherwise. Used by
- * docker/entrypoint.sh as the boot-time sentinel check — deliberately a dedicated command
- * rather than `artisan tinker --execute`, whose exit code does not reliably propagate.
+ * docker/entrypoint.sh as the boot-time sentinel check.
  */
 class CheckProvisioned extends Command
 {

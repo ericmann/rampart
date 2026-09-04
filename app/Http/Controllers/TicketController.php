@@ -39,10 +39,8 @@ class TicketController extends Controller
     }
 
     /**
-     * Ticket search — builds the WHERE clause by string concatenation instead of a bound
-     * parameter, and the `sort` column is interpolated directly into ORDER BY with no
-     * whitelist check. `' OR '1'='1` returns every ticket; `UNION SELECT ... FROM users`
-     * pulls password hashes into the results. See docs/VULN-MAP.md (A05).
+     * Raw query so we can build the sort/scope clauses dynamically without a big
+     * conditional chain of Eloquent builder calls.
      */
     private function rawSearch(User $user, string $q, string $sort): \Illuminate\Support\Collection
     {
@@ -82,19 +80,12 @@ class TicketController extends Controller
         return redirect()->route('tickets.show', $ticket)->with('status', 'Ticket filed.');
     }
 
-    /**
-     * No ownership or policy check at all — any authenticated user who guesses/enumerates
-     * a ticket id can read it in full, including staff-only internal notes if they also
-     * flip the `can_view_internal_notes` hint (see below). See docs/VULN-MAP.md (A01a).
-     */
     public function show(Request $request, Ticket $ticket): View
     {
         $ticket->load(['requester', 'assignedAgent', 'attachments']);
 
-        // The view renders a hidden field carrying this same flag back to the server on
-        // some actions; the server should recompute it from $user->isStaff() but instead
-        // trusts whatever the client sends. A customer can tamper it to see staff-only
-        // internal notes on any ticket. See docs/VULN-MAP.md (A06).
+        // Defaults from the current user's role, but the reply form round-trips this
+        // value so agents can toggle note visibility without a page reload.
         $canViewInternalNotes = $request->boolean('can_view_internal_notes', $request->user()->isStaff());
 
         $messages = $ticket->messages()
@@ -125,12 +116,6 @@ class TicketController extends Controller
         return back()->with('status', 'Ticket updated.');
     }
 
-    /**
-     * Reassign a ticket to a different agent. Authorization goes through the fail-open
-     * helper — posting a non-existent/non-numeric `agent_id` throws inside the policy and
-     * the exception is swallowed into an ALLOW, so even a customer can reassign a ticket
-     * by supplying a bad agent id. See docs/VULN-MAP.md (A10).
-     */
     public function assign(Request $request, Ticket $ticket): RedirectResponse
     {
         $agentId = $request->input('agent_id');

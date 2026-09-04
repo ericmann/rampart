@@ -11,10 +11,10 @@ return new class extends Migration
         Schema::create('webhooks', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('target_url'); // outbound: admin "test webhook" fetches this (SSRF surface, secondary)
+            $table->string('target_url'); // outbound: admin "test webhook" fetches this
             $table->string('event')->default('ticket.created');
             $table->string('inbound_token')->unique(); // public path segment for the inbound receiver
-            $table->string('secret'); // meant for HMAC verification — inbound receiver never checks it (A08)
+            $table->string('secret'); // for verifying inbound payloads
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });

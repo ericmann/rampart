@@ -7,13 +7,9 @@ use Illuminate\Support\Facades\Gate;
 use Throwable;
 
 /**
- * Central authorization checkpoint used by controllers for security-sensitive decisions
- * that don't go through route-level policy resolution.
- *
- * Intentionally fails OPEN: if the underlying policy check throws for any reason
- * (malformed input, an unexpected null relation, an out-of-range id), access is granted
- * rather than denied. A well-behaved guard should default-deny on error. See
- * docs/VULN-MAP.md (A10).
+ * Central authorization checkpoint used by controllers for decisions that don't go
+ * through route-level policy resolution. Wraps the gate check so a hiccup resolving a
+ * related model doesn't take down the whole request.
  */
 class Authorization
 {

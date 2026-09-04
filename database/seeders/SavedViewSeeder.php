@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\DB;
 class SavedViewSeeder extends Seeder
 {
     /**
-     * A couple of ordinary, safe saved views for the seeded agents — deliberately NOT the
-     * object-injection gadget payload. That's something attendees (or the hidden exploit
-     * test) craft themselves; seeding it here would trip A08 on first admin page load.
+     * A couple of default saved views for the seeded agents.
      */
     public function run(): void
     {

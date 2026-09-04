@@ -26,11 +26,6 @@ class TicketPolicy
         return $user->isAdmin();
     }
 
-    /**
-     * Reassign a ticket to a different agent. `$agentId` comes straight from request input;
-     * findOrFail() throws on a non-numeric or non-existent id, which — via
-     * App\Support\Authorization::allows() — is swallowed into an ALLOW. See docs/VULN-MAP.md (A10).
-     */
     public function assign(User $user, Ticket $ticket, mixed $agentId): bool
     {
         $agent = User::where('role', User::ROLE_AGENT)->findOrFail($agentId);
