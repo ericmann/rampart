@@ -15,7 +15,11 @@ class Md5Hasher implements HasherContract
 {
     public function info($hashedValue): array
     {
-        return ['algo' => 'md5', 'algoName' => 'md5', 'options' => []];
+        // HashManager::isHashed() calls this (not our isHashed() below) and treats a
+        // non-null 'algo' as "already hashed" — it must only claim that for values that
+        // actually look like an md5 digest, or every plaintext password would be treated
+        // as pre-hashed and stored verbatim.
+        return ['algo' => $this->isHashed($hashedValue) ? 'md5' : null, 'algoName' => 'md5', 'options' => []];
     }
 
     public function make($value, array $options = []): string

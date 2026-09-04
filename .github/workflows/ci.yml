@@ -44,7 +44,7 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: mbstring, pdo_mysql, redis, zip, gd, bcmath
+          extensions: mbstring, pdo_mysql, redis, zip, gd, bcmath, intl
           coverage: none
 
       # No --locked flag, so a composer.json/composer.lock drift wouldn't fail the build

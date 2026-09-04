@@ -25,6 +25,15 @@ return Application::configure(basePath: dirname(__DIR__))
             TrustRememberMeCookie::class,
         ]);
 
+        // Laravel's middleware priority sorting can otherwise reorder the route-level
+        // `auth` check ahead of anything merely appended to the 'web' group, which would
+        // make the forged remember-me cookie never get a chance to log the user in before
+        // the auth check runs. Force the ordering explicitly.
+        $middleware->prependToPriorityList(
+            before: \Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests::class,
+            prepend: TrustRememberMeCookie::class,
+        );
+
         $middleware->alias([
             'role' => EnsureUserHasRole::class,
         ]);
