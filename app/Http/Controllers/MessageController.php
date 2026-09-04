@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Gate;
 
 class MessageController extends Controller
 {
     public function store(Request $request, Ticket $ticket): RedirectResponse
     {
+        Gate::authorize('view', $ticket);
+
         $validated = $request->validate([
             'body' => ['required', 'string'],
             'is_internal_note' => ['sometimes', 'boolean'],

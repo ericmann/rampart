@@ -20,6 +20,11 @@ return Application::configure(basePath: dirname(__DIR__))
         // TrustRememberMeCookie ever sees it.
         $middleware->encryptCookies(except: [TrustRememberMeCookie::COOKIE_NAME]);
 
+        // Inbound webhooks are called by external services that have no session and no
+        // CSRF token, so this receiver is exempt from CSRF verification (as any webhook
+        // endpoint must be).
+        $middleware->validateCsrfTokens(except: ['webhooks/inbound/*']);
+
         $middleware->web(append: [
             LogFullRequests::class,
             TrustRememberMeCookie::class,

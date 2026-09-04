@@ -12,8 +12,6 @@ use Illuminate\View\View;
 
 class TicketController extends Controller
 {
-    private const ALLOWED_SORT_COLUMNS = ['created_at', 'updated_at', 'subject', 'status', 'priority'];
-
     public function index(Request $request): View
     {
         $user = $request->user();
