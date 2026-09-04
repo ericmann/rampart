@@ -35,8 +35,9 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 COPY composer.json composer.lock* /var/www/html/
-RUN composer install --no-interaction --no-scripts --no-autoloader --no-dev \
-    || composer install --no-interaction --no-scripts --no-autoloader
+# Dev deps are kept in the shipped image on purpose — attendees run `composer test` and
+# `composer test:exploits` (phpunit, mockery, faker) inside this very container.
+RUN composer install --no-interaction --no-scripts --no-autoloader
 
 COPY . /var/www/html
 
@@ -46,3 +47,4 @@ RUN composer dump-autoload --optimize \
 EXPOSE 8080
 
 ENTRYPOINT ["docker/entrypoint.sh"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]

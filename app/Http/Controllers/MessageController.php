@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Ticket;
+use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
+
+class MessageController extends Controller
+{
+    /**
+     * Body is stored verbatim. The stored XSS is on the read side (tickets/show.blade.php
+     * renders it with {!! !!}), but nothing here strips or escapes it either. See
+     * docs/VULN-MAP.md (A05).
+     */
+    public function store(Request $request, Ticket $ticket): RedirectResponse
+    {
+        $validated = $request->validate([
+            'body' => ['required', 'string'],
+            'is_internal_note' => ['sometimes', 'boolean'],
+        ]);
+
+        $user = $request->user();
+        $isInternal = $user->isStaff() && $request->boolean('is_internal_note');
+
+        $ticket->messages()->create([
+            'author_id' => $user->id,
+            'body' => $validated['body'],
+            'is_internal_note' => $isInternal,
+        ]);
+
+        if ($ticket->status === 'resolved' && ! $isInternal) {
+            $ticket->update(['status' => 'open']);
+        }
+
+        return redirect()->route('tickets.show', $ticket)->with('status', 'Reply posted.');
+    }
+}

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Middleware\EnsureUserHasRole;
+use App\Http\Middleware\LogFullRequests;
+use App\Http\Middleware\TrustRememberMeCookie;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -12,10 +15,41 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // The forged remember-me cookie is plain base64, not an encrypted Laravel cookie —
+        // it has to be excluded here or EncryptCookies would reject the tampered value
+        // outright before TrustRememberMeCookie ever sees it. See docs/VULN-MAP.md (A07).
+        $middleware->encryptCookies(except: [TrustRememberMeCookie::COOKIE_NAME]);
+
+        $middleware->web(append: [
+            LogFullRequests::class,
+            TrustRememberMeCookie::class,
+        ]);
+
+        $middleware->alias([
+            'role' => EnsureUserHasRole::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
+
+        // Deliberate debug-mode information disclosure — see docs/VULN-MAP.md (A02).
+        // Only intercepts genuine server errors; validation/auth/HTTP/not-found exceptions
+        // keep Laravel's normal handling so the rest of the app behaves correctly.
+        $exceptions->render(function (Throwable $e, Request $request) {
+            if (! config('app.debug') || $request->expectsJson()) {
+                return null;
+            }
+
+            if ($e instanceof \Illuminate\Validation\ValidationException
+                || $e instanceof \Illuminate\Auth\AuthenticationException
+                || $e instanceof \Illuminate\Auth\Access\AuthorizationException
+                || $e instanceof \Symfony\Component\HttpKernel\Exception\HttpExceptionInterface
+                || $e instanceof \Illuminate\Database\Eloquent\ModelNotFoundException) {
+                return null;
+            }
+
+            return response()->view('errors.debug', ['exception' => $e], 500);
+        });
     })->create();
