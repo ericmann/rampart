@@ -11,10 +11,8 @@ use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 /**
- * Functional coverage for the hand-rolled reset flow (app/Http/Controllers/Auth/
- * PasswordResetLinkController.php + NewPasswordController.php). This suite only checks
- * that the feature *works* — the security properties it deliberately lacks (user
- * enumeration, non-expiring reusable tokens) are asserted in tests/Exploits instead.
+ * Functional coverage for the password reset flow — requesting a link and setting a new
+ * password with a valid token.
  */
 class PasswordResetTest extends TestCase
 {

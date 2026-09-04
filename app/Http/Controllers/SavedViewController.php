@@ -32,7 +32,6 @@ class SavedViewController extends Controller
 
         $request->user()->savedViews()->create([
             'name' => $validated['name'],
-            // Written with serialize(), not json_encode() — see show() below.
             'preferences' => serialize($preferences),
         ]);
 

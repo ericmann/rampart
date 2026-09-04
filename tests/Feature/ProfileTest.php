@@ -7,10 +7,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
- * Functional coverage for profile editing. ProfileController@update deliberately writes
- * straight from the raw request body (see app/Http/Controllers/ProfileController.php) —
- * the resulting mass-assignment privilege escalation is asserted in tests/Exploits, not
- * here; this suite just confirms the ordinary "update my name and email" path works.
+ * Functional coverage for profile editing — the ordinary "update my name and email"
+ * and "delete my account" paths.
  */
 class ProfileTest extends TestCase
 {

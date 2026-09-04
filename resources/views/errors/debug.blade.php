@@ -27,8 +27,7 @@
         <pre>{{ $exception->getTraceAsString() }}</pre>
     </div>
 
-    {{-- Convenience for local debugging — but nothing here checks APP_ENV, so it renders
-         wherever APP_DEBUG=true, including the workshop's "prod-ish" compose. --}}
+    {{-- Effective configuration for the current environment, handy while debugging. --}}
     <div class="box">
         <div class="label">Environment ({{ config('app.env') }})</div>
         <table>
