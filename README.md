@@ -1,58 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Rampart
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A support-desk / ticketing SaaS that works exactly like a real product — and is broken in
+exactly ten curated ways, one per [OWASP Top 10:2025](https://owasp.org/Top10/) category.
+Rampart is the companion app for **"Break It, Then Fix It" — An OWASP Top 10 Workshop for
+PHP Developers**, a 3-hour hands-on tutorial at LonghornPHP.
 
-## About Laravel
+It's built to survive a room full of people actively trying to break it: `docker compose up`
+brings up a fully populated, browsable product with no second command and no internet
+access required, and `make reset` puts it right back the way it started in seconds.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Quick start
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+```
+docker compose up
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Then open <http://localhost:8080>. First boot migrates and seeds automatically — give it
+a minute the first time.
 
-## Contributing
+| Role | Email | Password |
+|---|---|---|
+| Admin | `admin@rampart.test` | `admin` |
+| Agent | `priya@rampart.test` | *(see `docs/wordlist.txt`)* |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Broke something?**
 
-## Code of Conduct
+```
+make reset       # puts the database back to the exact seeded state, in seconds
+make reset-hard  # nuclear option: wipes and rebuilds everything
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## What's actually in here
 
-## Security Vulnerabilities
+- **Laravel 13 / PHP 8.4**, MySQL 8, Redis, Blade + Tailwind — a normal-looking Laravel app
+- ~6 organizations, 30 users, 120 tickets with realistic threaded replies, a knowledge
+  base, webhooks, and API tokens — committed as deterministic fixture JSON
+  (`database/fixtures/`), not a database dump, so every clone gets identical data
+- A tiny fourth container (`metadata-mock`) simulating a cloud "instance metadata"
+  endpoint, reachable only from the app container, so the SSRF demo works fully offline
+- **Ten intentional vulnerabilities**, exactly one per 2025 category, each real,
+  demonstrable offline, and asserted by a hidden test suite
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Two test suites
+
+```
+composer test            # public suite — asserts the app WORKS. Must stay green.
+composer test:exploits   # hidden suite — asserts the vulnerabilities are PRESENT.
+```
+
+The public suite (`tests/Unit`, `tests/Feature`) is what attendees extend as they patch
+each bug — see `tests/Feature/RegressionExamples.md`. The hidden suite
+(`tests/Exploits`, gated behind `ALLOW_EXPLOIT_TESTS=1`) is the instructor's own QA
+harness: green means every plant is correctly in place; it goes red, category by category,
+as fixes land on a patched branch.
+
+## Documentation
+
+- **[docs/LAB-GUIDE.md](docs/LAB-GUIDE.md)** — attendee-facing hunt instructions with a
+  three-rung hint ladder per category. Start here if you're doing the workshop.
+- **[docs/HARDENING-CHECKLIST.md](docs/HARDENING-CHECKLIST.md)** — one secure-default
+  line per category, for the closing recap.
+- **`docs/VULN-MAP.md`** — instructor-only answer key (file, exploit, fix, hidden test for
+  every plant). Not included in `git archive` output; if you're an attendee reading this
+  from a distributed copy, you may not have this file, and that's on purpose.
+
+## Safety
+
+Everything here is confined to the Docker Compose network: no real credentials, no calls
+to real external hosts, no destructive gadgets (the one deserialization "exploit" writes
+an inert marker file, nothing else). Run it only against your own copy, only in the
+provided sandbox — never expose it to a network you don't own.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+MIT.
