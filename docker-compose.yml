@@ -8,6 +8,7 @@ services:
       args:
         PHP_VERSION: ${PHP_VERSION:-8.4}
     image: rampart-app
+    pull_policy: never
     ports:
       - "8080:8080"
     environment:
@@ -34,6 +35,7 @@ services:
 
   mysql:
     image: mysql:8.4
+    pull_policy: never
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -53,17 +55,18 @@ services:
 
   redis:
     image: redis:7-alpine
+    pull_policy: never
     restart: unless-stopped
     networks:
       default:
 
-  # Fake internal "cloud metadata" endpoint so the SSRF (A01) demo works fully offline.
-  # Only reachable from the app container (internal-only network, no published ports) at
-  # http://metadata.internal/latest/meta-data/ — never from the host.
+  # Fake internal "cloud metadata" endpoint, reachable only from the app container
+  # (internal-only network, no published ports) at http://metadata.internal/latest/meta-data/.
   metadata-mock:
     build:
       context: ./mock/metadata
     image: rampart-metadata-mock
+    pull_policy: never
     networks:
       internal-only:
         aliases:

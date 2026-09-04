@@ -6,8 +6,9 @@ Rampart is the companion app for **"Break It, Then Fix It" — An OWASP Top 10 W
 PHP Developers**, a 3-hour hands-on tutorial at LonghornPHP.
 
 It's built to survive a room full of people actively trying to break it: `docker compose up`
-brings up a fully populated, browsable product with no second command and no internet
-access required, and `make reset` puts it right back the way it started in seconds.
+brings up a fully populated, browsable product with no second command, and `make reset`
+puts it right back the way it started in seconds. Once images are built or loaded (see
+"Workshop distribution" below), it needs no internet access at all.
 
 ## Quick start
 
@@ -53,6 +54,27 @@ each bug — see `tests/Feature/RegressionExamples.md`. The hidden suite
 (`tests/Exploits`, gated behind `ALLOW_EXPLOIT_TESTS=1`) is the instructor's own QA
 harness: green means every plant is correctly in place; it goes red, category by category,
 as fixes land on a patched branch.
+
+## Workshop distribution
+
+A room full of laptops all running `docker compose build` on conference wifi at once
+will not go well. Build once, bundle the images, and hand out the bundle instead:
+
+```
+make dist   # builds everything, then writes rampart-images.tar.gz (a few hundred MB)
+```
+
+Copy `rampart-images.tar.gz` to a USB stick (or wherever attendees can grab it) alongside
+a clone/zip of this repo. On each attendee's machine:
+
+```
+make load       # docker load < rampart-images.tar.gz — no network needed
+docker compose up
+```
+
+`docker-compose.yml` sets `pull_policy: never` on every service, so once the images are
+loaded, `docker compose up` will not attempt to contact a registry at all — it either
+finds the loaded image locally or fails fast, never hangs on a pull.
 
 ## Documentation
 

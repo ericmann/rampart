@@ -26,12 +26,15 @@ it takes longer, but it always works.
 
 ## Getting started
 
+**Before you arrive:** run `docker compose build` once on venue/home wifi (or ask your
+facilitator for the USB image and run `make load` instead) — don't wait until you're on
+conference wifi with forty other people to pull and build everything for the first time.
+
 ```
 docker compose up
 ```
 
-Then open <http://localhost:8080>. Seeded accounts (passwords are all deliberately weak —
-that's category #4, see below):
+Then open <http://localhost:8080>. Seeded accounts:
 
 | Role | Email | Password |
 |---|---|---|
