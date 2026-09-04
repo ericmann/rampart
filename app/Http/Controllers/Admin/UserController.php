@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\AuditLog;
 use App\Models\Organization;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -35,7 +36,22 @@ class UserController extends Controller
             'organization_id' => ['nullable', 'exists:organizations,id'],
         ]);
 
+        $previousRole = $user->role;
+
         $user->update($validated);
+
+        // A09:2025 — Security Logging & Alerting Failures. A privilege change — the
+        // single most security-relevant admin action in this app — left no record at all.
+        // Only log it when the role actually moved, so routine name/email edits don't
+        // flood the audit log with noise.
+        if ($previousRole !== $user->role) {
+            AuditLog::create([
+                'user_id' => $request->user()->id,
+                'event' => 'user.role_changed',
+                'context' => ['target_user_id' => $user->id, 'from' => $previousRole, 'to' => $user->role],
+                'ip_address' => $request->ip(),
+            ]);
+        }
 
         return redirect()->route('admin.users.index')->with('status', 'User updated.');
     }

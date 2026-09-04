@@ -1,6 +1,9 @@
 # Generated from database/fixtures/generate.php — every password below matches at
-# least one seeded user's md5() hash. Regenerate this file by re-running that script;
-# never hand-edit it, or it will drift from the fixtures it's meant to crack.
+# least one seeded user's stored password hash. Regenerate this file by re-running
+# that script; never hand-edit it, or it will drift from the fixtures it's meant to
+# crack. On main, users.json ships md5() hashes this cracks directly; on solutions
+# the seeder bcrypt-hashes these same plaintexts instead (see UserSeeder), which is
+# why this wordlist no longer cracks anything there — that's the A04 fix.
 admin
 dragon123
 football7

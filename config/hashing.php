@@ -7,14 +7,15 @@ return [
     | Default Hash Driver
     |--------------------------------------------------------------------------
     |
-    | The default driver here is a custom "md5" hasher registered in
-    | AppServiceProvider. Every Hash::make()/Hash::check() call in the app
-    | (login, registration, password reset, the `hashed` Eloquent cast) goes
-    | through it.
+    | A04:2025 — Cryptographic Failures. main registered a custom "md5" driver here
+    | (see AppServiceProvider) so every Hash::make()/Hash::check() call — login,
+    | registration, password reset, the `hashed` Eloquent cast — silently used a fast,
+    | unsalted, long-broken-for-passwords digest. That extension is gone; this is back to
+    | Laravel's real default, bcrypt.
     |
     */
 
-    'driver' => env('HASH_DRIVER', 'md5'),
+    'driver' => env('HASH_DRIVER', 'bcrypt'),
 
     'bcrypt' => [
         'rounds' => env('BCRYPT_ROUNDS', 12),

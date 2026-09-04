@@ -37,7 +37,13 @@ jobs:
           --health-retries=10
 
     steps:
-      - uses: actions/checkout@v4
+      # A03:2025 — Software Supply Chain Failures. A mutable tag like @v4 can be
+      # repointed to a different commit at any time (by the action's maintainer, or by
+      # anyone who compromises their account) and CI would silently start running whatever
+      # that commit contains. A commit SHA can't be repointed — verified directly against
+      # actions/checkout's own tag refs (`git ls-remote --tags`), not copied from a
+      # third-party writeup.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       - uses: shivammathur/setup-php@v2
         with:
@@ -45,8 +51,12 @@ jobs:
           extensions: mbstring, pdo_mysql, redis, zip, gd, bcmath, intl
           coverage: none
 
+      # A03:2025 — Software Supply Chain Failures. --locked fails the build if
+      # composer.json and composer.lock have drifted apart, instead of composer silently
+      # re-resolving and installing whatever satisfies composer.json at that moment —
+      # which defeats the point of committing a lockfile at all.
       - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist
+        run: composer install --no-interaction --prefer-dist --locked
 
       - uses: actions/setup-node@v4
         with:

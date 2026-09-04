@@ -5,8 +5,8 @@
         "name": "Ava Administrator",
         "email": "admin@rampart.test",
         "role": "admin",
-        "created_days_ago": 420,
-        "password_md5": "21232f297a57a5a743894a0e4a801fc3"
+        "password_plain": "admin",
+        "created_days_ago": 420
     },
     {
         "id": 2,
@@ -14,8 +14,8 @@
         "name": "Priya Natarajan",
         "email": "priya@rampart.test",
         "role": "agent",
-        "created_days_ago": 380,
-        "password_md5": "482c811da5d5b4bc6d497ffa98491e38"
+        "password_plain": "password123",
+        "created_days_ago": 380
     },
     {
         "id": 3,
@@ -23,8 +23,8 @@
         "name": "Marcus Webb",
         "email": "marcus@rampart.test",
         "role": "agent",
-        "created_days_ago": 360,
-        "password_md5": "bec92397646e8feb93667ae2e6bc931b"
+        "password_plain": "letmein1",
+        "created_days_ago": 360
     },
     {
         "id": 4,
@@ -32,8 +32,8 @@
         "name": "Sofia Alvarez",
         "email": "sofia@rampart.test",
         "role": "agent",
-        "created_days_ago": 340,
-        "password_md5": "fba7e9b80b60e4fa5749e717500c0dce"
+        "password_plain": "sunshine22",
+        "created_days_ago": 340
     },
     {
         "id": 5,
@@ -41,8 +41,8 @@
         "name": "Devon Clarke",
         "email": "devon@rampart.test",
         "role": "agent",
-        "created_days_ago": 320,
-        "password_md5": "201f00b5ca5d65a1c118e5e32431514c"
+        "password_plain": "welcome1",
+        "created_days_ago": 320
     },
     {
         "id": 6,
@@ -50,8 +50,8 @@
         "name": "Clark Abbott",
         "email": "clark.abbott@northwind.example",
         "role": "customer",
-        "created_days_ago": 25,
-        "password_md5": "21232f297a57a5a743894a0e4a801fc3"
+        "password_plain": "admin",
+        "created_days_ago": 25
     },
     {
         "id": 7,
@@ -59,8 +59,8 @@
         "name": "General Kulas Sr.",
         "email": "general.kulas@globex.example",
         "role": "customer",
-        "created_days_ago": 68,
-        "password_md5": "ce2e5165566e4056fa020f984885b931"
+        "password_plain": "rmnc2440LQ",
+        "created_days_ago": 68
     },
     {
         "id": 8,
@@ -68,8 +68,8 @@
         "name": "Brannon Wehner",
         "email": "brannon.wehner@initech.example",
         "role": "customer",
-        "created_days_ago": 117,
-        "password_md5": "403123cb5c0a0d2c2e0f044d61309e55"
+        "password_plain": "mbaf3756HC",
+        "created_days_ago": 117
     },
     {
         "id": 9,
@@ -77,8 +77,8 @@
         "name": "Theodora Frami",
         "email": "theodora.frami@umbrella.example",
         "role": "customer",
-        "created_days_ago": 316,
-        "password_md5": "fba7e9b80b60e4fa5749e717500c0dce"
+        "password_plain": "sunshine22",
+        "created_days_ago": 316
     },
     {
         "id": 10,
@@ -86,8 +86,8 @@
         "name": "Tiffany Abernathy",
         "email": "tiffany.abernathy@wayfarer.example",
         "role": "customer",
-        "created_days_ago": 359,
-        "password_md5": "f697794c4f32e5280f15853abfb693b1"
+        "password_plain": "pnhm7436OO",
+        "created_days_ago": 359
     },
     {
         "id": 11,
@@ -95,8 +95,8 @@
         "name": "Mr. Layne Koch III",
         "email": "layne.koch@bluepeak.example",
         "role": "customer",
-        "created_days_ago": 283,
-        "password_md5": "bcace9a368e019ef388d9875299380c5"
+        "password_plain": "xhpk2484UB",
+        "created_days_ago": 283
     },
     {
         "id": 12,
@@ -104,8 +104,8 @@
         "name": "General Jacobson",
         "email": "general.jacobson@northwind.example",
         "role": "customer",
-        "created_days_ago": 91,
-        "password_md5": "3fc0a7acf087f549ac2b266baf94b8b1"
+        "password_plain": "qwerty123",
+        "created_days_ago": 91
     },
     {
         "id": 13,
@@ -113,8 +113,8 @@
         "name": "Vincenza Zieme",
         "email": "vincenza.zieme@globex.example",
         "role": "customer",
-        "created_days_ago": 114,
-        "password_md5": "f82e6824bfe7b80dac5fd68310cd601c"
+        "password_plain": "aszk9441GH",
+        "created_days_ago": 114
     },
     {
         "id": 14,
@@ -122,8 +122,8 @@
         "name": "Zane Turner",
         "email": "zane.turner@initech.example",
         "role": "customer",
-        "created_days_ago": 275,
-        "password_md5": "4807e5b31b7a4c58416998eee82b253f"
+        "password_plain": "idlt7303UR",
+        "created_days_ago": 275
     },
     {
         "id": 15,
@@ -131,8 +131,8 @@
         "name": "Monique Carroll",
         "email": "monique.carroll@umbrella.example",
         "role": "customer",
-        "created_days_ago": 216,
-        "password_md5": "e22cc743f5369df09bb249d6c7a0a678"
+        "password_plain": "football7",
+        "created_days_ago": 216
     },
     {
         "id": 16,
@@ -140,8 +140,8 @@
         "name": "Tate Murazik",
         "email": "tate.murazik@wayfarer.example",
         "role": "customer",
-        "created_days_ago": 266,
-        "password_md5": "6fc0e01b4ed7ae8f7850724b1078bc21"
+        "password_plain": "yrzo9560VC",
+        "created_days_ago": 266
     },
     {
         "id": 17,
@@ -149,8 +149,8 @@
         "name": "Ms. Nikki Wilderman MD",
         "email": "nikki.wilderman@bluepeak.example",
         "role": "customer",
-        "created_days_ago": 232,
-        "password_md5": "428146c09c007e215226d67e44fd00c3"
+        "password_plain": "irul8098AY",
+        "created_days_ago": 232
     },
     {
         "id": 18,
@@ -158,8 +158,8 @@
         "name": "Dr. Johnnie Langworth",
         "email": "johnnie.langworth@northwind.example",
         "role": "customer",
-        "created_days_ago": 298,
-        "password_md5": "bec92397646e8feb93667ae2e6bc931b"
+        "password_plain": "letmein1",
+        "created_days_ago": 298
     },
     {
         "id": 19,
@@ -167,8 +167,8 @@
         "name": "Kailey Johnston",
         "email": "kailey.johnston@globex.example",
         "role": "customer",
-        "created_days_ago": 46,
-        "password_md5": "4b661617465a6901d9ca6b0ca4afb0d9"
+        "password_plain": "ukcg0944JS",
+        "created_days_ago": 46
     },
     {
         "id": 20,
@@ -176,8 +176,8 @@
         "name": "Esperanza Buckridge DVM",
         "email": "esperanza.buckridge@initech.example",
         "role": "customer",
-        "created_days_ago": 116,
-        "password_md5": "61e26c4d7151b30f6384db7a9bfc5a98"
+        "password_plain": "brro7348NZ",
+        "created_days_ago": 116
     },
     {
         "id": 21,
@@ -185,8 +185,8 @@
         "name": "Ethan Ortiz",
         "email": "ethan.ortiz@umbrella.example",
         "role": "customer",
-        "created_days_ago": 67,
-        "password_md5": "fac3b6c91a03f0896f369e471b1976e3"
+        "password_plain": "dragon123",
+        "created_days_ago": 67
     },
     {
         "id": 22,
@@ -194,8 +194,8 @@
         "name": "Charlie Leannon DDS",
         "email": "charlie.leannon@wayfarer.example",
         "role": "customer",
-        "created_days_ago": 94,
-        "password_md5": "ff7ce47732246c0871961f843cb12b6e"
+        "password_plain": "dqmn8074HF",
+        "created_days_ago": 94
     },
     {
         "id": 23,
@@ -203,8 +203,8 @@
         "name": "Jadon Hickle IV",
         "email": "jadon.hickle@bluepeak.example",
         "role": "customer",
-        "created_days_ago": 48,
-        "password_md5": "80727a1b7b73bbcfed56d8a9a15823cf"
+        "password_plain": "dnwl1779LL",
+        "created_days_ago": 48
     },
     {
         "id": 24,
@@ -212,8 +212,8 @@
         "name": "Phoebe Ratke",
         "email": "phoebe.ratke@northwind.example",
         "role": "customer",
-        "created_days_ago": 132,
-        "password_md5": "cc25c0f861a83f5efadc6e1ba9d1269e"
+        "password_plain": "monkey123",
+        "created_days_ago": 132
     },
     {
         "id": 25,
@@ -221,8 +221,8 @@
         "name": "Prof. Waino Satterfield",
         "email": "waino.satterfield@globex.example",
         "role": "customer",
-        "created_days_ago": 203,
-        "password_md5": "9e061c6f838542ec8cddaa3d380537ef"
+        "password_plain": "adcf1692LF",
+        "created_days_ago": 203
     },
     {
         "id": 26,
@@ -230,8 +230,8 @@
         "name": "Mrs. Alisha Oberbrunner",
         "email": "alisha.oberbrunner@initech.example",
         "role": "customer",
-        "created_days_ago": 76,
-        "password_md5": "d42dcf1e84cd97cdf1ea0055eae7e193"
+        "password_plain": "mlbn2400FL",
+        "created_days_ago": 76
     },
     {
         "id": 27,
@@ -239,8 +239,8 @@
         "name": "Mr. Louvenia Hayes",
         "email": "louvenia.hayes@umbrella.example",
         "role": "customer",
-        "created_days_ago": 349,
-        "password_md5": "482c811da5d5b4bc6d497ffa98491e38"
+        "password_plain": "password123",
+        "created_days_ago": 349
     },
     {
         "id": 28,
@@ -248,8 +248,8 @@
         "name": "Kenneth Christiansen",
         "email": "kenneth.christiansen@wayfarer.example",
         "role": "customer",
-        "created_days_ago": 22,
-        "password_md5": "02c0f9d3ce4e9598856c35a520b5bdca"
+        "password_plain": "owkf0668WN",
+        "created_days_ago": 22
     },
     {
         "id": 29,
@@ -257,8 +257,8 @@
         "name": "Hazle Rodriguez",
         "email": "hazle.rodriguez@bluepeak.example",
         "role": "customer",
-        "created_days_ago": 248,
-        "password_md5": "6b15ffea610a6b7677e90937e18fe576"
+        "password_plain": "kbqz7800ZW",
+        "created_days_ago": 248
     },
     {
         "id": 30,
@@ -266,7 +266,7 @@
         "name": "Austen Satterfield",
         "email": "austen.satterfield@northwind.example",
         "role": "customer",
-        "created_days_ago": 191,
-        "password_md5": "201f00b5ca5d65a1c118e5e32431514c"
+        "password_plain": "welcome1",
+        "created_days_ago": 191
     }
 ]

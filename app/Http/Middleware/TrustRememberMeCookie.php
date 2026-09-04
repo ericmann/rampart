@@ -2,47 +2,21 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\User;
-use Closure;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Symfony\Component\HttpFoundation\Response;
-
 /**
- * Lightweight "remember me" cookie — stores the user id so returning visitors don't have
- * to log in again on the same browser.
+ * A07:2025 — Authentication Failures. This used to be an active middleware that trusted a
+ * plain `base64(user_id)` cookie as proof of identity — no signature, no server-side
+ * secret, so anyone could forge a login for any user id by hand. It has been fully removed
+ * from the request pipeline (see bootstrap/app.php) in favor of Laravel's built-in signed
+ * remember-me recaller: `Auth::attempt($credentials, $remember)` in LoginRequest now
+ * issues an encrypted, signed cookie tied to a random `remember_token` stored on the user,
+ * which the framework's own session guard verifies on every request — no hand-rolled
+ * cookie-trusting code left to get wrong.
+ *
+ * The class (and this constant) stay only so the cookie name remains documented and the
+ * historical "forged remember-me cookie" exploit test still runs and demonstrates that a
+ * forged cookie of this shape is now inert, rather than erroring on a missing class.
  */
 class TrustRememberMeCookie
 {
     public const COOKIE_NAME = 'remember_me';
-
-    public function handle(Request $request, Closure $next): Response
-    {
-        if (! Auth::check() && $request->cookie(self::COOKIE_NAME)) {
-            $userId = base64_decode($request->cookie(self::COOKIE_NAME), true);
-
-            if ($userId !== false && ctype_digit((string) $userId)) {
-                $user = User::find((int) $userId);
-
-                if ($user) {
-                    Auth::login($user);
-                }
-            }
-        }
-
-        return $next($request);
-    }
-
-    public static function issue(Response $response, User $user): Response
-    {
-        $response->headers->setCookie(
-            \Symfony\Component\HttpFoundation\Cookie::create(self::COOKIE_NAME)
-                ->withValue(base64_encode((string) $user->id))
-                ->withExpires(now()->addYears(5))
-                ->withHttpOnly(true)
-                ->withPath('/')
-        );
-
-        return $response;
-    }
 }

@@ -7,7 +7,7 @@ use App\Models\User;
 use App\Support\Authorization;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
 
 class TicketController extends Controller
@@ -16,39 +16,31 @@ class TicketController extends Controller
     {
         $user = $request->user();
 
+        $query = $user->isStaff()
+            ? Ticket::query()
+            : Ticket::query()->where('requester_id', $user->id);
+
+        // A05:2025 — Injection. The old implementation built the search query with raw
+        // string concatenation (`... LIKE '%".$q."%' ORDER BY {$sort} ...`), so `q` and
+        // `sort` were both directly injectable SQL. Eloquent's query builder parameter-
+        // binds every value below, so injection metacharacters are treated as literal
+        // search text instead of SQL syntax. The free-form `sort` column is gone entirely
+        // — the index only ever sorts by `created_at` — since there was no legitimate need
+        // to accept an arbitrary column/direction from the client at all.
         if ($request->filled('q')) {
-            $tickets = $this->rawSearch($user, (string) $request->string('q'), (string) $request->string('sort', 'created_at'));
-        } else {
-            $query = $user->isStaff()
-                ? Ticket::query()
-                : Ticket::query()->where('requester_id', $user->id);
-
-            if ($request->filled('status')) {
-                $query->where('status', $request->string('status'));
-            }
-
-            $tickets = $query->with(['requester', 'assignedAgent'])
-                ->latest()
-                ->paginate(20)
-                ->withQueryString();
+            $query->where('subject', 'like', '%'.$request->string('q').'%');
         }
 
+        if ($request->filled('status')) {
+            $query->where('status', $request->string('status'));
+        }
+
+        $tickets = $query->with(['requester', 'assignedAgent'])
+            ->latest()
+            ->paginate(20)
+            ->withQueryString();
+
         return view('tickets.index', ['tickets' => $tickets, 'q' => $request->input('q', '')]);
-    }
-
-    /**
-     * Raw query so we can build the sort/scope clauses dynamically without a big
-     * conditional chain of Eloquent builder calls.
-     */
-    private function rawSearch(User $user, string $q, string $sort): \Illuminate\Support\Collection
-    {
-        $scope = $user->isStaff() ? '1=1' : 'requester_id = '.(int) $user->id;
-
-        $sql = "SELECT * FROM tickets WHERE ({$scope}) AND subject LIKE '%".$q."%' ORDER BY {$sort} DESC LIMIT 200";
-
-        $rows = DB::select($sql);
-
-        return collect($rows)->map(fn ($row) => Ticket::hydrate([(array) $row])->first());
     }
 
     public function create(): View
@@ -80,11 +72,20 @@ class TicketController extends Controller
 
     public function show(Request $request, Ticket $ticket): View
     {
+        // A01:2025 — Broken Access Control (IDOR). This action previously loaded and
+        // rendered any ticket by id with no ownership/role check at all — a route being
+        // reachable is not authorization. TicketPolicy::view() already encodes the correct
+        // rule (staff see everything, a customer only their own); this was the one place
+        // that never called it.
+        Gate::authorize('view', $ticket);
+
         $ticket->load(['requester', 'assignedAgent', 'attachments']);
 
-        // Defaults from the current user's role, but the reply form round-trips this
-        // value so agents can toggle note visibility without a page reload.
-        $canViewInternalNotes = $request->boolean('can_view_internal_notes', $request->user()->isStaff());
+        // A06:2025 — Insecure Design. This used to default to isStaff() but let a
+        // `can_view_internal_notes=1` query/form value override it — an authorization
+        // decision must never be accepted as request input; it has to be recomputed
+        // server-side every time, with nothing the client sends able to influence it.
+        $canViewInternalNotes = $request->user()->isStaff();
 
         $messages = $ticket->messages()
             ->when(! $canViewInternalNotes, fn ($query) => $query->where('is_internal_note', false))

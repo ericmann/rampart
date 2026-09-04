@@ -76,7 +76,12 @@
                         <span>&middot;</span>
                         <span>{{ $ticket->created_at->diffForHumans() }}</span>
                     </div>
-                    <div class="prose prose-sm dark:prose-invert max-w-none">{!! $ticket->body !!}</div>
+                    {{-- A05:2025 — Injection (stored XSS). Ticket/message bodies are free-form
+                         customer/agent text, not authored HTML, so they're escaped by default
+                         with `{{ }}`. Raw `{!! !!}` rendering stays reserved for the KB article
+                         body, which is deliberately staff-authored HTML (see kb/show.blade.php)
+                         — that's the justified opt-in the checklist calls for, not this. --}}
+                    <div class="prose prose-sm dark:prose-invert max-w-none">{{ $ticket->body }}</div>
                 </div>
 
                 @foreach ($messages as $message)
@@ -89,7 +94,7 @@
                             <span>&middot;</span>
                             <span>{{ $message->created_at->diffForHumans() }}</span>
                         </div>
-                            <div class="prose prose-sm dark:prose-invert max-w-none">{!! $message->body !!}</div>
+                            <div class="prose prose-sm dark:prose-invert max-w-none">{{ $message->body }}</div>
                     </div>
                 @endforeach
             </div>
@@ -99,7 +104,6 @@
                     <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-3">Reply</h3>
                     <form method="POST" action="{{ route('tickets.messages.store', $ticket) }}" class="space-y-3">
                         @csrf
-                        <input type="hidden" name="can_view_internal_notes" value="{{ $canViewInternalNotes ? 1 : 0 }}">
                         <textarea name="body" rows="4" class="block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 shadow-sm" required></textarea>
                         <div class="flex items-center justify-between">
                             @if (auth()->user()->isStaff())
