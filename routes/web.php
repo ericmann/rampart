@@ -24,6 +24,9 @@ Route::get('/', function () {
 Route::get('/health', [HealthController::class, 'index'])->name('health');
 
 Route::get('/kb', [KbController::class, 'index'])->name('kb.index');
+// Must be registered before the /kb/{article:slug} wildcard below, or "create" is matched
+// as a slug and 404s instead of hitting the role-gated composer.
+Route::middleware(['auth', 'role:agent,admin'])->get('/kb/create', [KbController::class, 'create'])->name('kb.create');
 Route::get('/kb/{article:slug}', [KbController::class, 'show'])->name('kb.show');
 
 Route::get('/status/{token}', [PublicTicketStatusController::class, 'show'])->name('tickets.public-status');
@@ -57,7 +60,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/api-tokens/{apiToken}', [ApiTokenController::class, 'destroy'])->name('api-tokens.destroy');
 
     Route::middleware('role:agent,admin')->group(function () {
-        Route::get('/kb/create', [KbController::class, 'create'])->name('kb.create');
         Route::post('/kb', [KbController::class, 'store'])->name('kb.store');
         Route::post('/kb/preview-link', [KbController::class, 'previewLink'])->name('kb.preview-link');
     });

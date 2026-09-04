@@ -9,6 +9,18 @@
         Runs against an isolated `rampart_testing` database (real MySQL, matching
         production) so it never touches the live demo data seeded into `rampart`.
         tests/Exploits is explicitly excluded — see phpunit.exploits.xml.
+
+        force="true" matters on every <env> below: docker-compose.yml sets DB_HOST,
+        DB_DATABASE, DB_USERNAME, DB_PASSWORD etc. as REAL process environment variables
+        on the app container, and PHPUnit silently ignores a plain <env> when the variable
+        is already set in the process environment. Without force="true" here, the public
+        suite's RefreshDatabase would run migrate:fresh against the live `rampart`
+        database — wiping the seeded demo data — instead of `rampart_testing`.
+
+        The <server> block mirrors DB_DATABASE for the same reason from the opposite
+        angle: PHPUnit's <env> only updates getenv()/$_ENV, not $_SERVER, but CLI PHP
+        populates $_SERVER from the real process environment too, and Laravel's env()
+        resolution can read that stale $_SERVER value ahead of the corrected $_ENV one.
     -->
     <testsuites>
         <testsuite name="Unit">
@@ -24,16 +36,18 @@
         </include>
     </source>
     <php>
-        <env name="APP_ENV" value="testing"/>
-        <env name="APP_MAINTENANCE_DRIVER" value="file"/>
-        <env name="BCRYPT_ROUNDS" value="4"/>
-        <env name="BROADCAST_CONNECTION" value="null"/>
-        <env name="CACHE_STORE" value="array"/>
-        <env name="DB_CONNECTION" value="mysql"/>
-        <env name="DB_DATABASE" value="rampart_testing"/>
-        <env name="MAIL_MAILER" value="array"/>
-        <env name="QUEUE_CONNECTION" value="sync"/>
-        <env name="SESSION_DRIVER" value="array"/>
-        <env name="ALLOW_EXPLOIT_TESTS" value="0"/>
+        <env name="APP_ENV" value="testing" force="true"/>
+        <env name="APP_MAINTENANCE_DRIVER" value="file" force="true"/>
+        <env name="BCRYPT_ROUNDS" value="4" force="true"/>
+        <env name="BROADCAST_CONNECTION" value="null" force="true"/>
+        <env name="CACHE_STORE" value="array" force="true"/>
+        <env name="DB_CONNECTION" value="mysql" force="true"/>
+        <env name="DB_DATABASE" value="rampart_testing" force="true"/>
+        <env name="MAIL_MAILER" value="array" force="true"/>
+        <env name="QUEUE_CONNECTION" value="sync" force="true"/>
+        <env name="SESSION_DRIVER" value="array" force="true"/>
+        <env name="ALLOW_EXPLOIT_TESTS" value="0" force="true"/>
+        <server name="DB_CONNECTION" value="mysql" force="true"/>
+        <server name="DB_DATABASE" value="rampart_testing" force="true"/>
     </php>
 </phpunit>

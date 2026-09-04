@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\PasswordResetLinkMail;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -42,10 +43,9 @@ class PasswordResetLinkController extends Controller
             ['token' => $token, 'created_at' => now()]
         );
 
-        Mail::raw(
-            "Reset your Rampart password: ".route('password.reset', ['token' => $token, 'email' => $request->email]),
-            fn ($message) => $message->to($user->email)->subject('Reset your Rampart password')
-        );
+        $resetUrl = route('password.reset', ['token' => $token, 'email' => $request->email]);
+
+        Mail::to($user->email)->send(new PasswordResetLinkMail($resetUrl));
 
         return back()->with('status', 'We have emailed your password reset link!');
     }

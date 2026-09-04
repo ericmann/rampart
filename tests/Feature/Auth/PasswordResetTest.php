@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Auth;
 
+use App\Mail\PasswordResetLinkMail;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -36,9 +37,7 @@ class PasswordResetTest extends TestCase
 
         $response->assertSessionHas('status');
         $this->assertDatabaseHas('password_reset_tokens', ['email' => $user->email]);
-        Mail::assertSent(function ($mail) use ($user) {
-            return $mail->hasTo($user->email);
-        });
+        Mail::assertSent(PasswordResetLinkMail::class, fn ($mail) => $mail->hasTo($user->email));
     }
 
     public function test_reset_password_screen_can_be_rendered(): void

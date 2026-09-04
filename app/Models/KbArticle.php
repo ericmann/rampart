@@ -12,6 +12,11 @@ class KbArticle extends Model
 {
     use HasFactory;
 
+    protected function casts(): array
+    {
+        return ['is_published' => 'boolean'];
+    }
+
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'author_id');
