@@ -170,9 +170,12 @@ or the contents of a local file.
 rejects `file://` and internal/private hosts. See `RegressionExamples.md` for the
 mass-assignment one written out.
 
-**Fix, in one line:** authorize the object on every access (`Gate::authorize`), drop `role`
-from what a profile update may set, and allowlist the preview fetch (scheme + host, block
-private ranges). Cross-framework specifics: `docs/HARDENING-CHECKLIST.md` (A01).
+**Fix, in one line:** authorize the object on every access (`Gate::authorize`), validate a
+fixed field allowlist for a profile update (a form request that only accepts `name`/`email`)
+so the request body can never set `role` — don't try to fix it by removing `role` from the
+model's `$fillable`, which the admin user-management screen legitimately relies on — and
+allowlist the preview fetch (scheme + host, block private ranges). Cross-framework
+specifics: `docs/HARDENING-CHECKLIST.md` (A01).
 
 ---
 
@@ -211,6 +214,15 @@ a generic 500 with no `DB_PASSWORD`/`APP_KEY` in the body.
 
 **Fix, in one line:** `APP_DEBUG=false` outside local dev, never render config on an error
 page, and kill the default admin credentials. Cross-framework: HARDENING-CHECKLIST (A02).
+
+> **What the `solutions` branch changes here — and what it deliberately doesn't.** Rampart
+> is a local-only sandbox (`APP_ENV=local`, bound to `127.0.0.1`), so on `solutions` the A02
+> fix you'll diff is just the one that actually leaked secrets: the custom error page that
+> dumped `DB_PASSWORD`/`APP_KEY` is gone. `APP_DEBUG` is intentionally left on (the checklist
+> permits debug in local dev) and the `admin`/`admin` sign-in is kept so the workshop's
+> documented login keeps working. In a real deployment you would also set `APP_DEBUG=false`
+> and remove the default credentials — both are on the checklist above for exactly that
+> reason.
 
 ---
 
@@ -358,8 +370,10 @@ and your `<script>` reply pops an alert (showing the session cookie) on view.
 **Add a regression test:** a search for `' OR '1'='1` returns only true subject matches
 (none, for a nonsense term); a stored `<script>` reply comes back **escaped** in the HTML.
 
-**Fix, in one line:** parameter-bind the query (and whitelist `sort`), escape output with
-`{{ }}`, and set `HttpOnly` on the session cookie. Cross-framework: HARDENING-CHECKLIST (A05).
+**Fix, in one line:** parameter-bind the query (and whitelist or drop the `sort` column —
+the `solutions` branch drops it, since the list only ever needs to sort by newest), escape
+output with `{{ }}`, and set `HttpOnly` on the session cookie. Cross-framework:
+HARDENING-CHECKLIST (A05).
 
 ---
 

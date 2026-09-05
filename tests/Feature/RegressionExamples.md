@@ -43,8 +43,9 @@ public function test_updating_your_profile_cannot_change_your_role(): void
     ]);
 
     // On the vulnerable app this passes role=admin straight to User::update() and the
-    // customer becomes an admin. Once `role` is removed from what profile updates can
-    // touch, it should stay 'customer' no matter what the request body says.
+    // customer becomes an admin. Once a profile update validates a fixed allowlist of
+    // fields (name/email) via a form request — rather than trusting the raw request body —
+    // it should stay 'customer' no matter what the request body says.
     $this->assertSame('customer', $customer->fresh()->role);
 }
 ```
