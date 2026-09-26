@@ -28,12 +28,13 @@ blog series you can work through solo.
 ## Quick start
 
 ```
-docker compose up          # or: make up
+make build && make up      # first run on a machine with nothing built or loaded yet
+docker compose up          # every run after that (or: make up)
 ```
 
-The **first** run builds the images (this one time needs internet). Subsequent runs, and
-any machine you `make load` the prebuilt bundle onto (see *Workshop distribution*), need no
-network at all. First boot migrates and seeds automatically — give it a minute.
+The **first** run pulls the MySQL/Redis base images and builds the app images (this one
+time needs internet). Subsequent runs, and any machine you `make load` the prebuilt bundle
+onto (see *Workshop distribution*), need no network at all. First boot migrates and seeds automatically — give it a minute.
 
 Then open <http://localhost:8080>. Seeded sign-ins:
 
@@ -108,7 +109,9 @@ docker compose up
 
 `docker-compose.yml` sets `pull_policy: never` on every service, so once the images are
 loaded `docker compose up` never contacts a registry — it uses the local image or fails
-fast, it never hangs on a pull.
+fast, it never hangs on a pull. The flip side: a bare `docker compose up` on a machine with
+nothing built or loaded fails with `No such image: mysql:8.4`. That is expected — run
+`make build` (or `make load`) first.
 
 ## Safety recap
 
