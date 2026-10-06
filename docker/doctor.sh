@@ -13,9 +13,9 @@ PORT=8080
 MIN_ENGINE=24
 MIN_MEM_GB=2
 
-# Files baked into rampart-app that matter at runtime. A change here since the image was
-# built means the container is running old code.
-APP_PATHSPEC=". :(exclude)docs :(exclude)*.md :(exclude)Makefile :(exclude).github :(exclude)mock :(exclude)docker/doctor.sh"
+# What rampart-app bakes in that the bind-mounted checkout can't override: dependencies
+# and built front-end assets. Everything else (app code, views, config, tests) is live.
+APP_PATHSPEC="Dockerfile composer.json composer.lock package.json package-lock.json resources/css resources/js vite.config.js tailwind.config.js postcss.config.js"
 
 if [ -t 1 ] && [ -z "${NO_COLOR:-}" ]; then
     green=$(printf '\033[32m'); yellow=$(printf '\033[33m'); red=$(printf '\033[31m')
@@ -176,14 +176,27 @@ case $rev in
                suggest "Run: git pull && make build"
            # shellcheck disable=SC2086  # APP_PATHSPEC is deliberately word-split
            elif ! git diff --quiet "$rev" HEAD -- $APP_PATHSPEC; then
-               warn "rampart-app was built from $short; the app code has changed since"
-               hint "The container would run the old code until you rebuild."
+               warn "rampart-app was built from $short; dependencies or assets have changed since"
+               hint "Code edits are live, but these only take effect after a rebuild."
                suggest "Run: make build"
            else
                ok "rampart-app matches your checkout ($short)"
            fi
        fi ;;
 esac
+
+# An app container created from an older image still carries that image's vendor/ in its
+# anonymous volume, even though Compose will recreate the container itself.
+cid=$(docker compose ps --all --quiet app 2>/dev/null)
+if [ -n "$cid" ]; then
+    used=$(docker inspect --format '{{.Image}}' "$cid" 2>/dev/null)
+    current=$(docker image inspect --format '{{.Id}}' rampart-app 2>/dev/null)
+    if [ -n "$used" ] && [ -n "$current" ] && [ "$used" != "$current" ]; then
+        warn "the app container predates your current rampart-app image"
+        hint "It would keep the old image's dependencies."
+        suggest "Run: docker compose rm --force --stop --volumes app && make up"
+    fi
+fi
 
 # --- Port -----------------------------------------------------------------------------
 

@@ -65,6 +65,19 @@ make reset-hard  # wipe the DB volume and re-provision from scratch (no image re
 - **Ten planted vulnerabilities**, exactly one per 2025 category, each real, demonstrable
   offline, and asserted by a hidden test suite.
 
+## Editing the code
+
+Your checkout is mounted into the app container, so edits are live: save a file under
+`app/`, `routes/`, `config/`, `resources/views/`, `database/` or `tests/` and refresh — no
+rebuild. `.env` (created in your checkout on first boot) works the same way; the server
+restarts itself when it changes.
+
+The image only bakes in what the mount can't supply: Composer dependencies and the built
+CSS/JS. After changing `composer.json`/`composer.lock`, `package.json`, or `resources/css`
+/`resources/js`, run `make build` (`make doctor` tells you when). To change a dependency
+without leaving the container, `make shell` then `composer require …` — that updates
+`composer.json`/`composer.lock` in your checkout and the running app at once.
+
 ## Running the tests
 
 Both suites run **inside the app container** (that's where PHP and the dependencies live):

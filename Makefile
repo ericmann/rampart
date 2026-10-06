@@ -37,8 +37,13 @@ pull:
 		docker image inspect $$img >/dev/null 2>&1 || docker pull $$img; \
 	done
 
+# Also removes the app container (stopping it if running) along with its anonymous
+# vendor/ and public/build volumes — Compose would otherwise carry those over into the new
+# container, and the rebuilt image's dependencies would never show up. Named volumes (the
+# database, storage) are untouched.
 build: pull
 	RAMPART_REVISION=$$(git rev-parse HEAD 2>/dev/null || echo unknown) docker compose build
+	docker compose rm --force --stop --volumes app
 
 # Bundles every image this app needs (built app image, mock service, plus the stock
 # mysql/redis base images) into one file for a USB stick — a room full of laptops on
