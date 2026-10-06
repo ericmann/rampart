@@ -28,9 +28,13 @@ blog series you can work through solo.
 ## Quick start
 
 ```
+make doctor                # checks Docker, Compose, images and port 8080 — tells you what to run next
 make build && make up      # first run on a machine with nothing built or loaded yet
 docker compose up          # every run after that (or: make up)
 ```
+
+`make doctor` is read-only and safe to run any time: it never pulls, builds, or starts
+anything. No `make`? Run `sh docker/doctor.sh` instead.
 
 The **first** run pulls the MySQL/Redis base images and builds the app images (this one
 time needs internet). Subsequent runs, and any machine you `make load` the prebuilt bundle
@@ -60,6 +64,19 @@ make reset-hard  # wipe the DB volume and re-provision from scratch (no image re
   endpoint, reachable only from the app container, so the SSRF demo works fully offline.
 - **Ten planted vulnerabilities**, exactly one per 2025 category, each real, demonstrable
   offline, and asserted by a hidden test suite.
+
+## Editing the code
+
+Your checkout is mounted into the app container, so edits are live: save a file under
+`app/`, `routes/`, `config/`, `resources/views/`, `database/` or `tests/` and refresh — no
+rebuild. `.env` (created in your checkout on first boot) works the same way; the server
+restarts itself when it changes.
+
+The image only bakes in what the mount can't supply: Composer dependencies and the built
+CSS/JS. After changing `composer.json`/`composer.lock`, `package.json`, or `resources/css`
+/`resources/js`, run `make build` (`make doctor` tells you when). To change a dependency
+without leaving the container, `make shell` then `composer require …` — that updates
+`composer.json`/`composer.lock` in your checkout and the running app at once.
 
 ## Running the tests
 

@@ -25,10 +25,12 @@ Say `make reset` out loud before you start. It's the single most useful command 
 
 ## Getting started
 
-**Before a workshop:** run `docker compose build` once on home/venue wifi (or `make load`
-the USB image) — don't first-build on conference wifi with forty other people.
+**Before a workshop:** run `make doctor` — it checks your Docker setup and tells you exactly
+what to run next (usually `make build`, once, on home/office wifi — don't first-build on
+conference wifi with forty other people). Run it again until it says *All set*.
 
 ```
+make doctor
 docker compose up
 ```
 
@@ -669,6 +671,12 @@ and fail closed when a control's dependency is down. Cross-framework: HARDENING-
 ---
 
 ## When you've fixed one
+
+Your checkout is mounted into the container, so a fix is live the moment you save it —
+refresh the browser, or run `make test`. `.env` edits restart the server on their own. No
+rebuild needed, except for dependency changes: do those with `make shell` then
+`composer require …`, which updates `composer.json`/`composer.lock` in your checkout and
+the running app together.
 
 Add a regression test in `tests/Feature` that **fails on the vulnerable app and passes on
 your fix** — that's the proof your fix is real, not just a changed error message.

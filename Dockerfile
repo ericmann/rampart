@@ -52,10 +52,18 @@ RUN composer install --no-interaction --no-scripts --no-autoloader
 COPY . /var/www/html
 COPY --from=assets /app/public/build /var/www/html/public/build
 
-RUN composer dump-autoload --optimize \
-    && chmod +x docker/entrypoint.sh
+# Not --optimize: the checkout is bind-mounted over this directory at runtime, and a
+# classmap frozen at build time would keep pointing at files attendees move or delete.
+RUN composer dump-autoload
+
+# Stamped by `make build` so `make doctor` can tell when this image predates the checkout.
+# Declared last so changing it never invalidates the cached layers above.
+ARG RAMPART_REVISION=unknown
+LABEL rampart.revision=${RAMPART_REVISION}
 
 EXPOSE 8080
 
-ENTRYPOINT ["docker/entrypoint.sh"]
+# Run via bash rather than relying on the file's exec bit — at runtime this is the host's
+# copy (bind-mounted), and git tracks it as 644.
+ENTRYPOINT ["bash", "docker/entrypoint.sh"]
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]

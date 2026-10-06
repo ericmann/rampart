@@ -1,4 +1,9 @@
-.PHONY: up down reset reset-hard test exploits logs shell mysql-shell build dist load pull
+.PHONY: doctor up down reset reset-hard test exploits logs shell mysql-shell build dist load pull
+
+# Read-only pre-flight: checks Docker, Compose, images and port 8080, then says which
+# command to run next. The first thing to tell anyone setting this up.
+doctor:
+	@BASE_IMAGES="$(BASE_IMAGES)" sh docker/doctor.sh
 
 # Uses whatever image is already present (loaded from rampart-images.tar.gz, or built by
 # a prior `make build`) — never forces a rebuild, so this needs no network once images
@@ -32,8 +37,13 @@ pull:
 		docker image inspect $$img >/dev/null 2>&1 || docker pull $$img; \
 	done
 
+# Also removes the app container (stopping it if running) along with its anonymous
+# vendor/ and public/build volumes — Compose would otherwise carry those over into the new
+# container, and the rebuilt image's dependencies would never show up. Named volumes (the
+# database, storage) are untouched.
 build: pull
-	docker compose build
+	RAMPART_REVISION=$$(git rev-parse HEAD 2>/dev/null || echo unknown) docker compose build
+	docker compose rm --force --stop --volumes app
 
 # Bundles every image this app needs (built app image, mock service, plus the stock
 # mysql/redis base images) into one file for a USB stick — a room full of laptops on
