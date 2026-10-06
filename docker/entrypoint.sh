@@ -3,8 +3,15 @@ set -euo pipefail
 
 cd /var/www/html
 
+# /var/www/html is the host's checkout, bind-mounted. Hand anything created here back to
+# whoever owns the checkout, so a Linux host doesn't end up with root-owned files it can't
+# edit. (Docker Desktop on macOS/Windows maps ownership itself; there this is a no-op.)
+host_owner=$(stat -c '%u:%g' .)
+give_back() { chown -h "$host_owner" "$@" 2>/dev/null || true; }
+
 if [ ! -f .env ]; then
     cp .env.example .env
+    give_back .env
 fi
 
 if ! grep -q '^APP_KEY=base64' .env 2>/dev/null; then
@@ -43,5 +50,6 @@ else
 fi
 
 php artisan storage:link > /dev/null 2>&1 || true
+give_back public/storage
 
 exec "$@"

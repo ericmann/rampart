@@ -672,6 +672,12 @@ and fail closed when a control's dependency is down. Cross-framework: HARDENING-
 
 ## When you've fixed one
 
+Your checkout is mounted into the container, so a fix is live the moment you save it —
+refresh the browser, or run `make test`. `.env` edits restart the server on their own. No
+rebuild needed, except for dependency changes: do those with `make shell` then
+`composer require …`, which updates `composer.json`/`composer.lock` in your checkout and
+the running app together.
+
 Add a regression test in `tests/Feature` that **fails on the vulnerable app and passes on
 your fix** — that's the proof your fix is real, not just a changed error message.
 `tests/Feature/RegressionExamples.md` has two written out. Keep the public suite green
