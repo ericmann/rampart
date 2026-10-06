@@ -104,9 +104,11 @@ jobs:
 
       # On main this suite passing proves the plants are present. Here they're fixed, so
       # the suite is expected to FAIL — assert that every exploit is now blocked instead.
+      # --no-output: the expected failures dump whole error pages; the gate reports what
+      # matters.
       - name: Hidden exploit suite (proves every plant is fixed)
         run: |
-          composer test:exploits -- --log-junit exploits.xml || true
+          composer test:exploits -- --no-output --log-junit exploits.xml || true
           php .github/scripts/assert-exploits-fixed.php exploits.xml
         env:
           DB_CONNECTION: mysql
