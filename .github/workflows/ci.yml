@@ -51,12 +51,15 @@ jobs:
           extensions: mbstring, pdo_mysql, redis, zip, gd, bcmath, intl
           coverage: none
 
-      # A03:2025 — Software Supply Chain Failures. --locked fails the build if
-      # composer.json and composer.lock have drifted apart, instead of composer silently
-      # re-resolving and installing whatever satisfies composer.json at that moment —
-      # which defeats the point of committing a lockfile at all.
+      # A03:2025 — Software Supply Chain Failures. When composer.json and composer.lock
+      # have drifted apart, `composer install` only prints a warning and installs anyway —
+      # which defeats the point of committing a lockfile at all. `composer validate` turns
+      # that drift into a failed build.
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict --no-check-publish
+
       - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist --locked
+        run: composer install --no-interaction --prefer-dist
 
       - uses: actions/setup-node@v4
         with:
@@ -99,8 +102,12 @@ jobs:
           DB_PASSWORD: ''
           REDIS_HOST: 127.0.0.1
 
-      - name: Hidden exploit suite (proves the plants are all still present)
-        run: composer test:exploits
+      # On main this suite passing proves the plants are present. Here they're fixed, so
+      # the suite is expected to FAIL — assert that every exploit is now blocked instead.
+      - name: Hidden exploit suite (proves every plant is fixed)
+        run: |
+          composer test:exploits -- --log-junit exploits.xml || true
+          php .github/scripts/assert-exploits-fixed.php exploits.xml
         env:
           DB_CONNECTION: mysql
           DB_HOST: 127.0.0.1
