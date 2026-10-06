@@ -55,6 +55,11 @@ COPY --from=assets /app/public/build /var/www/html/public/build
 RUN composer dump-autoload --optimize \
     && chmod +x docker/entrypoint.sh
 
+# Stamped by `make build` so `make doctor` can tell when this image predates the checkout.
+# Declared last so changing it never invalidates the cached layers above.
+ARG RAMPART_REVISION=unknown
+LABEL rampart.revision=${RAMPART_REVISION}
+
 EXPOSE 8080
 
 ENTRYPOINT ["docker/entrypoint.sh"]

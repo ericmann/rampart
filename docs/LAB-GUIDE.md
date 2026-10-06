@@ -25,10 +25,12 @@ Say `make reset` out loud before you start. It's the single most useful command 
 
 ## Getting started
 
-**Before a workshop:** run `docker compose build` once on home/venue wifi (or `make load`
-the USB image) — don't first-build on conference wifi with forty other people.
+**Before a workshop:** run `make doctor` — it checks your Docker setup and tells you exactly
+what to run next (usually `make build`, once, on home/office wifi — don't first-build on
+conference wifi with forty other people). Run it again until it says *All set*.
 
 ```
+make doctor
 docker compose up
 ```
 

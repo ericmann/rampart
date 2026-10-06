@@ -28,9 +28,13 @@ blog series you can work through solo.
 ## Quick start
 
 ```
+make doctor                # checks Docker, Compose, images and port 8080 — tells you what to run next
 make build && make up      # first run on a machine with nothing built or loaded yet
 docker compose up          # every run after that (or: make up)
 ```
+
+`make doctor` is read-only and safe to run any time: it never pulls, builds, or starts
+anything. No `make`? Run `sh docker/doctor.sh` instead.
 
 The **first** run pulls the MySQL/Redis base images and builds the app images (this one
 time needs internet). Subsequent runs, and any machine you `make load` the prebuilt bundle
