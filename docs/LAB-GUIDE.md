@@ -259,7 +259,8 @@ that can be moved to point at new code.
 - View-source on any page: the Chart.js `<script src="https://cdn.jsdelivr.net/…">` has no
   `integrity=`/`crossorigin=` (no Subresource Integrity) — a compromised CDN owns your page.
 - `.github/workflows/ci.yml`: `actions/checkout@v4` and `actions/setup-node@v4` are **tags**,
-  not commit SHAs, and `composer install` runs without `--locked`.
+  not commit SHAs, and nothing checks that `composer.lock` still matches `composer.json` —
+  `composer install` only *warns* when they've drifted, then carries on.
 </details>
 
 **✓ You've done it when:** you can point to all three — the `composer audit` finding, the
@@ -269,7 +270,7 @@ integrity-less script tag, and the tag-pinned actions.
 `composer audit` and fail on findings.
 
 **Fix, in one line:** audit deps in CI (fail the build), add SRI to third-party scripts,
-pin actions by SHA, install `--locked`. Cross-framework: HARDENING-CHECKLIST (A03).
+pin actions by SHA, fail CI on a stale lockfile (`composer validate --strict`). Cross-framework: HARDENING-CHECKLIST (A03).
 
 ---
 
